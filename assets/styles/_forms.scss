@@ -1,0 +1,30 @@
+/* JOIN AFFILIATE PROGRAMM FORM START */
+section.join-affiliate-form {
+    padding: 40px 0;
+    z-index: 1;
+
+    &.overlap-top {
+        padding: 0 0 40px;
+        margin-top: -300px;
+    }
+
+    .form-wrapper {
+        border-radius: 24px;
+        background: var(--Medium_Grey);
+        box-shadow: -4px 4px 15px 0px rgba(0, 0, 0, 0.10);
+        padding: 30px;
+
+        // height set for just testing purpose
+        min-height: 620px;
+
+        .section-title {
+            p {
+                &:last-child {
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+}
+
+/* JOIN AFFILIATE PROGRAMM FORM END  */

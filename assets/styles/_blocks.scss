@@ -1,0 +1,139 @@
+/* BLOG CARD BLOCK END */
+section.blog-card-block {
+
+    .section-title {
+        margin-bottom: 50px;
+    }
+
+    ul.search-tag {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 30px;
+        row-gap: 20px;
+        padding-left: 0;
+        margin-bottom: 30px;
+
+        li {
+            &::before {
+                display: none;
+            }
+
+            a {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                padding: 6px 17px;
+                border-radius: 100px;
+                $border: 1px;
+                background: white;
+                background-clip: padding-box;
+                border: solid $border transparent;
+                text-align: center;
+                transition: all 0.3s ease-in-out;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: 1px;
+                    right: 1px;
+                    bottom: 1px;
+                    left: 1px;
+                    z-index: -1;
+                    margin: -$border;
+                    /* !importanté */
+                    border-radius: inherit;
+                    background: var(--New_Gradient, linear-gradient(90deg, #158ECE 0%, #19E3E3 100%));
+                }
+
+                span {
+                    text-align: center;
+                    font-feature-settings: 'liga' off, 'clig' off;
+                    font-family: var(--heading-font);
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 22px;
+                    background: var(--New_Gradient, linear-gradient(90deg, #158ECE 0%, #19E3E3 100%));
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    position: relative;
+                    z-index: 11;
+                }
+
+                &:hover,
+                &.active {
+                    background: var(--New_Gradient);
+                    border: 1px solid white;
+
+                    span {
+                        background: var(--white);
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        position: relative;
+                        z-index: 11;
+                    }
+
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .subtitle {
+        color: var(--Brandcolor_Black);
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 20px;
+        letter-spacing: -0.26px;
+        margin-bottom: 30px;
+    }
+
+    .view-more-button {
+        text-align: center;
+        margin-top: 50px;
+    }
+}
+
+/* BLOG CARD BLOCK END */
+
+/* ELECTRIC MOBILITY SECTION START */
+section.electric-mobility-block {
+    .section-title-with-bg {
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: center;
+        padding-top: 80px;
+        border-radius: 40px;
+        padding-bottom: 100px;
+        min-height: 480px;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            left: 0;
+            right: 0;
+            top: 0;
+            border-radius: 40px;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.90) 12.08%, rgba(0, 0, 0, 0.00) 130.28%);
+        }
+
+        .section-title {
+            max-width: 820px;
+            margin: 0 auto 40px;
+            position: relative;
+            z-index: 11;
+        }
+    }
+}
+
+/* ELECTRIC MOBILITY SECTION END */

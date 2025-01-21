@@ -1,0 +1,184 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  list-style: none;
+  box-sizing: border-box;
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+select,
+input:focus,
+button:focus,
+.btn:focus {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+label {
+  margin-bottom: 0;
+}
+
+footer,
+section {
+  width: 100%;
+  /* float: left; */
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-prev:focus,
+.swiper-button-prev:active,
+.swiper-button-next:hover,
+.swiper-button-next:focus,
+.swiper-button-next:active,
+.swiper-prev:hover,
+.swiper-prev:focus,
+.swiper-prev:active,
+.swiper-next:hover,
+.swiper-next:focus,
+.swiper-next:active {
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+}
+
+/*ul,
+li,
+ol,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ ul {
+    padding-left: 0px;
+}
+
+ul ul {
+    padding-left: 20px;
+} */
+
+html,
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+}
+
+.ieshow {
+  display: none;
+}
+
+
+/* IE11 */
+
+@media all and (-ms-high-contrast:none) {
+  .ieshow {
+    display: block;
+  }
+}
+
+
+/* EDGE */
+
+@supports (-ms-ime-align:auto) {
+  .ieshow {
+    display: block;
+  }
+}
+
+
+/* CONTAINER WIDTH SET START */
+@media (min-width: 1400px) {
+
+  .container-xxl,
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 1240px;
+  }
+}
+
+@media (min-width: 1441px) {
+
+  .container-xxl,
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 1320px;
+  }
+}
+
+@media (min-width: 1921px) {
+  .container-fluid {
+    max-width: 1440px;
+  }
+}
+
+.container-fluid {
+  @media (max-width: 1920px) {
+    max-width: 1270px !important;
+  }
+
+  @media (max-width: 576px) {
+    padding: 0 24px !important;
+  }
+}
+
+/* CONTAINER WIDTH SET END */
+
+.main {
+  overflow: hidden;
+}
+
+
+// rotate animation css
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+// HOME PAGE BACKGROUND COLOR 
+// .home.page-template-default {
+//   background: var(--MainColor_Dark);
+// }

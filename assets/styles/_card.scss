@@ -1,0 +1,246 @@
+/* Single blog card start */
+.single-blog-card {
+    border-radius: 14px 14px 22px 14px;
+    background: #FFF;
+    box-shadow: 0px 15px 45px 0px rgba(0, 0, 0, 0.10);
+    padding: 8px 8px 16px 8px;
+    position: relative;
+
+    .image {
+        display: block;
+        overflow: hidden;
+        border-radius: 8px;
+        position: relative;
+
+        img {
+            width: 100%;
+            transition: all 0.3s ease-in-out;
+            transform: scale(1);
+            border-radius: 8px;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+        .share-button {
+            display: flex;
+            width: 25px;
+            height: 25px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100px;
+            background: #FFF;
+            position: absolute;
+            top: 9px;
+            left: 9px;
+            border: none;
+            outline: none;
+        }
+
+    }
+
+    .card-tags {
+        padding-left: 0;
+        margin-top: 15px;
+        margin-bottom: 0;
+        display: flex;
+        align-items: flex-start;
+        column-gap: 10px;
+        flex-wrap: wrap;
+
+        li {
+            &::before {
+                display: none;
+            }
+
+            a {
+                display: inline-flex;
+                padding: 4px 6px;
+                justify-content: center;
+                align-items: center;
+                column-gap: 4px;
+                color: var(--Brandcolor_Blue);
+                font-family: var(--heading-font);
+                font-size: 10px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                border-radius: 100px;
+                background: rgba(21, 142, 206, 0.05);
+            }
+        }
+    }
+
+    .content {
+        padding: 0px 4px;
+    }
+
+    .title {
+        color: var(--Brandcolor_Black);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-top: 10px;
+        width: calc(100% - 25px);
+        display: inline-block;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            color: var(--Brandcolor_Blue);
+        }
+    }
+
+    p {
+        color: #424753;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 20px;
+        letter-spacing: -0.26px;
+        margin-top: 5px;
+        width: calc(100% - 30px);
+    }
+
+    .view-details-button {
+        display: flex;
+        width: 30px;
+        height: 30px;
+        padding: 13px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100px;
+        background: var(--New_Gradient, linear-gradient(90deg, #158ECE 0%, #19E3E3 100%));
+        box-shadow: -3px 3px 20px 0px rgba(25, 227, 227, 0.60);
+        position: absolute;
+        right: 9px;
+        bottom: 9px;
+        transition: all 0.3s ease-in-out;
+
+        img {
+            transition: all 0.3s ease-in-out;
+        }
+
+        &:hover {
+            img {
+                transform: rotate(45deg);
+            }
+        }
+    }
+
+    &.home-blog {
+        .title {
+            margin-top: 16px;
+        }
+
+        p {
+            opacity: 0.8;
+        }
+    }
+}
+
+/* Single blog card end */
+
+/* SINGLE PRODUCT CARD START */
+.single-product-card {
+    padding: 8px 8px 16px 8px;
+    border-radius: 14px;
+    background: #FFF;
+    box-shadow: 0px 15px 45px 0px rgba(0, 0, 0, 0.10);
+    position: relative;
+    max-width: 350px;
+    height: 100%;
+
+    .image {
+        position: relative;
+        overflow: hidden;
+        display: block;
+
+        img {
+            width: 100%;
+            transition: all 0.3s ease-in-out;
+            transform: scale(1);
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+        .discount {
+            position: absolute;
+            top: 11px;
+            left: 9px;
+            display: inline-flex;
+            padding: 4px 6px;
+            justify-content: center;
+            align-items: center;
+            column-gap: 4px;
+            color: var(--white);
+            font-family: var(--heading-font);
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            border-radius: 100px;
+            background: var(--New_Gradient, linear-gradient(90deg, #158ECE 0%, #19E3E3 100%));
+            min-width: 97px;
+
+            img {
+                max-width: 8px;
+            }
+        }
+
+        .options {
+            display: flex;
+            column-gap: 10px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+
+            .share-button {
+                display: flex;
+                width: 25px;
+                height: 25px;
+                justify-content: center;
+                align-items: center;
+                border-radius: 100px;
+                background: #FFF;
+                border: none;
+                outline: none;
+            }
+        }
+    }
+
+    .content {
+        .price {
+            color: var(--Brandcolor_Black);
+            font-feature-settings: 'liga' off, 'clig' off;
+            font-family: var(--heading-font);
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            display: block;
+            margin-top: 15px;
+        }
+
+        .title {
+            display: inline-block;
+            margin-top: 15px;
+
+            h3 {
+                color: var(--Brandcolor_Black);
+                font-feature-settings: 'liga' off, 'clig' off;
+                font-family: var(--heading-font);
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+    }
+
+}
+
+/* SINGLE PRODUCT CARD END */

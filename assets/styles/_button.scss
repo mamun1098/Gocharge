@@ -1,0 +1,154 @@
+a.button,
+button.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 18px;
+  width: auto;
+  height: 43px;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: var(--heading-font);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  transition: all 0.3s ease-in;
+  position: relative;
+  padding: 8px 8px 8px 16px;
+  border-radius: 100px;
+  border: none;
+  outline: none;
+  text-decoration: none;
+
+  .icon {
+    display: flex;
+    width: 27px;
+    height: 27px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+
+    svg {
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+  &.white {
+    box-shadow: -2px 4px 20px 0px rgba(25, 227, 227, 0.2);
+
+    .btn-text {
+      background: var(--New_Gradient, linear-gradient(90deg, #158ECE 0%, #19E3E3 100%));
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-fill-color: transparent;
+      font-family: var(--heading-font);
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 22px;
+      transition: all 0.3s ease-in;
+    }
+
+    .icon {
+      border-radius: 100px;
+      border: 0.5px solid var(--New_Gradient);
+    }
+
+    &:hover {
+      .icon {
+        background: var(--New_Gradient, linear-gradient(90deg, #158ECE 0%, #19E3E3 100%));
+      }
+    }
+  }
+
+  &.blue {
+    border-radius: 100px;
+    background: var(--New_Gradient, linear-gradient(90deg, #158ECE 0%, #19E3E3 100%));
+
+    .btn-text {
+      color: var(--white);
+      font-feature-settings: 'liga' off, 'clig' off;
+      font-family: var(--heading-font);
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 22px;
+    }
+
+    .icon {
+      border-radius: 100px;
+      border: 0.5px solid rgba(255, 255, 255, 0.50);
+
+      svg {
+        path {
+          transition: all 0.3s ease-in-out;
+        }
+      }
+    }
+
+    &:hover {
+      box-shadow: -3px 3px 20px 0px rgba(25, 227, 227, 0.60);
+
+      .icon {
+        background: var(--white);
+
+        svg {
+
+          path {
+            fill: var(--Newcolor_Neon);
+          }
+        }
+      }
+    }
+  }
+
+}
+
+.hero-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 12px;
+  width: auto;
+  height: 50px;
+  font-feature-settings: 'liga' off, 'clig' off;
+  color: var(--Brandcolor_Black);
+  font-family: var(--heading-font);
+  background: var(--white);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  transition: all 0.3s ease-in;
+  position: relative;
+  padding: 5px 20px 5px 5px;
+  border-radius: 100px;
+  border: none;
+  outline: none;
+  text-decoration: none;
+
+  .btn-text {
+    color: var(--Brandcolor_Black);
+    font-family: var(--heading-font);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+  }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 20px rgba(25, 227, 227, 0.60);
+    background: var(--New_Gradient);
+    border-radius: 100%;
+  }
+
+  &:hover {
+    box-shadow: -2px 4px 20px 0px rgba(25, 227, 227, 0.60);
+  }
+}
