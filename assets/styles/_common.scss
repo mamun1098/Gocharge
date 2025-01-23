@@ -51,4 +51,93 @@
     padding: 50px 0;
 }
 
+
+
 /* section title end */
+
+
+/* SWIPER PAGINATION AND NEXT PREV BUTTON STYLES START */
+.swiper-slider-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    column-gap: 50px;
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        &::after {
+            display: none;
+        }
+
+        position: unset;
+        left: unset;
+        right: unset;
+        display: flex;
+        width: 40px;
+        height: 40px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100px;
+        text-align: center;
+        transition: all 0.3s ease-in-out;
+        z-index: unset;
+        border: 1px solid transparent;
+        margin-top: unset;
+
+        svg {
+            max-width: 14px;
+            position: relative;
+            z-index: 11;
+        }
+    }
+
+    .swiper-button-prev {
+        background: linear-gradient(white, white) padding-box,
+            linear-gradient(270deg, #158ECE 0%, #19E3E3 100%) border-box;
+
+    }
+
+    .swiper-button-next {
+        background: linear-gradient(white, white) padding-box,
+            linear-gradient(90deg, #158ECE 0%, #19E3E3 100%) border-box;
+    }
+
+    .swiper-pagination {
+        position: unset;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 12px;
+        width: auto;
+
+        .swiper-pagination-bullet {
+            background: var(--Brandcolor_Black);
+            opacity: 0.2;
+            width: 4px;
+            height: 4px;
+            margin: 0 6px;
+            transition: all 0.3s ease-in-out;
+
+            &.swiper-pagination-bullet-active {
+                position: relative;
+                opacity: 1;
+
+                &::before {
+                    position: absolute;
+                    content: "";
+                    width: 16px;
+                    height: 16px;
+                    border-radius: 16px;
+                    border: 0.3px solid rgba(17, 17, 17, 0.2);
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+        }
+    }
+}
+
+/* SWIPER PAGINATION AND NEXT PREV BUTTON STYLES END */
