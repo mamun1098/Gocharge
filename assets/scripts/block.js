@@ -27,18 +27,13 @@ setTimeout(function () {
         breakpoints: {
           0: {
             slidesPerView: 1.2,
-            centeredSlides: true,
-            initialSlide: 2,
-            scrollbar: false,
-            navigation: false,
+            centeredSlides: false,
+            loop: false,
           },
-          660: {
-            slidesPerView: 2.2,
-            pagination: true,
-            pagination: {
-              el: `.${uniqueClass} .swiper-pagination`,
-              clickable: true,
-            },
+          576: {
+            slidesPerView: 2,
+            centeredSlides: false,
+            loop: false,
           },
           768: {
             slidesPerView: 3,
@@ -47,14 +42,22 @@ setTimeout(function () {
             slidesPerView: 4,
           },
           1200: {
-            slidesPerView: 4,
+            slidesPerView: 4.3,
+            centeredSlides: true,
+            loop: true,
           },
           1441: {
-            slidesPerView: 4.4,
-            centeredSlides: false,
+            slidesPerView: 5.4,
+            centeredSlides: true,
+            loop: true,
+          },
+          1500: {
+            slidesPerView: 5.4,
+            centeredSlides: true,
+            loop: true,
           },
           1920: {
-            slidesPerView: 5.2,
+            slidesPerView: 5.6,
           },
         },
       });
@@ -82,4 +85,70 @@ setTimeout(function () {
     });
   }
   /* ELECTRIC MOBILITY SECTION END */
+
+  /* CHARGE WITH APP BLOCK START */
+  const chargingSlider = document.querySelectorAll(
+    ".charge-withapp-block .content-wrapper .swiper"
+  );
+  if (chargingSlider.length > 0) {
+    chargingSlider.forEach((swiperElement, i) => {
+      const uniqueClass = `chargingSL_${i}`;
+      swiperElement.classList.add(uniqueClass);
+
+      const chargingSwiper = new Swiper(`.${uniqueClass}`, {
+        watchOverflow: true,
+        spaceBetween: 20,
+        loop: false,
+        speed: 500,
+
+        // Navigation arrows
+        navigation: {
+          nextEl: `.${uniqueClass} .swiper-button-next`,
+          prevEl: `.${uniqueClass} .swiper-button-prev`,
+        },
+        pagination: {
+          el: `.${uniqueClass} .swiper-pagination`,
+          clickable: true,
+        },
+
+        breakpoints: {
+          0: {
+            slidesPerView: 1.5,
+            centeredSlides: false,
+            loop: false,
+          },
+          576: {
+            slidesPerView: 2.1,
+            centeredSlides: false,
+            loop: false,
+          },
+          768: {
+            slidesPerView: 2.6,
+          },
+          1024: {
+            slidesPerView: 2,
+          },
+          1200: {
+            slidesPerView: 2.4,
+            centeredSlides: false,
+            loop: false,
+          },
+          1441: {
+            slidesPerView: 2.4,
+            centeredSlides: false,
+            loop: false,
+          },
+          1500: {
+            slidesPerView: 2.6,
+            centeredSlides: false,
+            loop: false,
+          },
+          1920: {
+            slidesPerView: 2.8,
+          },
+        },
+      });
+    });
+  }
+  /* CHARGE WITH APP BLOCK END */
 }, 500);

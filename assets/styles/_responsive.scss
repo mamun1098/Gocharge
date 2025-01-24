@@ -15,6 +15,16 @@
     }
 }
 
+@media (max-width: 1250px) {
+    section.charge-withapp-block {
+        .single-price {
+            .icon {
+                right: 10px;
+            }
+        }
+    }
+}
+
 @media (max-width: 1200px) {
     header.header-area .wrapper-header .logo img {
         max-width: 150px;
@@ -30,6 +40,14 @@
 
     header.header-area .wrapper-header .header-right-wrapp .icon-list {
         column-gap: 15px;
+    }
+
+    section.charge-withapp-block {
+        .content-wrapper {
+            .side-slider {
+                left: 46%;
+            }
+        }
     }
 }
 
@@ -266,6 +284,17 @@
         }
     }
 
+    section.charge-withapp-block {
+        padding: 40px 0 50px;
+
+        .content-wrapper {
+            .side-slider {
+                position: unset;
+                width: 100%;
+            }
+        }
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -411,6 +440,207 @@
 
         }
     }
+
+    // section title responsive start 
+    .section-title {
+        margin-bottom: 35px;
+
+        h2 {
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px;
+            letter-spacing: -0.26px;
+        }
+
+    }
+
+    // siper page-orientation start 
+    .swiper-slider-btns {
+        .swiper-pagination {
+            .swiper-pagination-bullet {
+                column-gap: 11.5px;
+
+                &.swiper-pagination-bullet-active {
+                    &::before {
+                        width: 15px;
+                        height: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+    section.electric-mobility-block {
+        .section-title-with-bg {
+            padding-top: 60px;
+            border-radius: 28px;
+            padding-bottom: 160px;
+            height: 365px;
+            position: relative;
+            padding: 60px 30px 160px 30px;
+
+            &::before {
+                border-radius: 28px;
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.00) 100);
+            }
+
+            .section-title {
+                max-width: 820px;
+                margin: 0 auto 40px;
+                position: relative;
+                z-index: 11;
+            }
+        }
+
+        .swiper {
+            margin-top: -125px;
+
+            .swiper-wrapper {
+                margin-left: 10px;
+            }
+        }
+
+        .swiper-slider-btns {
+
+            .swiper-button-prev,
+            .swiper-button-next {
+                display: none;
+            }
+        }
+
+        .view-more-button {
+            margin-top: 20px;
+        }
+    }
+
+    section.charge-withapp-block {
+        padding: 20px 0 20px;
+
+        .text-wrap {
+            max-width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .single-price {
+            .title {
+                font-size: 50px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 50px;
+            }
+
+            .icon {
+                width: 30px;
+                height: 30px;
+                right: unset;
+                left: 26px;
+                bottom: -15px;
+
+                img {
+                    max-height: 10px;
+                }
+
+            }
+
+            &.icon-top {
+                .icon {
+                    left: 82px;
+                    right: unset;
+                    top: -20px;
+                }
+            }
+        }
+
+        .content-wrapper {
+
+            .side-slider {
+                margin-left: 10px;
+                padding-top: 30px;
+
+                .swiper-slider-btns {
+
+                    margin-top: 30px;
+
+                    .swiper-button-next,
+                    .swiper-button-prev {
+                        display: none;
+                    }
+
+                }
+            }
+        }
+
+        .view-more-button {
+            margin-top: 30px;
+
+            &.mobile-version {
+                display: block;
+                text-align: center;
+            }
+
+            &.desktop-version {
+                display: none;
+            }
+        }
+    }
 }
 
-@media (max-width: 576px) {}
+@media (max-width: 576px) {
+    .section-padding {
+        padding: 20px 0;
+    }
+
+    section.electric-mobility-block {
+        .section-title-with-bg {
+            .section-title {
+                max-width: 315px;
+                margin: 0 auto 35px;
+            }
+        }
+
+        .container {
+            max-width: 100%;
+            padding: 0;
+        }
+
+        .swiper {
+            margin-top: -75px;
+
+            .swiper-wrapper {
+                margin-left: 10px;
+            }
+        }
+
+    }
+
+    section.charge-withapp-block {
+        padding: 20px 0 20px;
+
+        .section-title {
+            margin-bottom: 30px;
+        }
+
+        .text-wrap {
+            p {
+                margin-bottom: 10px;
+            }
+
+            .app-button {
+                padding-top: 20px;
+            }
+        }
+
+        .single-price {
+            .subtitle {}
+        }
+
+        .content-wrapper {
+
+            .side-slider {
+
+                .swiper-slider-btns {}
+            }
+        }
+    }
+}
