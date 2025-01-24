@@ -51,6 +51,21 @@
     }
 }
 
+@media (max-width: 1140px) {
+    section.save-for-charge-block {
+        .wrapper {
+            .single-recharge-card {
+                .card-image {
+                    img {
+                        max-width: 280px;
+                        max-height: 180px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 1100px) {
     header.header-area .wrapper-header .header-menu-wrap ul.nav li a {
         font-size: 15px;
@@ -295,11 +310,29 @@
         }
     }
 
+    section.save-for-charge-block {
+        .wrapper {
+            padding: 40px 20px 80px 20px;
+
+            .single-recharge-card {
+                margin-bottom: 80px;
+
+                .card-image {
+                    img {
+                        max-width: 280px;
+                        max-height: 180px;
+                    }
+                }
+            }
+        }
+    }
+
 }
 
 @media (max-width: 768px) {
     footer.footer-area {
         padding: 40px 0 30px;
+        margin-top: 20px;
 
         .logo-side {
             .social-share {
@@ -584,6 +617,26 @@
             }
         }
     }
+
+    section.save-for-charge-block {
+        .wrapper {
+            border-radius: 20px;
+        }
+    }
+
+    section.block-image {
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        &.overlap-top {
+            margin-top: -115px;
+        }
+
+        .bg-image {
+            height: 480px;
+            background-attachment: scroll;
+        }
+    }
 }
 
 @media (max-width: 576px) {
@@ -599,7 +652,7 @@
             }
         }
 
-        .container {
+        .container-fluid {
             max-width: 100%;
             padding: 0;
         }
@@ -641,6 +694,60 @@
 
                 .swiper-slider-btns {}
             }
+        }
+    }
+
+    section.save-for-charge-block {
+        .container-fluid {
+            padding: 0 8px !important;
+        }
+
+        .wrapper {
+            padding: 40px 16px 0px 16px;
+
+            .single-recharge-card {
+                padding: 20px 20px 10px 17px;
+                margin-bottom: 42px;
+
+                h3 {
+                    margin-bottom: 78px;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+
+                .card-btn {
+                    margin-left: -8px;
+                }
+
+                .card-image {
+                    bottom: -13px;
+                    right: 23px;
+
+                    img {
+                        max-width: 177px;
+                        max-height: 105px;
+                        border-radius: 10px;
+                    }
+                }
+
+                &:hover {
+                    .card-image {
+                        bottom: -25px;
+                    }
+                }
+            }
+        }
+    }
+
+    section.news-block {
+        .desktop-version {
+            display: none;
+        }
+
+        .mobile-version {
+            display: block;
         }
     }
 }

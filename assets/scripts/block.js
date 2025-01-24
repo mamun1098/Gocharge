@@ -151,4 +151,34 @@ setTimeout(function () {
     });
   }
   /* CHARGE WITH APP BLOCK END */
+
+  /* NEWS BLOCK START */
+  const newsSlider = document.querySelectorAll(".news-block .swiper");
+  if (newsSlider.length > 0) {
+    newsSlider.forEach((swiperElement, i) => {
+      const uniqueClass = `newsSL_${i}`;
+      swiperElement.classList.add(uniqueClass);
+
+      const newsSwiper = new Swiper(`.${uniqueClass}`, {
+        watchOverflow: true,
+        spaceBetween: 16,
+        loop: true,
+        speed: 500,
+
+        pagination: {
+          el: `.${uniqueClass} .swiper-pagination`,
+          clickable: true,
+        },
+
+        breakpoints: {
+          0: {
+            slidesPerView: 1.2,
+            centeredSlides: true,
+            loop: true,
+          },
+        },
+      });
+    });
+  }
+  /* NEWS BLOCK END */
 }, 500);
