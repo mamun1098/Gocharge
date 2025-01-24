@@ -95,6 +95,25 @@ section.blog-card-block {
         margin-bottom: 30px;
     }
 
+    .col-lg-4.col-md-6 {
+        margin-bottom: 10px;
+        height: auto;
+    }
+
+    .single-blog-card {
+        height: 100%;
+
+        .title {
+            font-weight: 400;
+            margin-top: 14px;
+        }
+
+        .text,
+        p {
+            opacity: 0.8;
+        }
+    }
+
     .view-more-button {
         text-align: center;
         margin-top: 50px;
@@ -281,6 +300,8 @@ section.save-for-charge-block {
         border-radius: 40px;
         background: var(--New_Gradient);
         box-shadow: 0px 15px 45px 0px rgba(0, 0, 0, 0.10);
+        position: relative;
+        z-index: 11;
 
         .section-title {
             p {
@@ -401,7 +422,7 @@ section.block-image {
     &.overlap-top {
         margin-top: -80px;
         position: relative;
-        z-index: -1;
+        z-index: 1;
         padding-top: 0;
     }
 

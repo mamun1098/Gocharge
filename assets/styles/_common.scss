@@ -174,3 +174,19 @@
 }
 
 /* SWIPER PAGINATION AND NEXT PREV BUTTON STYLES END */
+
+
+
+/* TRANSPARENT BACKGROUND LOGO START */
+.main {
+    overflow: hidden;
+    position: relative;
+
+    .bg-logo {
+        position: absolute;
+        top: 34%;
+        z-index: -1;
+    }
+}
+
+/* TRANSPARENT BACKGROUND LOGO END */
