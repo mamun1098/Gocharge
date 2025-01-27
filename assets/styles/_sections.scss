@@ -1,0 +1,231 @@
+/* BREADCRUMB START */
+.breadcrumb-section {
+    padding: 0 0 50px;
+
+    .breadcrumb-list {
+        display: flex;
+        align-items: center;
+        column-gap: 15px;
+
+        a,
+        span {
+            color: var(--Brandcolor_Black);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 20px;
+            letter-spacing: -0.26px;
+            opacity: 0.6;
+            position: relative;
+
+            &::before {
+                position: absolute;
+                content: "";
+                background-image: url('./../images/right-arrow-dark.svg');
+                width: 6px;
+                height: 9px;
+                right: -10px;
+                top: 6px;
+                background-repeat: no-repeat;
+            }
+
+            &.current-page {
+                opacity: 1;
+            }
+
+            &:last-child {
+                &::before {
+                    display: none;
+                }
+            }
+        }
+    }
+
+}
+
+/* BREADCRUMB END */
+
+
+/* INNOVATION-SUSTAINABILITY START */
+section.innovation-sustainablity-section {
+    .text-with-bg {
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        object-fit: cover;
+        height: 100%;
+        padding: 60px 35px;
+        border-radius: 40px;
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+
+        &::before {
+            content: "";
+            position: absolute;
+            border-radius: 40px;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.60) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%);
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            z-index: 1;
+        }
+
+        .content {
+            position: relative;
+            z-index: 11;
+
+            h3,
+            .title {
+                color: var(--white);
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+
+            .subtitle {
+                color: var(--white);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 20px;
+                letter-spacing: -0.26px;
+                opacity: 0.8;
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .text-details-tab {
+        padding: 50px 40px;
+        border-radius: 40px;
+        background: linear-gradient(90deg, rgba(21, 142, 206, 0.10) 0%, rgba(25, 227, 227, 0.10) 100%);
+
+        .tab-content {
+
+            h3,
+            .title {
+                font-feature-settings: 'liga' off, 'clig' off;
+                font-family: Sora;
+                font-size: 44px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 52px;
+                letter-spacing: -0.26px;
+                background: var(--New_Gradient);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            p {
+                font-feature-settings: 'liga' off, 'clig' off;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 20px;
+                letter-spacing: -0.26px;
+                opacity: 0.8;
+                background: var(--New_Gradient);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                margin-top: 20px;
+            }
+        }
+
+        ul.nav {
+            display: flex;
+            align-items: center;
+            column-gap: 15px;
+            margin-top: 30px;
+
+            li {
+                &::before {
+                    display: none;
+                }
+
+                .tab-button {
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    column-gap: 18px;
+                    padding: 6px 20px 6px 20px;
+                    border-radius: 100px;
+                    $border: 1px;
+                    background: transparent;
+
+                    background-clip: padding-box;
+                    border: solid $border rgba(21, 142, 206, 0.3);
+                    text-align: center;
+                    transition: all 0.3s ease-in-out;
+
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        top: 1px;
+                        right: 1px;
+                        bottom: 1px;
+                        left: 1px;
+                        z-index: -1;
+                        margin: -$border;
+                        /* !importanté */
+                        border-radius: inherit;
+                        // background: var(--New_Gradient);
+                        opacity: 0.4;
+                    }
+
+                    span {
+                        text-align: center;
+                        font-feature-settings: 'liga' off, 'clig' off;
+                        font-family: var(--heading-font);
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 22px;
+                        background: var(--New_Gradient);
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        position: relative;
+                        z-index: 11;
+                    }
+
+
+                    &:hover,
+                    &.active {
+                        background: var(--New_Gradient);
+                        border: 1px solid white;
+
+                        span {
+                            background: var(--white);
+                            background-clip: text;
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            position: relative;
+                            z-index: 11;
+                        }
+
+                        .icon {
+                            svg {
+                                path {
+                                    fill: var(--white);
+                                }
+                            }
+                        }
+
+                        &::before {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* INNOVATION-SUSTAINABILITY END */

@@ -550,3 +550,36 @@ section.advantage-block {
 }
 
 /* ADVANTAGE BLOCK END */
+
+/* TEXT BLOCK START */
+section.text-block {
+    .text-content {
+        h2 {
+            color: var(--Brandcolor_Black);
+            font-size: 44px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 52px;
+            letter-spacing: -0.26px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: var(--Brandcolor_Black);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 20px;
+            letter-spacing: -0.26px;
+            margin-bottom: 20px;
+            opacity: 0.8;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+        }
+    }
+}
+
+/* TEXT BLOCK END */
