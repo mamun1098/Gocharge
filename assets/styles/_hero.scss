@@ -1,6 +1,7 @@
 section.banner-area {
     display: flex;
     align-items: center;
+    margin-bottom: 50px;
 
     .hero-wrapper {
         width: 100%;
@@ -116,27 +117,84 @@ section.banner-area {
                             .text {
                                 max-width: 650px;
                             }
+
+                            .bottom-text-block {
+                                margin-top: 120px;
+                                padding: 80px 0 0px;
+                                border-top: 0.5px solid rgba(255, 255, 255, 0.3);
+
+                                h2 {
+                                    color: var(--white);
+                                    text-align: center;
+                                    font-size: 44px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 52px;
+                                    letter-spacing: -0.26px;
+                                    max-width: 600px;
+                                    margin: auto;
+                                }
+
+                                p {
+                                    color: var(--white);
+                                    text-align: center;
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 300;
+                                    line-height: 20px;
+                                    letter-spacing: -0.26px;
+                                    max-width: 700px;
+                                    margin: 20px auto 0px;
+                                }
+                            }
                         }
                     }
 
                 }
             }
         }
+
+        .pagination-btn {
+            position: absolute;
+            top: 63%;
+            z-index: 11;
+            left: 50%;
+            transform: translate(-50%);
+
+            .swiper-pagination {
+                .swiper-pagination-bullet {
+                    background: rgba(255, 255, 255, 0.5);
+
+                    &.swiper-pagination-bullet-active {
+                        background: rgba(255, 255, 255, 1);
+
+                        &::before {
+                            border: .3px solid rgba(255, 255, 255, 0.20);
+                        }
+                    }
+                }
+            }
+        }
     }
 
     &.normal {
-        min-height: 500px;
+        min-height: 700px;
         margin-bottom: 40px;
+
+        .col-lg-10 {
+            padding-right: calc(var(--bs-gutter-x)* 0.2);
+            padding-left: calc(var(--bs-gutter-x)* 0.2);
+        }
 
         .hero-wrapper {
 
             .swiper {
 
                 .swiper-slide {
-                    min-height: 500px;
+                    min-height: 700px;
 
                     .wrapper-content {
-                        min-height: 500px;
+                        min-height: 700px;
                         border-radius: 0px 0px 40px 40px;
 
                         .background {
@@ -144,7 +202,7 @@ section.banner-area {
                             .gradient-overlay {
                                 position: absolute;
                                 border-radius: 0px 0px 40px 40px;
-                                background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), lightgray;
+                                background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%);
                                 top: 0;
                                 left: 0;
                                 right: 0;
@@ -154,26 +212,82 @@ section.banner-area {
                             }
 
                             .bg-content {
-                                min-height: 500px;
+                                min-height: 700px;
                                 border-radius: 0px 0px 40px 40px;
                             }
                         }
 
                         .hero-content {
-                            padding: 150px 0 100px;
+                            padding: 90px 0 0px;
 
                             h1 {
-                                font-size: 56px;
+                                color: var(--white);
+                                text-align: center;
+                                font-size: 100px;
                                 font-style: normal;
                                 font-weight: 300;
-                                line-height: 72px;
+                                line-height: 120px;
                                 letter-spacing: -0.26px;
+                            }
+
+                            p {
+                                color: var(--white);
+                                text-align: center;
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 300;
+                                line-height: 20px;
+                                letter-spacing: -0.26px;
+                                margin: 10px auto 0;
+                                max-width: 600px;
                             }
                         }
 
                     }
 
                 }
+            }
+        }
+
+        .swiper-slider-btns {
+            display: none;
+        }
+    }
+
+
+    .nex-prev-btn {
+        top: calc(50% - 20px);
+        position: absolute;
+        z-index: 11;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 100px;
+
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            border: none;
+            background: rgba(255, 255, 255, 0.10);
+
+            &::before {
+                display: none;
+            }
+        }
+
+        .swiper-button-next {
+
+            &:hover {
+                background: linear-gradient(rgba(255, 255, 255, 0.10), rgba(255, 255, 255, 0.10)) padding-box,
+                    linear-gradient(90deg, #158ECE 0%, #19E3E3 100%) border-box;
+            }
+        }
+
+        .swiper-button-prev {
+
+            &:hover {
+                background: linear-gradient(rgba(255, 255, 255, 0.10), rgba(255, 255, 255, 0.10)) padding-box,
+                    linear-gradient(270deg, #158ECE 0%, #19E3E3 100%) border-box;
             }
         }
     }

@@ -69,7 +69,7 @@ setTimeout(function () {
           nextEl: ".swHero_" + i + " .swiper-button-next",
           prevEl: ".swHero_" + i + " .swiper-button-prev",
         },
-        loop: true,
+        loop: false,
       });
     });
   }

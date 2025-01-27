@@ -181,4 +181,66 @@ setTimeout(function () {
     });
   }
   /* NEWS BLOCK END */
+
+  /* ADVANTAGE BLOCK START */
+  const advantageSlider = document.querySelectorAll(".advantage-block .swiper");
+  if (advantageSlider.length > 0) {
+    advantageSlider.forEach((swiperElement, i) => {
+      const uniqueClass = `advantageSL_${i}`;
+      swiperElement.classList.add(uniqueClass);
+
+      const advantageSwip = new Swiper(`.${uniqueClass}`, {
+        watchOverflow: true,
+        spaceBetween: 16,
+        loop: true,
+        speed: 500,
+
+        pagination: {
+          el: `.${uniqueClass} .swiper-pagination`,
+          clickable: true,
+        },
+
+        breakpoints: {
+          0: {
+            slidesPerView: 1.2,
+            centeredSlides: true,
+            loop: true,
+          },
+        },
+      });
+    });
+  }
+  /* ADVANTAGE BLOCK END */
+
+  /* BLOCK NEWS FOR MOBILE  BLOCK START */
+  const blogCardSlider = document.querySelectorAll(".blog-card-block .swiper");
+  if (blogCardSlider.length > 0) {
+    const swiperInstances = [];
+    blogCardSlider.forEach((swiperElement, i) => {
+      const uniqueClass = `advantageSL_${i}`;
+      swiperElement.classList.add(uniqueClass);
+
+      const blockCardSwip = new Swiper(`.${uniqueClass}`, {
+        watchOverflow: true,
+        spaceBetween: 16,
+        loop: true,
+        speed: 500,
+
+        pagination: {
+          el: `.${uniqueClass} .swiper-pagination`,
+          clickable: true,
+        },
+
+        breakpoints: {
+          0: {
+            slidesPerView: 1.2,
+            centeredSlides: false,
+            loop: false,
+          },
+          577: {},
+        },
+      });
+    });
+  }
+  /* BLOCK NEWS FOR MOBILE BLOCK END */
 }, 500);

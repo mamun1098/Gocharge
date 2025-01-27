@@ -5,6 +5,14 @@
 
 @media (max-width:1500px) {}
 
+@media (max-width: 1400px) {
+    section.banner-area {
+        .nex-prev-btn {
+            padding: 0 50px;
+        }
+    }
+}
+
 @media (max-width:1300px) {
     header.header-area .wrapper-header {
         column-gap: 30px;
@@ -12,6 +20,12 @@
 
     header.header-area .wrapper-header .header-menu-wrap ul.nav {
         column-gap: 20px;
+    }
+
+    section.banner-area {
+        .nex-prev-btn {
+            padding: 0 25px;
+        }
     }
 }
 
@@ -79,6 +93,10 @@
         .wrapper-header {
             justify-content: space-between;
             position: unset;
+
+            .logo img {
+                max-width: 215px;
+            }
 
             .header-menu-wrap {
                 position: absolute;
@@ -299,6 +317,72 @@
         }
     }
 
+    section.banner-area {
+
+        .hero-wrapper {
+            width: 100%;
+
+            .swiper {
+                .swiper-slide {
+                    .wrapper-content {
+                        .hero-content {
+
+                            h1 {
+                                font-size: 60px;
+                                line-height: 80px;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+
+
+        &.higher {
+            min-height: 700px;
+
+            .hero-wrapper {
+                .swiper {
+                    .swiper-slide {
+                        min-height: 700px;
+
+                        .wrapper-content {
+                            min-height: 700px;
+                            padding-top: 140px;
+
+                            .background {
+                                .bg-content {
+                                    min-height: 700px;
+                                }
+                            }
+
+                            .hero-content {
+                                .bottom-text-block {
+                                    padding: 40px 0 0px;
+
+                                    h2 {
+                                        font-size: 40px;
+                                        line-height: 60px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .pagination-btn {
+                top: 55%;
+            }
+        }
+
+        .nex-prev-btn {
+            display: none;
+        }
+
+    }
+
     section.charge-withapp-block {
         padding: 40px 0 50px;
 
@@ -327,9 +411,34 @@
         }
     }
 
+    section.advantage-block {
+        .section-title-with-bg-logo {
+            .bg-img {
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        .title-order {
+            order: 1;
+        }
+
+        .card-order {
+            order: 2;
+        }
+    }
+
 }
 
 @media (max-width: 768px) {
+
+    a.button,
+    button.button {
+        .btn-text {
+            min-width: 105px !important;
+        }
+    }
+
     footer.footer-area {
         padding: 40px 0 30px;
         margin-top: 20px;
@@ -473,6 +582,24 @@
 
         }
     }
+
+    section.banner-area {
+        margin-bottom: 20px;
+
+        &.higher {
+
+            .hero-wrapper {
+                .swiper {
+                    .swiper-slide {
+
+                        .wrapper-content {}
+                    }
+                }
+            }
+        }
+
+    }
+
 
     // section title responsive start 
     .section-title {
@@ -619,6 +746,8 @@
     }
 
     section.save-for-charge-block {
+        padding-top: 20px;
+
         .wrapper {
             border-radius: 20px;
         }
@@ -642,6 +771,142 @@
 @media (max-width: 576px) {
     .section-padding {
         padding: 20px 0;
+    }
+
+    header.header-area .wrapper-header .logo img {
+        max-width: 145px;
+        max-height: 20px;
+    }
+
+    section.banner-area {
+        .hero-wrapper {
+            width: 100%;
+
+            .swiper {
+                .swiper-slide {
+                    .wrapper-content {
+                        border-radius: 0px 0px 40px 40px !important;
+
+                        .background .gradient-overlay {
+                            border-radius: 0px 0px 40px 40px !important;
+                        }
+
+                        .hero-content {
+
+                            h1 {
+                                font-size: 50px;
+                                font-style: normal;
+                                font-weight: 300;
+                                line-height: 50px;
+                                text-align: center;
+                            }
+
+                            p {
+                                text-align: center;
+                            }
+
+                            .hero-btns {
+                                text-align: center;
+                                margin-top: 30px;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+
+        &.higher {
+            min-height: 600px;
+
+            .hero-wrapper {
+                .swiper {
+                    .swiper-slide {
+                        min-height: 600px;
+
+                        .wrapper-content {
+                            min-height: 600px;
+
+                            .hero-content {
+                                padding-bottom: 60px;
+
+                                .bottom-text-block {
+                                    margin-top: 65px;
+                                    padding: 30px 0 0px;
+
+                                    h2 {
+                                        font-size: 24px;
+                                        font-weight: 400;
+
+                                        line-height: 30px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .pagination-btn {
+                top: 61%;
+            }
+        }
+
+    }
+
+    section.blog-card-block {
+        .section-title {
+            margin-bottom: 30px;
+            padding: 0 24px;
+
+            &.text-center {
+                text-align: left;
+
+                h2 {
+                    text-align: left;
+                }
+
+                p {
+                    text-align: left;
+                }
+            }
+        }
+
+        ul.search-tag {
+            justify-content: flex-start;
+            padding: 0 24px;
+        }
+
+        .subtitle {
+            padding: 0 24px;
+            text-align: left;
+        }
+
+        .container-fluid {
+            padding: 0 0 !important;
+        }
+
+        .desktop-version {
+            display: none;
+        }
+
+        .mobile-version {
+            display: block;
+        }
+
+        .swiper {
+            padding-bottom: 30px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .swiper-slider-btns {
+            margin-top: 25px;
+        }
+
+        .view-more-button {
+            margin-top: 0;
+        }
     }
 
     section.electric-mobility-block {
@@ -742,12 +1007,86 @@
     }
 
     section.news-block {
+        padding: 20px 0 0px;
+
         .desktop-version {
             display: none;
         }
 
         .mobile-version {
             display: block;
+        }
+    }
+
+    section.advantage-block {
+        padding: 20px 0 0px;
+
+        .section-title-with-bg-logo {
+            margin-left: 0;
+
+            .bg-img {
+                max-width: 568px;
+                transform: translate(-50%, -37%);
+                top: 100%;
+
+                img {
+                    width: 568px;
+                    height: 801px;
+                }
+            }
+        }
+
+        .card-wrapper {
+            display: none;
+        }
+
+        .mobile-version-card {
+            display: block;
+            order: 2;
+
+            .swiper {
+                padding-bottom: 20px;
+                overflow: visible;
+            }
+
+            .swiper-slide {
+                height: auto;
+            }
+
+            .single-advantage-card {
+                padding: 15px 25px;
+
+
+                text-align: left;
+                display: flex;
+                align-items: center;
+                column-gap: 20px;
+
+                .img {
+                    flex-basis: 60px;
+                    margin-bottom: 0;
+                }
+
+                .content {
+                    flex-basis: calc(100% - 80px);
+                    text-align: left;
+
+                    .title {
+                        max-width: 100%;
+                        margin: 0 auto 8px;
+                        text-align: left;
+                    }
+
+                    .subtitle {
+                        text-align: left;
+                        max-width: unset;
+                    }
+                }
+            }
+
+            .swiper-slider-btns {
+                margin-top: 20px;
+            }
         }
     }
 }
