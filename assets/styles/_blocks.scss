@@ -441,6 +441,25 @@ section.block-image {
         background-attachment: fixed;
         height: 705px;
     }
+
+    .swiper {
+        border-radius: 40px;
+    }
+
+    .bg-image-slide {
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        height: 515px;
+        border-radius: 40px;
+    }
+
+    .swiper-slider-btns {
+        margin-top: 60px;
+    }
 }
 
 /* ACKGROUND IMAGE BLOCK END */
@@ -579,7 +598,178 @@ section.text-block {
             }
 
         }
+
+        h3 {
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            color: var(--Brandcolor_Black);
+        }
+
+        &.text-blue {
+            h3 {
+                background: var(--New_Gradient);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+
+        &.text-center {
+            text-align: center;
+
+            h3 {
+                text-align: center;
+            }
+        }
     }
 }
 
 /* TEXT BLOCK END */
+
+/* EVOLUTION COLLAPSE BLOCK START */
+section.evolution-collapse-block {
+    position: relative;
+
+    .block-wrapp {
+        .accordion-item {
+            margin-bottom: 15px;
+            border-radius: 20px;
+            background: var(--white);
+            box-shadow: 0px 15px 45px 0px rgba(0, 0, 0, 0.10);
+            border: none;
+
+            .accordion-button {
+                span {
+                    color: var(--Brandcolor_Black);
+                    font-feature-settings: 'liga' off, 'clig' off;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 30px;
+                    letter-spacing: -0.26px;
+                }
+
+                display: flex;
+                align-items: center;
+                background: transparent;
+                padding: 16px 15px 18px 28px;
+                border-top-left-radius: none;
+                border-top-right-radius: none;
+
+                &:focus {
+                    background-color: transparent;
+                    box-shadow: none;
+                }
+
+                &:not(.collapsed) {
+                    background-color: transparent;
+                    box-shadow: none;
+
+                    &::after {
+                        transform: rotate(0deg) !important;
+                    }
+                }
+
+                .logo {
+                    padding-right: 35px;
+                    position: relative;
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        width: 1px;
+                        height: 32px;
+                        right: 17px;
+                        right: 17px;
+                        top: 50%;
+                        background: var(--New_Gradient);
+                        opacity: 0.3;
+                        transform: translateY(-50%);
+                    }
+                }
+
+                &::after {
+                    background-image: url("/assets/images//accordion-arrow.svg");
+                    background-size: 22px;
+                    width: 22px;
+                    height: 22px;
+                    transform: rotate(-180deg);
+                }
+
+            }
+
+            .accordion-body {
+                padding: 0 16px 16px 30px;
+
+                p {
+                    color: var(--Brandcolor_Black);
+                    font-feature-settings: 'liga' off, 'clig' off;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 20px;
+                    letter-spacing: -0.26px;
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+
+    .bg-image-wrapper {
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        object-fit: cover;
+        height: 100%;
+        min-height: 770px;
+        max-height: calc(100% - 120px);
+        border-radius: 40px;
+        position: absolute;
+        top: 50px;
+        left: 50%;
+    }
+}
+
+/* EVOLUTION COLLAPSE BLOCK END */
+
+
+/* LOGO SLIDER BLOCK START START */
+section.logo-slider-block {
+    position: relative;
+
+    &.with-bg-logo-shape {}
+
+    .swiper-wrapper {
+        align-items: center;
+
+        // justify-content: space-between;
+        .swiper-slide {
+            width: fit-content !important;
+
+            img {
+                mix-blend-mode: multiply;
+                mix-blend-mode: screen;
+            }
+        }
+    }
+
+    .swiper-slider-btns {
+        margin-top: 60px;
+        display: flex;
+        align-items: center;
+        column-gap: 50px;
+    }
+
+    .bg-shape-img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+    }
+}
+
+/* LOGO SLIDER BLOCK START END */

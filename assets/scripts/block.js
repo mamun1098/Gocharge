@@ -243,4 +243,93 @@ setTimeout(function () {
     });
   }
   /* BLOCK NEWS FOR MOBILE BLOCK END */
+
+  /* LOGO SLIDER BLOCK START */
+  const logoSlider = document.querySelectorAll(".logo-slider-block .swiper");
+  if (logoSlider.length > 0) {
+    logoSlider.forEach((swiperElement, i) => {
+      const uniqueClass = `logoSL_${i}`;
+      swiperElement.classList.add(uniqueClass);
+
+      const logoSwiper = new Swiper(`.${uniqueClass}`, {
+        watchOverflow: true,
+        observer: true,
+        observeParents: true,
+        spaceBetween: 90,
+        loop: false,
+        speed: 500,
+        slidesPerView: 5,
+
+        // Navigation arrows
+        navigation: {
+          nextEl: `.${uniqueClass} .swiper-button-next`,
+          prevEl: `.${uniqueClass} .swiper-button-prev`,
+        },
+        pagination: {
+          el: `.${uniqueClass} .swiper-pagination`,
+          clickable: true,
+        },
+
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+            centeredSlides: false,
+            loop: false,
+          },
+          576: {
+            slidesPerView: 2,
+            centeredSlides: false,
+            loop: false,
+          },
+          768: {
+            slidesPerView: 3,
+          },
+          1024: {
+            slidesPerView: 4,
+          },
+          1920: {
+            slidesPerView: 5,
+          },
+        },
+      });
+    });
+  }
+  /* LOGO SLIDER BLOCK START END */
+
+  /* BACKGROUND IMAGE BLOCK START */
+  const bgImageSlider = document.querySelectorAll(".block-image .swiper");
+  if (bgImageSlider.length > 0) {
+    bgImageSlider.forEach((swiperElement, i) => {
+      const uniqueClass = `bgImageSL_${i}`;
+      swiperElement.classList.add(uniqueClass);
+
+      const bgImageSwip = new Swiper(`.${uniqueClass}`, {
+        watchOverflow: true,
+        observer: true,
+        observeParents: true,
+        spaceBetween: 16,
+        loop: true,
+        speed: 500,
+
+        // Navigation arrows
+        navigation: {
+          nextEl: `.${uniqueClass} .swiper-button-next`,
+          prevEl: `.${uniqueClass} .swiper-button-prev`,
+        },
+        pagination: {
+          el: `.${uniqueClass} .swiper-pagination`,
+          clickable: true,
+        },
+
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+            centeredSlides: false,
+            loop: false,
+          },
+        },
+      });
+    });
+  }
+  /* BACKGROUND IMAGE BLOCK END */
 }, 500);

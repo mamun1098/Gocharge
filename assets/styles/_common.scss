@@ -113,6 +113,10 @@
 
             }
         }
+
+        &.swiper-button-lock {
+            display: none;
+        }
     }
 
     .swiper-button-prev {
