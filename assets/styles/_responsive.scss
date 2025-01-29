@@ -766,6 +766,49 @@
             background-attachment: scroll;
         }
     }
+
+    section.career-block {
+        .section-title {
+            text-align: left;
+            margin-bottom: 30px;
+
+            h2 {
+                text-align: left;
+            }
+
+            p {
+                text-align: left;
+            }
+        }
+
+        .items-wrapper {
+            justify-content: flex-start;
+            align-items: flex-start;
+            row-gap: 30px;
+
+            .single-item {
+                max-width: 100%;
+                text-align: left;
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                column-gap: 16px;
+
+                .img {
+                    text-align: left;
+
+                }
+
+                .title {
+                    text-align: left;
+                }
+
+                .subtitle {
+                    text-align: left;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 576px) {
@@ -1086,6 +1129,68 @@
 
             .swiper-slider-btns {
                 margin-top: 20px;
+            }
+        }
+    }
+
+    section.career-block {
+        .section-title {
+            text-align: left;
+            margin-bottom: 30px;
+
+            h2 {
+                text-align: left;
+            }
+
+            p {
+                text-align: left;
+            }
+        }
+
+        .items-wrapper {
+            .single-item {
+
+                .img {
+                    width: 30px;
+                    height: 30px;
+                    flex-basis: 30px;
+                }
+
+                .content {
+                    flex-basis: calc(100% - 50px);
+                }
+
+                .title {
+                    text-align: left;
+                }
+
+                .subtitle {
+                    text-align: left;
+                }
+            }
+        }
+
+        .status-wrapper {
+            padding-top: 30px;
+            row-gap: 20px;
+        }
+
+        .single-status {
+            .left {
+                h3 {
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 30px;
+                    letter-spacing: -0.26px;
+                }
+
+                p {
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 18px;
+                }
             }
         }
     }

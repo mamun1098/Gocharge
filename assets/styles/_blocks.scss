@@ -773,3 +773,241 @@ section.logo-slider-block {
 }
 
 /* LOGO SLIDER BLOCK START END */
+
+/* CAREER BLOCK START */
+section.career-block {
+    .section-title {
+        margin-bottom: 60px;
+    }
+
+    .items-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: center;
+        column-gap: 80px;
+
+        .single-item {
+            max-width: 196px;
+            text-align: center;
+
+            .img {
+                text-align: center;
+                margin-bottom: 20px;
+                position: relative;
+
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 100px;
+                width: 50px;
+                height: 50px;
+                $border: 2px;
+                background: white;
+                background-clip: padding-box;
+                border: solid $border transparent;
+                text-align: center;
+                transition: all 0.3s ease-in-out;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: 1px;
+                    right: 1px;
+                    bottom: 1px;
+                    left: 1px;
+                    z-index: -1;
+                    margin: -$border;
+                    /* !importanté */
+                    border-radius: inherit;
+                    background: var(--New_Gradient);
+                    opacity: 0.4;
+                }
+
+
+
+
+                // box-shadow: -3px 3px 20px 0px rgba(255, 255, 255, 0.25);
+                // border-radius: 100px;
+                // border: 0.5px solid #158ECE;
+                // box-shadow: -3px 3px 20px 0px rgba(255, 255, 255, 0.25);
+                // width: 50px;
+                // height: 50px;
+                // display: inline-flex;
+                // align-items: center;
+                // justify-content: center;
+
+                img {
+                    max-width: 11px;
+                    height: 16px;
+                }
+            }
+
+            .title {
+                color: var(--Brandcolor_Black);
+                text-align: center;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 20px;
+                letter-spacing: -0.26px;
+                margin-top: 0;
+                opacity: 1;
+            }
+
+            .subtitle,
+            p {
+                color: var(--Brandcolor_Black);
+                text-align: center;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 20px;
+                letter-spacing: -0.26px;
+                opacity: 0.8;
+                margin-top: 8px;
+
+                strong {
+                    opacity: 1;
+                    margin-top: 0px;
+                }
+            }
+        }
+    }
+
+    .status-wrapper {
+        padding-top: 60px;
+        height: auto;
+        row-gap: 30px;
+    }
+
+    .single-status {
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        column-gap: 35px;
+        padding: 16px;
+        min-height: 130px;
+        height: 100%;
+
+        &.blue-bg {
+            background: var(--New_Gradient);
+            color: var(--white);
+
+            .left {
+                h3 {
+                    color: var(--white);
+                }
+
+                p {
+                    color: var(--white);
+                }
+            }
+        }
+
+        &.white-bg {
+            background: var(--white);
+            box-shadow: 0px 15px 45px 0px rgba(0, 0, 0, 0.10);
+
+            .left {
+                h3 {
+                    background: var(--New_Gradient);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+
+                p {
+                    background: var(--New_Gradient);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+
+            p {
+                background: var(--New_Gradient);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+
+        .left {
+            text-align: center;
+
+            h3 {
+                white-space: nowrap;
+                font-size: 44px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 52px;
+                letter-spacing: -0.26px;
+            }
+
+            p {
+                font-family: var(--heading-font);
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+
+        p {
+            color: #FFF;
+            font-feature-settings: 'liga' off, 'clig' off;
+            font-family: Outfit;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 20px;
+            letter-spacing: -0.26px;
+        }
+
+    }
+}
+
+/* CAREER BLOCK END */
+
+
+/* CAREER FORM START START */
+section.career-form-block {
+    .form-wrapper {
+        border-radius: 60px;
+        background: linear-gradient(90deg, rgba(21, 142, 206, 0.10) 0%, rgba(25, 227, 227, 0.10) 100%);
+        padding: 80px 25px;
+
+        .title {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto 40px;
+
+            h2 {
+                text-align: center;
+                font-size: 44px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 52px;
+                letter-spacing: -0.26px;
+                background: var(--New_Gradient);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            p {
+                color: var(--Brandcolor_Black);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 20px;
+                letter-spacing: -0.26px;
+                opacity: 0.8;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+/* CAREER FORM START END */

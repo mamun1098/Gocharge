@@ -1,30 +1,294 @@
-/* JOIN AFFILIATE PROGRAMM FORM START */
-section.join-affiliate-form {
-    padding: 40px 0;
-    z-index: 1;
-
-    &.overlap-top {
-        padding: 0 0 40px;
-        margin-top: -300px;
+/* FORM START */
+.form-block {
+    .gform_validation_errors {
+        display: none;
     }
 
-    .form-wrapper {
-        border-radius: 24px;
-        background: var(--Medium_Grey);
-        box-shadow: -4px 4px 15px 0px rgba(0, 0, 0, 0.10);
-        padding: 30px;
+    form {
+        position: relative;
+        max-width: 610px;
+    }
 
-        // height set for just testing purpose
-        min-height: 620px;
+    .gform_heading {
+        display: none;
+    }
 
-        .section-title {
-            p {
-                &:last-child {
-                    margin-top: 15px;
+    .gform-body.gform_body {
+        .gform_fields {
+            row-gap: 20px;
+        }
+
+        .gfield_label {
+            display: none;
+        }
+
+        .ginput_container {
+
+            input,
+            textarea {
+                border-radius: 10px;
+                border: none;
+                background: var(--white);
+                padding: 10px 17px;
+                height: 34px;
+                outline: none;
+
+                color: rgba(21, 142, 206, 0.8);
+                font-feature-settings: 'liga' off, 'clig' off;
+                font-family: var(--body-font);
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 14px;
+                letter-spacing: -0.26px;
+
+                &:focus {
+                    outline: none !important;
+                    border: none !important;
+                }
+            }
+
+            textarea {
+                min-height: 75px;
+            }
+        }
+
+        .ginput_container_fileupload {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+
+            input[type="file"] {
+                // display: none;
+                padding: 6px 10px 8px 0px;
+                background-color: transparent;
+                display: flex;
+                align-items: center;
+
+            }
+
+            #file-upload-button {
+                display: none;
+            }
+
+            div {
+                border-radius: 20px;
+                border: 1px solid rgba(25, 25, 25, 0.30);
+                padding: 8px 55px 10px 10px;
+                height: 34px;
+                outline: none;
+                color: var(--Brandcolor_Black);
+                font-feature-settings: 'liga' off, 'clig' off;
+                font-family: var(--body-font);
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 16px;
+            }
+
+            p.filename {
+                color: var(--Brandcolor_Black);
+                font-feature-settings: 'liga' off, 'clig' off;
+                font-family: var(--body-font);
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 16px;
+            }
+
+            .gform_fileupload_rules {
+                display: none;
+            }
+
+            &::before {
+                position: absolute;
+                content: "";
+                background-image: url('../images/upload-icon.svg');
+                size: 18px 18px;
+                object-fit: cover;
+                width: 18px;
+                height: 18px;
+                top: 8px;
+                right: 8px;
+            }
+
+            .ginput_preview_list {
+                padding: 0;
+                border: none;
+                height: unset;
+
+                .ginput_preview {
+                    padding: 0;
+                    border: none;
+                    height: unset;
                 }
             }
         }
+
+        .gfield--type-consent {
+            margin-top: 30px;
+            position: relative;
+        }
+
+        .ginput_container.ginput_container_consent {
+            position: relative;
+
+            .gform-field-label {
+                color: var(--Brandcolor_Black);
+                font-feature-settings: 'liga' off, 'clig' off;
+                font-family: var(--body-font);
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 14px;
+                letter-spacing: -0.26px;
+                padding-left: 10px;
+                cursor: pointer;
+
+                a {
+
+                    color: var(--Brandcolor_Black);
+                    font-feature-settings: 'liga' off, 'clig' off;
+                    font-family: var(--body-font);
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 14px;
+                    letter-spacing: -0.26px;
+                    display: inline-block;
+                    transition: all .3s ease;
+                    text-decoration: underline;
+
+                    &:hover {
+                        color: var(--Newcolor_Neon);
+                    }
+                }
+
+                .gfield_required_asterisk {
+                    display: none;
+                }
+            }
+
+            input[type="checkbox"] {
+                display: none;
+            }
+
+            label:before {
+                content: "";
+                background-color: transparent;
+                border: 1px solid var(--primary-color);
+                height: 12px;
+                width: 12px;
+                border-radius: 50%;
+                position: absolute;
+                cursor: pointer;
+                left: 0px;
+                top: 3px;
+            }
+
+            input:checked+label::after {
+                content: "";
+                position: absolute;
+                height: 12px;
+                width: 12px;
+                border: 1px solid var(--primary-color);
+                border-radius: 100%;
+                border: none;
+                border-radius: 100%;
+                background: var(--primary-color);
+                left: 0px;
+                top: 3px;
+            }
+        }
     }
+
+    .gform_footer.top_label {
+        width: 130px;
+        display: inline-flex;
+        justify-content: center;
+        position: relative;
+        // bottom: 55px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 30px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 18px;
+            height: 18px;
+            border-radius: 100%;
+            top: 15px;
+            right: 15px;
+            background-image: url("../images/button-arrow.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease-in-out;
+            background-color: var(--primary-color);
+            z-index: 1;
+            pointer-events: none
+        }
+
+        .gform_button {
+            display: inline-flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            width: auto !important;
+            height: 48px !important;
+            font-family: var(--primary-font) !important;
+            font-size: 14px !important;
+            font-style: normal !important;
+            font-weight: 400 !important;
+            line-height: 24px !important;
+            text-transform: uppercase !important;
+            transition: all 0.3s ease-in !important;
+            position: relative;
+            padding: 12px 48px 12px 20px !important;
+            border-radius: 100px !important;
+            text-transform: uppercase !important;
+            border: none;
+            outline: none !important;
+            text-decoration: none !important;
+            background: var(--MainColor_Dark) !important;
+            color: var(--white) !important;
+
+            &:hover {
+                background: var(--primary-color) !important;
+            }
+        }
+
+        &:hover {
+            &::before {
+                background-color: var(--MainColor_Dark) !important;
+            }
+        }
+
+        .gform-loader {
+            position: absolute;
+            bottom: 14px;
+            left: 140px;
+        }
+
+        &.none {
+            .gform-loader {
+                opacity: 0;
+            }
+        }
+    }
+
+    .gform_confirmation_message {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0.5px;
+        color: var(--Newcolor_Neon);
+        text-align: center;
+    }
+
 }
 
-/* JOIN AFFILIATE PROGRAMM FORM END  */
+/* FORM END  */
