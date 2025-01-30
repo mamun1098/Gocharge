@@ -444,6 +444,10 @@ section.block-image {
 
     .swiper {
         border-radius: 40px;
+
+        .swiper-slide {
+            text-align: center;
+        }
     }
 
     .bg-image-slide {
@@ -632,90 +636,7 @@ section.text-block {
 section.evolution-collapse-block {
     position: relative;
 
-    .block-wrapp {
-        .accordion-item {
-            margin-bottom: 15px;
-            border-radius: 20px;
-            background: var(--white);
-            box-shadow: 0px 15px 45px 0px rgba(0, 0, 0, 0.10);
-            border: none;
-
-            .accordion-button {
-                span {
-                    color: var(--Brandcolor_Black);
-                    font-feature-settings: 'liga' off, 'clig' off;
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 30px;
-                    letter-spacing: -0.26px;
-                }
-
-                display: flex;
-                align-items: center;
-                background: transparent;
-                padding: 16px 15px 18px 28px;
-                border-top-left-radius: none;
-                border-top-right-radius: none;
-
-                &:focus {
-                    background-color: transparent;
-                    box-shadow: none;
-                }
-
-                &:not(.collapsed) {
-                    background-color: transparent;
-                    box-shadow: none;
-
-                    &::after {
-                        transform: rotate(0deg) !important;
-                    }
-                }
-
-                .logo {
-                    padding-right: 35px;
-                    position: relative;
-
-                    &::after {
-                        content: "";
-                        position: absolute;
-                        width: 1px;
-                        height: 32px;
-                        right: 17px;
-                        right: 17px;
-                        top: 50%;
-                        background: var(--New_Gradient);
-                        opacity: 0.3;
-                        transform: translateY(-50%);
-                    }
-                }
-
-                &::after {
-                    background-image: url("/assets/images//accordion-arrow.svg");
-                    background-size: 22px;
-                    width: 22px;
-                    height: 22px;
-                    transform: rotate(-180deg);
-                }
-
-            }
-
-            .accordion-body {
-                padding: 0 16px 16px 30px;
-
-                p {
-                    color: var(--Brandcolor_Black);
-                    font-feature-settings: 'liga' off, 'clig' off;
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 300;
-                    line-height: 20px;
-                    letter-spacing: -0.26px;
-                    opacity: 0.8;
-                }
-            }
-        }
-    }
+    .block-wrapp {}
 
     .bg-image-wrapper {
         width: 100%;
@@ -730,6 +651,94 @@ section.evolution-collapse-block {
         position: absolute;
         top: 50px;
         left: 50%;
+    }
+}
+
+.accordion-item {
+    margin-bottom: 15px;
+    border-radius: 20px;
+    background: var(--white);
+    box-shadow: 0px 15px 45px 0px rgba(0, 0, 0, 0.10);
+    border: none;
+
+    &:first-of-type {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .accordion-button {
+        span {
+            color: var(--Brandcolor_Black);
+            font-feature-settings: 'liga' off, 'clig' off;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px;
+            letter-spacing: -0.26px;
+        }
+
+        display: flex;
+        align-items: center;
+        background: transparent;
+        padding: 16px 15px 18px 28px;
+        border-top-left-radius: none;
+        border-top-right-radius: none;
+
+        &:focus {
+            background-color: transparent;
+            box-shadow: none;
+        }
+
+        &:not(.collapsed) {
+            background-color: transparent;
+            box-shadow: none;
+
+            &::after {
+                transform: rotate(0deg) !important;
+            }
+        }
+
+        .logo {
+            padding-right: 35px;
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 1px;
+                height: 32px;
+                right: 17px;
+                right: 17px;
+                top: 50%;
+                background: var(--New_Gradient);
+                opacity: 0.3;
+                transform: translateY(-50%);
+            }
+        }
+
+        &::after {
+            background-image: url("/assets/images//accordion-arrow.svg");
+            background-size: 22px;
+            width: 22px;
+            height: 22px;
+            transform: rotate(-180deg);
+        }
+
+    }
+
+    .accordion-body {
+        padding: 0 16px 16px 30px;
+
+        p {
+            color: var(--Brandcolor_Black);
+            font-feature-settings: 'liga' off, 'clig' off;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 20px;
+            letter-spacing: -0.26px;
+            opacity: 0.8;
+        }
     }
 }
 
@@ -1029,3 +1038,124 @@ section.career-form-block {
 }
 
 /* CAREER FORM START END */
+
+/* FAQ BLOCK START */
+section.faq-block-area {
+    .title-part {
+        position: relative;
+
+        .bg-shape-img {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translatey(-50%);
+            z-index: -1;
+        }
+    }
+}
+
+.faq-collapse-area {
+    .accordion-item {
+        box-shadow: none;
+        background: none;
+        border-radius: 0px;
+        margin-bottom: 0;
+
+        .b-top {
+            width: 100%;
+            height: 0.5px;
+            background: linear-gradient(90deg, rgba(21, 142, 206, 0.3) 0%, rgba(25, 227, 227, 0.3) 100%);
+        }
+
+        .b-bottom {
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(90deg, rgba(21, 142, 206, 0.3) 0%, rgba(25, 227, 227, 0.3) 100%);
+        }
+
+        .accordion-button {
+            padding: 5px 0px 7px 0px;
+
+            .logo {
+                padding-right: 27px;
+
+                &::after {
+                    display: none;
+                }
+            }
+
+            span {
+                font-family: var(--heading-font);
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                max-width: calc(100% - 120px);
+                display: block;
+            }
+        }
+
+        &:first-of-type {
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0px;
+
+            .accordion-button {
+                border-top-left-radius: 0px;
+                border-top-right-radius: 0px;
+            }
+        }
+
+        .accordion-body {
+            padding: 0 25px 16px 0px;
+        }
+
+    }
+
+}
+
+/* FAQ BLOCK END */
+
+/*CTA BANNER BLOCK START*/
+section.cta-banner-block {
+    .block-wrapper {
+        padding: 60px 25px;
+        border-radius: 40px;
+        background: var(--New_Gradient);
+        box-shadow: 0px 15px 45px 0px rgba(0, 0, 0, 0.10);
+
+        .content {
+            text-align: center;
+
+            h2 {
+                color: var(--white);
+                font-size: 44px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 52px;
+                letter-spacing: -0.26px;
+                max-width: 600px;
+                margin: 0 auto 20px;
+            }
+
+            p {
+                color: var(--white);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 20px;
+                letter-spacing: -0.26px;
+                opacity: 0.8;
+            }
+
+            .bttn-bx {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                column-gap: 35px;
+                margin-top: 40px;
+            }
+        }
+    }
+}
+
+/*CTA BANNER BLOCK END*/

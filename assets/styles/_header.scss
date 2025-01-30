@@ -37,6 +37,12 @@ header.header-area {
                     margin-bottom: 0;
                     position: relative;
 
+                    opacity: 1;
+                    background: unset;
+                    background-clip: unset;
+                    -webkit-background-clip: unset;
+                    -webkit-text-fill-color: unset;
+
                     &::before {
                         display: none;
                     }
