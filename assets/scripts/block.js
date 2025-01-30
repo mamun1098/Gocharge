@@ -272,14 +272,17 @@ setTimeout(function () {
 
         breakpoints: {
           0: {
-            slidesPerView: 1,
+            slidesPerView: "auto",
             centeredSlides: false,
             loop: false,
+            spaceBetween: 25,
+            navigation: false,
           },
           576: {
             slidesPerView: 2,
             centeredSlides: false,
             loop: false,
+            navigation: false,
           },
           768: {
             slidesPerView: 3,
@@ -305,17 +308,11 @@ setTimeout(function () {
 
       const bgImageSwip = new Swiper(`.${uniqueClass}`, {
         watchOverflow: true,
-        observer: true,
+        // observer: true,
         observeParents: true,
         spaceBetween: 16,
         loop: true,
         speed: 500,
-
-        // Navigation arrows
-        navigation: {
-          nextEl: `.${uniqueClass} .swiper-button-next`,
-          prevEl: `.${uniqueClass} .swiper-button-prev`,
-        },
         pagination: {
           el: `.${uniqueClass} .swiper-pagination`,
           clickable: true,
@@ -326,6 +323,14 @@ setTimeout(function () {
             slidesPerView: 1,
             centeredSlides: false,
             loop: false,
+            navigation: false,
+          },
+          768: {
+            // Navigation arrows
+            navigation: {
+              nextEl: `.${uniqueClass} .swiper-button-next`,
+              prevEl: `.${uniqueClass} .swiper-button-prev`,
+            },
           },
         },
       });

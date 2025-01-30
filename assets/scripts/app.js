@@ -57,8 +57,10 @@ setTimeout(function () {
       swiperElement.classList.add("swHero_" + i);
 
       const swiper = new Swiper(".swHero_" + i, {
-        slidesPerView: 1,
         watchOverflow: true,
+        observer: true,
+        observeParents: true,
+        slidesPerView: 1,
         spaceBetween: 0,
         // If we need pagination
         pagination: {

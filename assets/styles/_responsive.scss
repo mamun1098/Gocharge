@@ -381,6 +381,45 @@
             display: none;
         }
 
+        &.normal {
+            min-height: 600px;
+
+            .hero-wrapper {
+
+                .swiper {
+
+                    .swiper-slide {
+                        min-height: 600px;
+
+                        .wrapper-content {
+                            min-height: 600px;
+
+                            .background {
+
+                                .gradient-overlay {
+                                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 48.5%, rgba(0, 0, 0, 0) 100%);
+                                }
+
+                                .bg-content {
+                                    min-height: 600px;
+                                }
+                            }
+
+                            .hero-content {
+
+                                h1 {
+                                    font-size: 80px;
+                                    line-height: 100px;
+                                }
+                            }
+
+                        }
+
+                    }
+                }
+            }
+        }
+
     }
 
     section.charge-withapp-block {
@@ -425,6 +464,35 @@
 
         .card-order {
             order: 2;
+        }
+    }
+
+    section.innovation-sustainablity-section {
+        .row {
+            row-gap: 30px;
+
+            .col-lg-7 {
+                order: 2;
+            }
+
+            .col-lg-5 {
+                order: 1;
+            }
+        }
+    }
+
+    section.block-image {
+        .bg-image-slide {
+            height: 415px;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            display: none;
+        }
+
+        .swiper-slider-btns {
+            margin-top: 40px;
         }
     }
 
@@ -600,6 +668,13 @@
 
     }
 
+    .breadcrumb-section {
+        padding: 30px 0 30px;
+    }
+
+    .section-padding {
+        padding: 20px 0;
+    }
 
     // section title responsive start 
     .section-title {
@@ -809,11 +884,72 @@
             }
         }
     }
+
+    section.evolution-collapse-block {
+        .bg-image-wrapper {
+            position: unset;
+            margin-top: 20px;
+            min-height: 300px;
+            position: relative;
+            top: unset;
+            left: unset;
+            right: -20px;
+            width: 100%;
+            border-bottom-left-radius: 40px;
+            border-top-left-radius: 40px;
+
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 0px;
+
+        }
+    }
+
+    section.logo-slider-block {
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            display: none;
+        }
+    }
+
+    section.career-form-block {
+        .form-wrapper {
+            padding: 40px 20px;
+            border-radius: 28px;
+
+            .title {
+                h2 {
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 30px;
+                    /* 125% */
+                    letter-spacing: -0.26px;
+                }
+
+                p {
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 20px;
+                    /* 125% */
+                    letter-spacing: -0.26px;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+
 }
 
 @media (max-width: 576px) {
-    .section-padding {
-        padding: 20px 0;
+
+    .section-title {
+        margin-bottom: 30px;
+
+        p {
+            margin-top: 15px;
+        }
     }
 
     header.header-area .wrapper-header .logo img {
@@ -895,6 +1031,51 @@
             }
         }
 
+        &.normal {
+            min-height: 430px;
+            margin-bottom: 30px;
+
+            .hero-wrapper {
+
+                .swiper {
+
+                    .swiper-slide {
+                        min-height: 430px;
+
+                        .wrapper-content {
+                            min-height: 430px;
+
+                            .background {
+
+                                .bg-content {
+                                    min-height: 430px;
+                                }
+                            }
+
+                            .hero-content {
+                                padding: 80px 0 0px;
+
+                                h1 {
+                                    font-size: 50px;
+                                    line-height: 50px;
+                                    font-weight: 300;
+                                }
+
+                                p {
+                                    margin-top: 10px;
+                                }
+                            }
+
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+    .breadcrumb-section {
+        padding: 30px 0 20px;
     }
 
     section.blog-card-block {
@@ -1176,7 +1357,14 @@
         }
 
         .single-status {
+            column-gap: 36px;
+
             .left {
+                &::before {
+                    height: 35px;
+                    right: -18px;
+                }
+
                 h3 {
                     font-size: 24px;
                     font-style: normal;
@@ -1191,7 +1379,125 @@
                     font-weight: 400;
                     line-height: 18px;
                 }
+
+            }
+
+            p {
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 18px;
             }
         }
     }
+
+    section.text-block {
+        .text-content {
+            h2 {
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 30px;
+                letter-spacing: -0.26px;
+                margin-bottom: 15px;
+            }
+
+            p {
+                margin-bottom: 15px;
+            }
+
+            h3 {
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+            }
+        }
+    }
+
+    section.innovation-sustainablity-section {
+        .row {
+            row-gap: 20px;
+        }
+
+        .text-details-tab {
+            padding: 40px 20px;
+            border-radius: 20px;
+
+            .tab-content {
+                text-align: center;
+
+                h3,
+                .title {
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 30px;
+                    letter-spacing: -0.26px;
+                }
+
+                .subtitle {
+                    margin-top: 15px;
+                }
+            }
+
+            ul.nav {
+                justify-content: center;
+                flex-direction: column;
+                row-gap: 12px;
+                margin-bottom: 0 !important;
+            }
+        }
+
+        .text-with-bg {
+            padding: 60px 20px 40px 20px;
+            border-radius: 20px;
+
+            &::before {
+                border-radius: 20px;
+            }
+        }
+    }
+
+    section.evolution-collapse-block {
+        .section-title {
+            margin-bottom: 30px;
+        }
+
+        .bg-image-wrapper {
+            min-height: 285px;
+            margin-bottom: 40px;
+        }
+    }
+
+    section.logo-slider-block {
+        .container-fluid {
+            padding: 0 0px !important;
+        }
+
+        .swiper-slider-btns {
+            margin-top: 20px;
+        }
+
+        .bg-shape-img {
+            img {
+                width: 213px;
+                height: 301px;
+            }
+        }
+    }
+
+    section.block-image {
+        .swiper {
+            border-radius: 10px;
+        }
+
+        .bg-image-slide {
+            height: 350px;
+            border-radius: 10px;
+        }
+
+        .swiper-slider-btns {
+            margin-top: 20px;
+        }
+    }
+
 }
