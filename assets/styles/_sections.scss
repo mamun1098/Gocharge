@@ -404,53 +404,65 @@ section.mobility-and-advantage {
         column-gap: 50px;
         row-gap: 50px;
 
-        .single-item {
-            border-radius: 20px;
-            background: #FFF;
-            box-shadow: 0px 15px 45px 0px rgba(0, 0, 0, 0.10);
-            max-width: 220px;
-            height: auto;
-            padding: 37px 25px;
-            text-align: center;
+    }
 
-            .icon {
-                display: flex;
-                width: 60px;
-                height: 60px;
-                justify-content: center;
-                align-items: center;
-                border-radius: 100px;
-                background: var(--New_Gradient);
-                box-shadow: -3px 3px 20px 0px rgba(25, 227, 227, 0.60);
-                margin: auto;
-            }
+    .single-item {
+        border-radius: 20px;
+        background: #FFF;
+        box-shadow: 0px 15px 45px 0px rgba(0, 0, 0, 0.10);
+        max-width: 220px;
+        height: auto;
+        padding: 37px 25px;
+        text-align: center;
+        width: 100%;
 
-            .title {
-                font-feature-settings: 'liga' off, 'clig' off;
-                font-size: 14px;
-                font-style: normal;
-                font-weight: 600;
-                line-height: normal;
-                background: var(--New_Gradient);
-                background-clip: text;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                margin: 20px auto 0;
-                max-width: 80%;
-            }
+        .icon {
+            display: flex;
+            width: 60px;
+            height: 60px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100px;
+            background: var(--New_Gradient);
+            box-shadow: -3px 3px 20px 0px rgba(25, 227, 227, 0.60);
+            margin: auto;
+        }
 
-            .subtitle {
-                color: var(--Brandcolor_Black);
-                font-feature-settings: 'liga' off, 'clig' off;
-                font-family: var(--body-font);
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 300;
-                line-height: 20px;
-                letter-spacing: -0.26px;
-                opacity: 0.8;
-                margin-top: 8px;
-            }
+        .title {
+            font-feature-settings: 'liga' off, 'clig' off;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            background: var(--New_Gradient);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin: 20px auto 0;
+            max-width: 80%;
+        }
+
+        .subtitle {
+            color: var(--Brandcolor_Black);
+            font-feature-settings: 'liga' off, 'clig' off;
+            font-family: var(--body-font);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 20px;
+            letter-spacing: -0.26px;
+            opacity: 0.8;
+            margin-top: 8px;
+        }
+    }
+
+    .mobile-version {
+        display: none;
+    }
+
+    &.private {
+        .section-title {
+            max-width: 810px;
         }
     }
 }
@@ -559,3 +571,116 @@ section.pricing-area {
 }
 
 /* PRICING SECTION END */
+
+
+/* CARD COLLAPSE SECTION START */
+section.card-collapse-area {
+    padding: 0px 0 80px;
+
+    .accordion-item {
+        border-radius: 40px !important;
+        background: var(--white);
+        box-shadow: 0px 15px 45px 0px rgba(0, 0, 0, 0.10);
+        padding: 40px 75px;
+
+        .accordion-header {
+            min-height: 200px;
+        }
+
+        .accordion-button {
+            padding: 0;
+
+            span {
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                background: var(--New_Gradient);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                // min-height: 160px;
+            }
+
+            .card-image {
+                position: absolute;
+                top: 70px;
+
+                img {
+                    max-width: 100%;
+                }
+            }
+        }
+
+        .accordion-body {
+            margin-top: 100px;
+            padding: 0 28px;
+
+            .title {
+                font-feature-settings: 'liga' off, 'clig' off;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+
+                background: var(--New_Gradient);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            p {
+                opacity: 1;
+            }
+
+            .info-option {
+                padding-left: 0;
+                margin-top: 20px;
+
+                li {
+                    opacity: 1;
+                    background: unset;
+                    background-clip: unset;
+                    -webkit-background-clip: unset;
+                    -webkit-text-fill-color: unset;
+
+                    display: flex;
+                    align-items: center;
+                    column-gap: 18px;
+                    margin-bottom: 15px;
+
+                    &::before {
+                        display: none;
+                    }
+
+                    p {
+                        color: var(--Brandcolor_Black);
+                        font-feature-settings: 'liga' off, 'clig' off;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: 20px;
+                        letter-spacing: -0.26px;
+                        opacity: 1;
+                    }
+                }
+            }
+
+            .view-btn {
+                margin-top: 30px;
+                text-align: center;
+            }
+        }
+
+    }
+
+    .accordion-item:last-of-type .accordion-button.collapsed,
+    .accordion-item:first-of-type .accordion-button {
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+}
+
+/* CARD COLLAPSE SECTION END */
