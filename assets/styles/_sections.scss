@@ -923,6 +923,10 @@ section.digital-experience-section {
     border-bottom-right-radius: 17px;
 }
 
+.select2-dropdown {
+    box-shadow: -4px 4px 15px 0px rgba(0, 0, 0, .1);
+}
+
 .select2-container.select2-container--default.select2-container--open {
     ul.select2-results__options {
 
@@ -974,3 +978,227 @@ section.digital-experience-section {
 }
 
 /* Filter Option Select2 Styles End */
+
+/* BLOG DETAILS START */
+section.blog-details {
+    .wrapper {
+        h2 {
+            color: var(--Brandcolor_Black);
+            font-size: 44px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 52px;
+            letter-spacing: -0.26px;
+            padding-bottom: 15px;
+            margin: auto;
+            max-width: 1030px;
+        }
+
+        p {
+            color: var(--Brandcolor_Black);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 20px;
+            opacity: 0.8;
+            letter-spacing: -0.26px;
+            opacity: 0.8;
+            margin: 15px auto 0;
+            max-width: 1030px;
+        }
+
+        img {
+            width: 100%;
+            max-height: 515px;
+            object-fit: cover;
+            border-radius: 40px;
+            margin: 100px 0 70px;
+        }
+    }
+}
+
+/* BLOG DETAILS END */
+
+/* RELATED BLOG SECTION START */
+section.related-blog-section {
+    position: relative;
+
+    .section-title {
+        margin-bottom: 40px;
+    }
+
+    .col-lg-4.col-md-6 {
+        height: auto;
+
+        .single-blog-card {
+            height: 100%;
+        }
+    }
+
+    .bg-shape-img {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+        z-index: -1;
+    }
+}
+
+/* RELATED BLOG SECTION END */
+
+/* CONTACT PAGE START */
+section.contact-page {
+    ul.nav {
+        column-gap: 60px;
+        margin-top: 0;
+        max-width: 470px;
+        margin: auto;
+
+        li {
+            background: unset;
+            background-clip: unset;
+            -webkit-background-clip: unset;
+            -webkit-text-fill-color: unset;
+            opacity: 1;
+            margin-bottom: 0;
+
+            &::before {
+                display: none;
+            }
+
+            .button.white {
+                &.active {
+                    .btn-text {
+                        background: unset;
+                        background-clip: unset;
+                        -webkit-background-clip: unset;
+                        -webkit-text-fill-color: unset;
+                        color: var(--white);
+                    }
+
+                    .icon {
+                        border: 0.5px solid rgba(255, 255, 255, 0.50);
+
+                        &::after {
+                            opacity: 0;
+                            background: linear-gradient(-90deg, #158ECE 0%, #19E3E3 100%);
+
+                        }
+
+                        &::before {
+                            background: rgba(255, 255, 255, 0);
+                            background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg xmlns%3D%22http%3A//www.w3.org/2000/svg%22 width%3D%2210%22 height%3D%2213%22 viewBox%3D%220 0 10 13%22 fill%3D%22none%22%3E%3Cpath d%3D%22M0.845182 7.27606L4.83526 0.80216C5.17022 0.258692 6.00779 0.496072 6.00779 1.13447V4.12492C6.00779 4.47471 6.29135 4.75827 6.64115 4.75827H8.616C9.11168 4.75827 9.41525 5.30197 9.15518 5.72394L5.1651 12.1978C4.83014 12.7413 3.99257 12.5039 3.99257 11.8655V8.87508C3.99257 8.52529 3.709 8.24173 3.35921 8.24173H1.38436C0.888674 8.24173 0.585106 7.69803 0.845182 7.27606Z%22 fill%3D%22%23FFFFFF%22/%3E%3C/svg%3E');
+                            background-repeat: no-repeat;
+                            background-position: center;
+                        }
+                    }
+
+                    &:hover {
+                        .icon {
+                            background: transparent;
+                        }
+                    }
+
+                    &::after {
+                        opacity: 0;
+                    }
+                }
+
+
+            }
+        }
+    }
+
+    .contact-form-wrapper {
+        margin-top: 60px;
+        padding: 80px 105px;
+        border-radius: 60px;
+        background: linear-gradient(90deg, rgba(21, 142, 206, 0.10) 0%, rgba(25, 227, 227, 0.10) 100%);
+
+        .section-title {
+            h2 {
+                text-align: center;
+                font-size: 44px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 52px;
+                letter-spacing: -0.26px;
+                background: var(--New_Gradient);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                max-width: 590px;
+                margin: auto;
+            }
+
+            p {
+                max-width: 665px;
+                margin: 20px auto 0;
+            }
+        }
+    }
+}
+
+
+/* CONTACT PAGE END */
+
+
+/* GOCHARGE CONTACT START */
+section.gocharge-contact-section {
+    padding: 50px 0 30px;
+
+    .address-wrapper {
+        h2 {
+            color: var(--Brandcolor_Black);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        .wrapper {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+
+            .single-item {
+                display: flex;
+                column-gap: 10px;
+
+                .icon {
+                    line-height: 1px;
+                    height: 12px;
+                    margin-top: 5px;
+                }
+
+                a {
+                    color: var(--Brandcolor_Black);
+                    font-feature-settings: 'liga' off, 'clig' off;
+                    font-family: var(--body-font);
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 20px;
+                    letter-spacing: -0.26px
+                }
+
+                &.address-item {
+                    max-width: 300px;
+
+                    .address {
+                        color: var(--Brandcolor_Black);
+                        font-feature-settings: 'liga' off, 'clig' off;
+                        font-family: var(--body-font);
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: 20px;
+                        letter-spacing: -0.26px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* GOCHARGE CONTACT END */

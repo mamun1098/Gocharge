@@ -1214,6 +1214,45 @@ section.faq-block-area {
 
     }
 
+    &.faq-page-collapse {
+        .accordion-item {
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 0.5px;
+                left: 0;
+                bottom: 0;
+                background: linear-gradient(90deg, rgba(21, 142, 206, 0.3) 0%, rgba(25, 227, 227, 0.3) 100%);
+                opacity: 0.7;
+            }
+
+            &:first-child {
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 0.5px;
+                    left: 0;
+                    top: 0;
+                    background: linear-gradient(90deg, rgba(21, 142, 206, 0.3) 0%, rgba(25, 227, 227, 0.3) 100%);
+                    opacity: 0.7;
+                }
+
+            }
+
+
+            .accordion-button {
+                padding: 15px 0px 15px 0px;
+            }
+
+            .accordion-body {
+                padding: 0 25px 30px 0px;
+            }
+        }
+    }
 }
 
 /* FAQ BLOCK END */

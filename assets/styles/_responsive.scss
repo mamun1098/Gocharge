@@ -970,6 +970,17 @@
     section.card-collapse-area {
         padding: 0px 0 20px;
     }
+
+    section.gocharge-contact-section {
+        padding: 20px 0;
+
+        .address-wrapper {
+            .wrapper {
+                flex-direction: column;
+                row-gap: 15px;
+            }
+        }
+    }
 }
 
 @media (max-width: 576px) {
@@ -991,6 +1002,25 @@
             .b-bottom {
                 height: 0.7px;
                 opacity: 0.7;
+            }
+        }
+
+        &.faq-page-collapse {
+            .accordion-item {
+                position: relative;
+
+                .accordion-button {
+                    span {
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 20px;
+                    }
+                }
+
+                .accordion-body {
+                    padding: 0 5px 30px 0px;
+                }
             }
         }
     }
@@ -1793,6 +1823,42 @@
 
         .select2-container--default .select2-selection--single {
             min-width: 320px;
+        }
+    }
+
+    section.contact-page {
+        ul.nav {
+            justify-content: center;
+            row-gap: 30px;
+
+            button.button.white {
+                .btn-text {
+                    min-width: 155px !important;
+                }
+            }
+        }
+
+        .contact-form-wrapper {
+            border-radius: 28px;
+            padding: 40px 20px;
+            margin-top: 40px;
+
+            .section-title {
+                text-align: center;
+
+                h2 {
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 30px;
+                    letter-spacing: -0.26px;
+                }
+
+                p {
+                    padding: 0 10px;
+                    margin-top: 10px;
+                }
+            }
         }
     }
 
