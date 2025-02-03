@@ -684,3 +684,124 @@ section.card-collapse-area {
 }
 
 /* CARD COLLAPSE SECTION END */
+
+
+/* DIGITAL EXPERIENCE SECTION START */
+section.digital-experience-section {
+    .section-title {
+        text-align: center;
+
+        h2 {
+            max-width: 600px;
+            margin: 0px auto 0;
+        }
+
+        p {
+            max-width: 800px;
+            margin: 20px auto 0;
+        }
+    }
+
+    .experience-wrapper {
+        padding: 40px 70px;
+        border-radius: 40px;
+        background: var(--white);
+        box-shadow: 0px 15px 45px 0px rgba(0, 0, 0, 0.10);
+
+        h3 {
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            background: var(--New_Gradient);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 20px;
+        }
+
+        .expereince-medai {
+            .media {
+                width: 100%;
+                border-radius: 20px;
+                box-shadow: 0px 15px 45px 0px rgba(0, 0, 0, 0.10);
+                margin-bottom: 30px;
+            }
+        }
+
+        h4 {
+            font-feature-settings: 'liga' off, 'clig' off;
+            font-family: var(--body-font);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 20px;
+            letter-spacing: -0.26px;
+            background: var(--New_Gradient);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 30px;
+        }
+
+        .single-sec {
+            margin-bottom: 20px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            .title {
+                display: flex;
+                align-items: center;
+                column-gap: 18px;
+                margin-bottom: 5px;
+
+                h5 {
+                    color: var(--Brandcolor_Black);
+                    font-feature-settings: 'liga' off, 'clig' off;
+                    font-family: var(--body-font);
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 20px;
+                    letter-spacing: -0.26px;
+                    opacity: 0.8;
+                }
+            }
+
+            p {
+                color: var(--Brandcolor_Black);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 20px;
+                letter-spacing: -0.26px;
+                opacity: 0.8;
+            }
+
+            ul {
+                margin-bottom: 15px;
+            }
+
+            small {
+                font-feature-settings: 'liga' off, 'clig' off;
+                font-family: var(--body-font);
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 14px;
+                letter-spacing: -0.26px;
+                opacity: 0.8;
+                background: var(--New_Gradient);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                display: block;
+                margin-top: 8px;
+            }
+        }
+    }
+}
+
+/* DIGITAL EXPERIENCE SECTION END */

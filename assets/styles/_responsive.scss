@@ -513,6 +513,12 @@
             margin-bottom: 50px;
         }
     }
+
+    section.digital-experience-section {
+        .experience-wrapper {
+            padding: 40px 35px;
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -1736,6 +1742,31 @@
         .form-wrapper {
             .title {
                 text-align: center;
+            }
+        }
+    }
+
+    section.digital-experience-section {
+        .experience-wrapper {
+            h3 {
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+            }
+
+            .expereince-medai {
+                .media {
+                    box-shadow: none;
+                    margin-bottom: 20px;
+                }
+            }
+
+            h4 {
+                margin-bottom: 20px;
+            }
+
+            .single-sec {
+                margin-bottom: 16px;
             }
         }
     }
