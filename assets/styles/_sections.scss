@@ -805,3 +805,172 @@ section.digital-experience-section {
 }
 
 /* DIGITAL EXPERIENCE SECTION END */
+
+/* LISTING AREA START */
+.lising-area {
+    padding-top: 40px;
+    padding-bottom: 50px;
+
+    .row-gaps {
+        row-gap: 55px;
+    }
+
+    .col-lg-4.col-md-6 {
+        height: auto;
+
+        .single-blog-card {
+            height: 100%;
+        }
+    }
+
+    .load-more {
+        margin-top: 60px;
+        text-align: center;
+    }
+}
+
+
+/* LISTING AREA END */
+
+/* Filter Option Select2 Styles Start */
+.filtering-options {
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+    flex-wrap: wrap;
+    row-gap: 40px;
+
+    select.select2-activate {
+        min-width: 345px;
+        height: 34px;
+    }
+
+    .select2-container--default {
+        &.select2-container--open {
+            .select2-selection--single {
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+                border-top-left-radius: 17px;
+                border-top-right-radius: 17px;
+                border-bottom: 1px solid transparent;
+
+                span.select2-selection__arrow {
+                    &::before {
+                        transform: translateY(-50%) rotate(180deg);
+                    }
+                }
+            }
+        }
+
+        .select2-selection--single {
+            border-radius: 100px;
+            background: var(--white);
+            box-shadow: -4px 4px 15px 0px rgba(0, 0, 0, 0.10);
+            height: 34px;
+            min-width: 345px;
+            border: none;
+
+            span.select2-selection__rendered {
+                padding: 9px 20px 8px;
+                font-feature-settings: 'liga' off, 'clig' off;
+                font-family: var(--heading-font);
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                background: var(--New_Gradient);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            span.select2-selection__arrow {
+                top: 3px;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    background-image: url("../images/select-arrow.svg");
+                    width: 16px;
+                    height: 16px;
+                    border-radius: 100%;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: contain;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 10px;
+                    transition: all 0.3s ease-in-out;
+                    background-size: 9px 9px;
+                }
+
+                b {
+
+                    display: none;
+
+                }
+            }
+        }
+    }
+
+
+}
+
+.select2-container--open .select2-dropdown--below {
+    border: none;
+    border-bottom-left-radius: 17px;
+    border-bottom-right-radius: 17px;
+}
+
+.select2-container.select2-container--default.select2-container--open {
+    ul.select2-results__options {
+
+        .select2-results__option {
+            &.select2-results__option--disabled {
+                display: none;
+            }
+
+            font-feature-settings: 'liga' off,
+            'clig' off;
+            font-family: var(--heading-font);
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            background: var(--New_Gradient);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+
+            padding: 5px 10px 5px 30px;
+            transition: all 0.3s ease-in-out;
+
+            &::before {
+                left: 14px;
+                width: 8px;
+                height: 8px;
+                border-radius: 100%;
+                border: 0.5px solid var(--Newcolor_Neon);
+                background: transparent;
+                transition: all 0.3s ease-in-out;
+            }
+
+            &:hover,
+            &.select2-results__option--highlighted {
+                background: var(--New_Gradient);
+                color: var(--white);
+                background-clip: unset;
+                -webkit-background-clip: unset;
+                -webkit-text-fill-color: unset;
+
+                &::before {
+                    border: 0.5px solid var(--white);
+                }
+            }
+        }
+    }
+}
+
+/* Filter Option Select2 Styles End */

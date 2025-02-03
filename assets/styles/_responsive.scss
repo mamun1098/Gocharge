@@ -1770,4 +1770,30 @@
             }
         }
     }
+
+    .lising-area {
+        padding-top: 10px;
+        padding-bottom: 20px;
+
+        .row-gaps {
+            row-gap: 20px;
+        }
+
+        .load-more {
+            margin-top: 30px;
+        }
+    }
+
+    .filtering-options {
+        margin-bottom: 40px;
+
+        select.select2-activate {
+            min-width: 320px;
+        }
+
+        .select2-container--default .select2-selection--single {
+            min-width: 320px;
+        }
+    }
+
 }
