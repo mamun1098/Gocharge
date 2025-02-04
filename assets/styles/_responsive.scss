@@ -1898,4 +1898,114 @@
         }
     }
 
+    section.typ-error-area {
+        padding-bottom: 80px;
+        padding-top: 140px;
+
+        .wrap {
+            .check {
+                width: 40px;
+                height: 40px;
+                margin: 0 auto 10px;
+
+                img {
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+
+            h1 {
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 30px;
+                letter-spacing: -0.26px;
+            }
+
+            p,
+            .text {
+                margin-top: 10px;
+                opacity: 1;
+            }
+
+            .btn {
+                margin-top: 30px;
+            }
+        }
+
+        &.error-area {
+            .wrap {
+
+                .check {
+                    img {
+                        width: 10px;
+                        height: 10px;
+                    }
+                }
+
+                .social-link {
+                    margin-top: 30px;
+                }
+            }
+        }
+
+        .bg-shape {
+            top: 0;
+
+            img {
+                max-width: 592px;
+                max-height: 835px;
+            }
+        }
+    }
+
+    section.privacy-policy-terms-and-condition {
+        padding-top: 90px;
+        padding-bottom: 20px;
+
+        .content {
+            h3 {
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 30px;
+                letter-spacing: -0.26px;
+                padding-bottom: 0;
+            }
+
+            h4 {
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                // margin-top: 15px;
+            }
+
+            ul.data-category {
+                li {
+                    padding: 15px 15px 15px 20px;
+
+                    .example {
+                        padding-left: 15px;
+                    }
+                }
+            }
+
+            .small-text {
+                p {
+                    margin-top: 15px;
+                }
+            }
+
+            .contract-holder {
+                margin-top: 0px;
+                margin-bottom: 0px;
+
+                .name {
+                    padding-top: 16px;
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+
 }

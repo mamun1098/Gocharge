@@ -252,12 +252,12 @@ ul {
     margin-bottom: 0.5rem;
     position: relative;
     margin-bottom: 5px;
-
+    color: var(--Brandcolor_Black);
     opacity: 0.8;
-    background: var(--New_Gradient);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    // background: var(--New_Gradient);
+    // background-clip: text;
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
 
     &::before {
       content: "";
@@ -265,7 +265,8 @@ ul {
       height: 3px;
       width: 3px;
       border-radius: 100%;
-      background: var(--New_Gradient);
+      // background: var(--New_Gradient);
+      background: var(--Brandcolor_Black);
       top: 10px;
       left: -10px;
     }
