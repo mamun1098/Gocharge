@@ -128,7 +128,7 @@ section.blog-card-block {
 /* BLOG CARD BLOCK END */
 
 /* ELECTRIC MOBILITY SECTION START */
-section.electric-mobility-block {
+section.product-with-bgImg {
     .section-title-with-bg {
         background-repeat: no-repeat;
         background-size: cover;
@@ -170,6 +170,13 @@ section.electric-mobility-block {
 
     .view-more-button {
         margin-top: 40px;
+    }
+
+    &.loja-product-with-bgImg {
+        .single-product-card .content .title {
+            text-align: center;
+            display: block;
+        }
     }
 }
 
@@ -529,6 +536,11 @@ section.news-block {
         .swiper {
             padding-bottom: 20px;
         }
+    }
+
+    .view-more-button {
+        text-align: center;
+        margin-top: 60px;
     }
 }
 

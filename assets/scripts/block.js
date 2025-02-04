@@ -1,7 +1,7 @@
 setTimeout(function () {
   /* ELECTRIC MOBILITY SECTION START */
   const electricMobilitySlider = document.querySelectorAll(
-    ".electric-mobility-block .swiper"
+    ".product-with-bgImg .swiper"
   );
   if (electricMobilitySlider.length > 0) {
     electricMobilitySlider.forEach((swiperElement, i) => {

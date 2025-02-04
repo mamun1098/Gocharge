@@ -1,0 +1,83 @@
+/* DISCOUNT BANNER BLOCK START */
+section.discount-banner-block {
+    .wrapper {
+        padding: 40px;
+        border-radius: 40px;
+        background: var(--New_Gradient, linear-gradient(90deg, #158ECE 0%, #19E3E3 100%));
+        box-shadow: 0px 15px 45px 0px rgba(0, 0, 0, 0.10);
+
+        .media {
+            max-width: 100%;
+
+            img {
+                max-width: 100%;
+                width: 100%;
+                max-height: 350px;
+                object-fit: cover;
+                border-radius: 20px;
+            }
+        }
+
+        .content {
+            h2 {
+                color: var(--white);
+                font-size: 44px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 52px;
+                letter-spacing: -0.26px;
+            }
+
+            h3 {
+                color: var(--White, #FFF);
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin-top: 16px;
+            }
+
+            p {
+                color: var(--white);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 20px;
+                letter-spacing: -0.26px;
+                opacity: 0.8;
+                margin-top: 10px;
+            }
+
+            .block-btn {
+                margin-top: 60px;
+
+                .button.white.blue_white {
+                    // background: var(--white);
+
+                    &::after {
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                    }
+
+                    .btn-text {
+                        background: var(--New_Gradient);
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+
+                    .icon {
+                        &::before {
+                            width: calc(100% - 1px);
+                            height: calc(100% - 1px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* DISCOUNT BANNER BLOCK END */
