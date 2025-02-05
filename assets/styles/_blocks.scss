@@ -162,6 +162,10 @@ section.product-with-bgImg {
     .swiper {
         margin-top: -195px;
         padding-bottom: 10px;
+
+        .swiper-slide {
+            height: auto;
+        }
     }
 
     .swiper-slider-btns {
@@ -176,6 +180,28 @@ section.product-with-bgImg {
         .single-product-card .content .title {
             text-align: center;
             display: block;
+        }
+
+        .mobile-version {
+            display: none;
+
+            .container-fluid {
+                padding: 0 15px !important;
+            }
+
+            .bg-color {
+                border-radius: 28px;
+                background: linear-gradient(90deg, rgba(21, 142, 206, 0.1) 0%, rgba(25, 227, 227, 0.1) 100%);
+                padding: 40px 18px;
+            }
+
+            .product-row {
+                .col-lg-4 {
+                    height: auto;
+                }
+
+                row-gap: 20px;
+            }
         }
     }
 }
@@ -535,6 +561,17 @@ section.news-block {
 
         .swiper {
             padding-bottom: 20px;
+        }
+    }
+
+    .desktop-version {
+        row-gap: 60px;
+
+        &.row {
+            .col-lg-4 {
+                padding-right: 25px !important;
+                padding-left: 25px !important;
+            }
         }
     }
 

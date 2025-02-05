@@ -534,6 +534,53 @@
             }
         }
     }
+
+    section.news-block {
+        .view-more-button {
+            margin-top: 30px;
+        }
+
+        .desktop-version {
+            row-gap: 40px;
+
+            &.row {
+                .col-lg-4 {
+                    padding-right: 10px !important;
+                    padding-left: 10px !important;
+                }
+            }
+        }
+    }
+
+    section.discount-banner-block {
+        .wrapper {
+            .content {
+                padding-left: 0;
+                text-align: center;
+                margin-top: 30px;
+
+                h2 {
+                    font-size: 50px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 50px;
+                    letter-spacing: -0.26px;
+                }
+
+                h3 {
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    opacity: 1;
+                    margin-top: 15px;
+                }
+
+                .block-btn {
+                    margin-top: 40px;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -784,6 +831,28 @@
 
         .view-more-button {
             margin-top: 20px;
+        }
+
+        &.loja-product-with-bgImg {
+            .desktop-version {
+                display: none;
+            }
+
+            .mobile-version {
+                display: flex;
+
+                .section-title {
+                    margin-bottom: 20px;
+
+                    h2 {
+                        color: unset;
+                        background: var(--New_Gradient);
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+                }
+            }
         }
     }
 
@@ -2005,6 +2074,39 @@
                     margin-top: 0;
                 }
             }
+        }
+    }
+
+    section.discount-banner-block {
+        .wrapper {
+            padding: 20px;
+            border-radius: 28px;
+
+            .media {
+                img {
+                    border-radius: 10px;
+                    max-height: 200px;
+                }
+            }
+
+            .content {
+                .block-btn {
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+
+    section.store-suggestion-block {
+        padding-bottom: 20px;
+
+        .desktop-version {
+            display: flex;
+            row-gap: 20px;
+        }
+
+        .view-more-button {
+            margin-top: 10px;
         }
     }
 

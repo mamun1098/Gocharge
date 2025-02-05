@@ -19,6 +19,8 @@ section.discount-banner-block {
         }
 
         .content {
+            padding-left: 40px;
+
             h2 {
                 color: var(--white);
                 font-size: 44px;
@@ -68,12 +70,6 @@ section.discount-banner-block {
                         -webkit-text-fill-color: transparent;
                     }
 
-                    .icon {
-                        &::before {
-                            width: calc(100% - 1px);
-                            height: calc(100% - 1px);
-                        }
-                    }
                 }
             }
         }
@@ -81,3 +77,24 @@ section.discount-banner-block {
 }
 
 /* DISCOUNT BANNER BLOCK END */
+
+
+/* STORE SUGGESTION BLOCK START */
+section.store-suggestion-block {
+
+
+    .single-blog-card {
+        margin-bottom: 30px;
+    }
+
+    .desktop-version {
+        row-gap: 60px;
+    }
+
+    .view-more-button {
+        text-align: center;
+        margin-top: 0;
+    }
+}
+
+/* STORE SUGGESTION BLOCK END */

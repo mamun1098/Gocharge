@@ -226,6 +226,19 @@
             line-height: normal;
             display: block;
             margin-top: 15px;
+
+            del {
+                color: var(--Brandcolor_Black);
+                font-feature-settings: 'liga' off, 'clig' off;
+                font-family: var(--heading-font);
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                text-decoration-line: strikethrough;
+                opacity: 0.4;
+                margin-left: 4px;
+            }
         }
 
         .title {
@@ -245,6 +258,7 @@
 
         .title {
             line-height: 1px;
+            max-width: 90%;
 
             a {
                 color: var(--Brandcolor_Black);
