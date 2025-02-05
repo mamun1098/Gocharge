@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="../assets/styles/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/styles/swiper-bundle.min.css">
     <link rel="stylesheet" href="../assets/styles/app.css">
-    <title>Loja</title>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <title>Produto detalhe</title>
 </head>
 
 <body class="home page-template-default">
@@ -229,353 +230,301 @@
         </header>
         <!-- HEADER AREA END  -->
 
-        <!-- HERO AREA START  -->
-        <section class="banner-area normal">
-            <div class="hero-wrapper">
-                <div class="swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="wrapper-content">
-                                <div class="background">
-                                    <div class="gradient-overlay"></div>
-                                    <div class="bg-content"
-                                        style="background-image: url('../assets/images/dynamic/normal-hero-bg.webp');">
-                                    </div>
-                                </div>
-                                <div class="hero-content">
-                                    <div class="container-fluid">
-                                        <div class="row">
-                                            <div class="col-lg-10 offset-lg-1">
-                                                <h1>Carregue o seu veículo com a Go.Charge
-                                                </h1>
-                                                <!-- <p class="text">
-                                                    Seja para esclarecer dúvidas, pedir aconselhamento ou dar o primeiro
-                                                    passo na transição para o carregamento elétrico, a Go.Charge está
-                                                    aqui para o apoiar em cada momento.
-                                                </p> -->
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slider-btns pagination-btn">
-                        <div class="swiper-pagination"></div>
-                    </div>
-                    <div class="swiper-slider-btns nex-prev-btn">
-                        <div class="swiper-button-prev">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="13" viewBox="0 0 14 13"
-                                fill="none">
-                                <path
-                                    d="M12.6567 6C12.9329 6 13.1567 6.22386 13.1567 6.5C13.1567 6.77614 12.9329 7 12.6567 7L12.6567 6ZM0.989478 6.85355C0.794216 6.65829 0.794216 6.34171 0.989478 6.14645L4.17146 2.96447C4.36672 2.7692 4.6833 2.7692 4.87857 2.96447C5.07383 3.15973 5.07383 3.47631 4.87857 3.67157L2.05014 6.5L4.87857 9.32843C5.07383 9.52369 5.07383 9.84027 4.87857 10.0355C4.6833 10.2308 4.36672 10.2308 4.17146 10.0355L0.989478 6.85355ZM12.6567 7L1.34303 7L1.34303 6L12.6567 6L12.6567 7Z"
-                                    fill="white" />
-                            </svg>
-                        </div>
-                        <div class="swiper-button-next">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="13" viewBox="0 0 14 13"
-                                fill="none">
-                                <path
-                                    d="M1.34326 6C1.06712 6 0.843262 6.22386 0.843262 6.5C0.843262 6.77614 1.06712 7 1.34326 7L1.34326 6ZM13.0105 6.85355C13.2058 6.65829 13.2058 6.34171 13.0105 6.14645L9.82854 2.96447C9.63328 2.7692 9.3167 2.7692 9.12143 2.96447C8.92617 3.15973 8.92617 3.47631 9.12143 3.67157L11.9499 6.5L9.12143 9.32843C8.92617 9.52369 8.92617 9.84027 9.12143 10.0355C9.3167 10.2308 9.63328 10.2308 9.82854 10.0355L13.0105 6.85355ZM1.34326 7L12.657 7L12.657 6L1.34326 6L1.34326 7Z"
-                                    fill="white" />
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- HERO AREA END  -->
+        <div class="product-details-page">
 
-        <!-- BREADCRUMB START -->
-        <div class="breadcrumb-section">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-10 offset-lg-1">
-                        <div class="breadcrumb-list">
-                            <a href="index.html">Homepage</a>
-                            <a class="current-page" href="javascript:void(0)">Loja</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- BREADCRUMB END -->
-
-        <!-- TEXT BLOCK START -->
-        <section class="text-block section-padding">
-            <div class="container-fluid">
-                <div class="row justify-content-center">
-                    <div class="col-lg-10">
-                        <div class="row align-items-center">
-                            <div class="col-lg-6">
-                                <div class="text-content">
-                                    <h2>Bem-vindo à loja online Go.Charge </h2>
-                                </div>
-                            </div>
-                            <div class="col-lg-5 offset-lg-1">
-                                <div class="text-content">
-                                    <p>Na Go.Charge, a nossa missão é descomplicar a mobilidade elétrica.
-                                        Disponibilizamos equipamentos de forma económica e segura, mantendo o padrão de
-                                        qualidade ao qual os nossos clientes já estão habituados.
-                                    </p>
-                                    <p>Estamos entusiasmados por recebê-lo na nossa loja online! Junte-se a nós enquanto
-                                        continuamos a simplificar o seu caminho para um futuro mais sustentável e
-                                        eficiente.
-                                    </p>
-                                </div>
+            <!-- BREADCRUMB START -->
+            <div class="breadcrumb-section">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-10 offset-lg-1">
+                            <div class="breadcrumb-list">
+                                <a href="index.html">Homepage</a>
+                                <a class="current-page" href="javascript:void(0)">EVPlug Cabo de Carregamento</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- TEXT BLOCK END -->
+            <!-- BREADCRUMB END -->
 
-
-
-        <!-- ELECTRIC MOBILITY SECTION START  -->
-        <section class="product-with-bgImg loja-product-with-bgImg section-padding">
-            <div class="container-fluid desktop-version">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-title-with-bg"
-                            style="background-image: url('../assets/images/dynamic/p-bg.webp');">
-                            <div class="section-title white text-center">
-                                <h2>Os nossos produtos</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper desktop-version">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="single-product-card">
-                            <a href="#" class="image">
-                                <img src="../assets/images/dynamic/product/p-01.webp" alt="product">
-                            </a>
-                            <div class="content">
-                                <!-- <span class="price">€289,00</span> -->
-                                <h3 class="title">
-                                    <a href="#">Todos os Produtos</a>
-                                </h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="single-product-card">
-                            <a href="#" class="image">
-                                <img src="../assets/images/dynamic/product/p-02.webp" alt="product">
-
-                            </a>
-                            <div class="content">
-                                <!-- <span class="price">€289,00</span> -->
-                                <h3 class="title">
-                                    <a href="#">Acessórios para wallbox</a>
-                                </h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="single-product-card">
-                            <a href="#" class="image">
-                                <img src="../assets/images/dynamic/product/p-03.webp" alt="product">
-
-                            </a>
-                            <div class="content">
-                                <!-- <span class="price">€289,00</span> -->
-                                <h3 class="title">
-                                    <a href="#">Wallboxes</a>
-                                </h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="single-product-card">
-                            <a href="#" class="image">
-                                <img src="../assets/images/dynamic/product/p-04.webp" alt="product">
-
-                            </a>
-                            <div class="content">
-                                <!-- <span class="price">€289,00</span> -->
-                                <h3 class="title">
-                                    <a href="#">Cabos de carregamento</a>
-                                </h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="single-product-card">
-                            <a href="#" class="image">
-                                <img src="../assets/images/dynamic/product/p-05.webp" alt="product">
-
-                            </a>
-                            <div class="content">
-                                <!-- <span class="price">€289,00</span> -->
-                                <h3 class="title">
-                                    <a href="#">Carregadores portáteis</a>
-                                </h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="single-product-card">
-                            <a href="#" class="image">
-                                <img src="../assets/images/dynamic/product/p-01.webp" alt="product">
-                            </a>
-                            <div class="content">
-                                <!-- <span class="price">€289,00</span> -->
-                                <h3 class="title">
-                                    <a href="#">LAPP Mobility Dock</a>
-                                </h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="single-product-card">
-                            <a href="#" class="image">
-                                <img src="../assets/images/dynamic/product/p-02.webp" alt="product">
-
-                            </a>
-                            <div class="content">
-                                <!-- <span class="price">€289,00</span> -->
-                                <h3 class="title">
-                                    <a href="#">LAPP Mobility Dock</a>
-                                </h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slider-btns">
-                    <div class="swiper-button-prev">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" viewBox="0 0 14 12" fill="none">
-                            <path
-                                d="M12.6567 5.5C12.9329 5.5 13.1567 5.72386 13.1567 6C13.1567 6.27614 12.9329 6.5 12.6567 6.5L12.6567 5.5ZM0.989478 6.35355C0.794216 6.15829 0.794216 5.84171 0.989478 5.64645L4.17146 2.46447C4.36672 2.2692 4.6833 2.2692 4.87857 2.46447C5.07383 2.65973 5.07383 2.97631 4.87857 3.17157L2.05014 6L4.87857 8.82843C5.07383 9.02369 5.07383 9.34027 4.87857 9.53553C4.6833 9.7308 4.36672 9.7308 4.17146 9.53553L0.989478 6.35355ZM12.6567 6.5L1.34303 6.5L1.34303 5.5L12.6567 5.5L12.6567 6.5Z"
-                                fill="url(#paint0_linear_306_754)" />
-                            <defs>
-                                <linearGradient id="paint0_linear_306_754" x1="12.6567" y1="6.5" x2="1.34303" y2="6.5"
-                                    gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#158ECE" />
-                                    <stop offset="1" stop-color="#19E3E3" />
-                                </linearGradient>
-                            </defs>
-                        </svg>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                    <div class="swiper-button-next">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" viewBox="0 0 14 12" fill="none">
-                            <path
-                                d="M1.34326 5.5C1.06712 5.5 0.843262 5.72386 0.843262 6C0.843262 6.27614 1.06712 6.5 1.34326 6.5L1.34326 5.5ZM13.0105 6.35355C13.2058 6.15829 13.2058 5.84171 13.0105 5.64645L9.82854 2.46447C9.63328 2.2692 9.3167 2.2692 9.12143 2.46447C8.92617 2.65973 8.92617 2.97631 9.12143 3.17157L11.9499 6L9.12143 8.82843C8.92617 9.02369 8.92617 9.34027 9.12143 9.53553C9.3167 9.7308 9.63328 9.7308 9.82854 9.53553L13.0105 6.35355ZM1.34326 6.5L12.657 6.5L12.657 5.5L1.34326 5.5L1.34326 6.5Z"
-                                fill="url(#paint0_linear_626_299)" />
-                            <defs>
-                                <linearGradient id="paint0_linear_626_299" x1="1.34326" y1="6.5" x2="12.657" y2="6.5"
-                                    gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#158ECE" />
-                                    <stop offset="1" stop-color="#19E3E3" />
-                                </linearGradient>
-                            </defs>
-                        </svg>
-                    </div>
-                </div>
-            </div>
-
-            <div class="mobile-version">
+            <!-- PRODUCT INFO AREA START -->
+            <article class="product-info-area">
                 <div class="container-fluid">
                     <div class="row justify-content-center">
                         <div class="col-lg-10">
-                            <div class="bg-color">
-                                <div class="section-title text-center">
-                                    <h2>Os nossos produtos</h2>
+                            <div class="product-images">
+                                <div class="options">
+                                    <button class="share-button">
+                                        <img src="../assets/images/add-to-card.svg" width="12" height="12"
+                                            alt="share icon">
+                                    </button>
+                                    <button class="share-button">
+                                        <img src="../assets/images/fav-icon.svg" width="11" height="10"
+                                            alt="share icon">
+                                    </button>
+                                    <button class="share-button">
+                                        <img src="../assets/images/share.svg" width="10" height="10" alt="share icon">
+                                    </button>
                                 </div>
-                                <div class="row product-row">
-                                    <div class="col-lg-4 col-md-4">
-                                        <div class="single-product-card">
-                                            <a href="#" class="image">
-                                                <img src="../assets/images/dynamic/product/p-01.webp" alt="product">
-                                            </a>
-                                            <div class="content">
-                                                <!-- <span class="price">€289,00</span> -->
-                                                <h3 class="title">
-                                                    <a href="#">Todos os Produtos</a>
-                                                </h3>
-                                            </div>
+                                <div class="swiper images">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="../assets/images/dynamic/product/p-06.webp" alt="p">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="../assets/images/dynamic/product/c-01.png" alt="p">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="../assets/images/dynamic/product/c-02.png" alt="p">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="../assets/images/dynamic/product/c-03.png" alt="p">
                                         </div>
                                     </div>
-                                    <div class="col-lg-4 col-md-4">
-                                        <div class="single-product-card">
-                                            <a href="#" class="image">
-                                                <img src="../assets/images/dynamic/product/p-02.webp" alt="product">
-
-                                            </a>
-                                            <div class="content">
-                                                <!-- <span class="price">€289,00</span> -->
-                                                <h3 class="title">
-                                                    <a href="#">Acessórios para wallbox</a>
-                                                </h3>
-                                            </div>
+                                </div>
+                                <div class="swiper thumbnails">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="../assets/images/dynamic/product/p-06.webp" alt="p">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="../assets/images/dynamic/product/c-01.png" alt="p">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="../assets/images/dynamic/product/c-02.png" alt="p">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="../assets/images/dynamic/product/c-03.png" alt="p">
                                         </div>
                                     </div>
-                                    <div class="col-lg-4 col-md-4">
-                                        <div class="single-product-card">
-                                            <a href="#" class="image">
-                                                <img src="../assets/images/dynamic/product/p-03.webp" alt="product">
-
-                                            </a>
-                                            <div class="content">
-                                                <!-- <span class="price">€289,00</span> -->
-                                                <h3 class="title">
-                                                    <a href="#">Wallboxes</a>
+                                </div>
+                            </div>
+                            <div class="content-info">
+                                <h2>EVPlug Cabo
+                                    de carregamento
+                                </h2>
+                                <div class="code-status">
+                                    <span class="ref-code">
+                                        REF.:123415
+                                    </span>
+                                    <span class="status">
+                                        Disponível
+                                    </span>
+                                </div>
+                                <div class="price">
+                                    <span class="amount">€184,00 <del>€220,00</del></span>
+                                </div>
+                                <div class="count-item">
+                                    <div class="quantity">
+                                        <button type="button" class="minus">-</button>
+                                        <input type="number" class="input-text" name="quantity" value="1"
+                                            aria-label="Product quantity" size="4" min="1" max="19" step="1"
+                                            placeholder="" inputmode="numeric" autocomplete="off">
+                                        <button type="button" class="plus">+</button>
+                                    </div>
+                                    <a href="#" class="button blue">
+                                        <span class="btn-text"> Adicionar ao carrinho</span>
+                                        <span class="icon">
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="info-text">
+                                    <p>Expanda as suas opções de carregamento: prepare-se para a liberdade de carregar o
+                                        seu veículo sempre que precisar e onde quiser. O nosso cabo de carregamento para
+                                        veículos elétricos oferece a flexibilidade de carregar em casa ou em postos de
+                                        carregamento públicos, adaptando-se facilmente à posição da porta de
+                                        carregamento de qualquer modelo de carro.</p>
+                                </div>
+                                <div class="product-info-collapse accordion" id="accordionPanelsStayOpenExample">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="panelsStayOpen-headingOne">
+                                                    <button class="accordion-button" type="button"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#panelsStayOpen-collapseOne"
+                                                        aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                                        <span> Descrição</span>
+                                                    </button>
                                                 </h3>
+                                                <div id="panelsStayOpen-collapseOne"
+                                                    class="accordion-collapse collapse show"
+                                                    aria-labelledby="panelsStayOpen-headingOne">
+                                                    <div class="accordion-body">
+                                                        <p>Descubra a Wallbox Pulsar Max, a solução definitiva para
+                                                            carregamento inteligente de veículos elétricos e híbridos
+                                                            recarregáveis. Com um design compacto e robusto, o Pulsar
+                                                            Max é a escolha ideal para uso residencial, garantindo
+                                                            eficiência e facilidade de uso.
+                                                        </p>
+                                                        <div class="list">
+                                                            <h4>Principais características</h4>
+                                                            <ul class="list-item">
+                                                                <li>
+                                                                    <div class="logo">
+                                                                        <img src="../assets/images/char-icon-2.svg"
+                                                                            width="11" height="16" alt="Icon">
+                                                                    </div>
+                                                                    Compacto e potente
+                                                                </li>
+                                                                <li>
+                                                                    <div class="logo">
+                                                                        <img src="../assets/images/char-icon-2.svg"
+                                                                            width="11" height="16" alt="Icon">
+                                                                    </div>
+                                                                    Conectividade avançada
+                                                                </li>
+                                                                <li>
+                                                                    <div class="logo">
+                                                                        <img src="../assets/images/char-icon-2.svg"
+                                                                            width="11" height="16" alt="Icon">
+                                                                    </div>
+                                                                    Instalação simplificada
+                                                                </li>
+                                                                <li>
+                                                                    <div class="logo">
+                                                                        <img src="../assets/images/char-icon-2.svg"
+                                                                            width="11" height="16" alt="Icon">
+                                                                    </div>
+                                                                    Características de segurança superiores
+                                                                </li>
+                                                                <li>
+                                                                    <div class="logo">
+                                                                        <img src="../assets/images/char-icon-2.svg"
+                                                                            width="11" height="16" alt="Icon">
+                                                                    </div>
+                                                                    Controle por voz e design premium
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <p>Ideal para o dia a dia, a Wallbox Pulsar Max é mais do
+                                                            que um simples carregador. É um avanço na tecnologia de
+                                                            carregamento em casa, proporcionando conveniência,
+                                                            segurança e eficiência. Com a Pulsar Max, estar sempre
+                                                            pronto para a estrada é fácil e inteligente.
+                                                        </p>
+                                                        <div class="image">
+                                                            <img src="../assets/images/dynamic/product/pimg.webp"
+                                                                alt="img">
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-4">
-                                        <div class="single-product-card">
-                                            <a href="#" class="image">
-                                                <img src="../assets/images/dynamic/product/p-04.webp" alt="product">
-
-                                            </a>
-                                            <div class="content">
-                                                <!-- <span class="price">€289,00</span> -->
-                                                <h3 class="title">
-                                                    <a href="#">Cabos de carregamento</a>
+                                        <div class="col-lg-4">
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                                    <button class="accordion-button" type="button"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#panelsStayOpen-collapseTwo"
+                                                        aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">
+                                                        <span> Ficha técnica</span>
+                                                    </button>
                                                 </h3>
+                                                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                                                    aria-labelledby="panelsStayOpen-headingTwo">
+                                                    <div class="accordion-body">
+                                                        <ul class="technical-sheet">
+                                                            <li class="single-row">
+                                                                <div class="name">
+                                                                    <h5>Tomada/Cabo carregamento</h5>
+                                                                </div>
+                                                                <div class="example">
+                                                                    <p>Type 2</p>
+                                                                </div>
+                                                            </li>
+                                                            <li class="single-row">
+                                                                <div class="name">
+                                                                    <h5>Tensão de alimentação</h5>
+                                                                </div>
+                                                                <div class="example">
+                                                                    <p>220V ou 400V 50/60Hz (Depende do modelo
+                                                                        escolhido)
+                                                                    </p>
+                                                                </div>
+                                                            </li>
+                                                            <li class="single-row">
+                                                                <div class="name">
+                                                                    <h5>Potência máxima</h5>
+                                                                </div>
+                                                                <div class="example">
+                                                                    <p>232A/22kW ou 32A/7.4kW (dependendo da versão
+                                                                        comprada)
+                                                                    </p>
+                                                                </div>
+                                                            </li>
+                                                            <li class="single-row">
+                                                                <div class="name">
+                                                                    <h5>Deteção de corrente residual</h5>
+                                                                </div>
+                                                                <div class="example">
+                                                                    <p>DC 6mA
+                                                                    </p>
+                                                                </div>
+                                                            </li>
+                                                            <li class="single-row">
+                                                                <div class="name">
+                                                                    <h5>Conectividade</h5>
+                                                                </div>
+                                                                <div class="example">
+                                                                    <p>Wi-Fi/Bluetooth
+                                                                    </p>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-4">
-                                        <div class="single-product-card">
-                                            <a href="#" class="image">
-                                                <img src="../assets/images/dynamic/product/p-05.webp" alt="product">
-
-                                            </a>
-                                            <div class="content">
-                                                <!-- <span class="price">€289,00</span> -->
-                                                <h3 class="title">
-                                                    <a href="#">Carregadores portáteis</a>
+                                        <div class="col-lg-4">
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="panelsStayOpen-headingThree">
+                                                    <button class="accordion-button" type="button"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#panelsStayOpen-collapseThree"
+                                                        aria-expanded="true"
+                                                        aria-controls="panelsStayOpen-collapseThree">
+                                                        <span> Informações adicionais</span>
+                                                    </button>
                                                 </h3>
+                                                <div id="panelsStayOpen-collapseThree"
+                                                    class="accordion-collapse collapse"
+                                                    aria-labelledby="panelsStayOpen-headingThree">
+                                                    <div class="accordion-body">
+                                                        <p>Ideal para o dia a dia, a Wallbox Pulsar Max é mais do
+                                                            que um simples carregador. É um avanço na tecnologia de
+                                                            carregamento em casa, proporcionando conveniência,
+                                                            segurança e eficiência. Com a Pulsar Max, estar sempre
+                                                            pronto para a estrada é fácil e inteligente.
+                                                        </p>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- ELECTRIC MOBILITY SECTION END -->
+            </article>
+            <!-- PRODUCT INFO AREA END -->
 
-        <!-- STORE SUGGESTION BLOCK START -->
-        <section class="store-suggestion-block news-block section-padding">
+
+        </div>
+
+
+
+        <!-- RELATED BLOG SECTION START  -->
+        <section class="related-blog-section section-padding">
             <div class="container-fluid">
                 <div class="row justify-content-center">
                     <div class="col-lg-10">
                         <div class="section-title text-center">
-                            <h2>As nossas sugestões
-                            </h2>
+                            <h2>Produtos relacionados</h2>
                         </div>
-                        <div class="row desktop-version">
+                        <div class="row related-blog-row">
                             <div class="col-lg-4 col-md-4">
                                 <div class="single-product-card">
                                     <a href="#" class="image">
@@ -679,56 +628,22 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-12">
-                                <div class="view-more-button text-center">
-                                    <a href="#" class="button blue">
-                                        <span class="btn-text">Carregar mais</span>
-                                        <span class="icon">
-
-                                        </span>
-                                    </a>
-                                </div>
+                        </div>
+                        <div class="row">
+                            <div class="load-more">
+                                <button type="button" class="button blue">
+                                    <span class="btn-text">Carregar mais</span>
+                                    <span class="icon"> </span>
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- STORE SUGGESTION BLOCK END -->
+        <!-- RELATED BLOG SECTION END  -->
 
-        <!-- DISCOUNT BANNER BLOCK START  -->
-        <section class="discount-banner-block section-padding">
-            <div class="container-fluid">
-                <div class="row justify-content-center">
-                    <div class="col-lg-10">
-                        <div class="wrapper">
-                            <div class="row align-items-center">
-                                <div class="col-lg-8">
-                                    <div class="media">
-                                        <img src="../assets/images/dynamic/banner-1.webp" alt="imge">
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="content">
-                                        <h2>10% Online</h2>
-                                        <h3>Desconto Exclusivo</h3>
-                                        <p>Aproveite esta oferta especial</p>
-                                        <div class="block-btn">
-                                            <a href="#" class="button white blue_white">
-                                                <span class="btn-text">Ver produtos</span>
-                                                <span class="icon">
-                                                </span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- DISCOUNT BANNER BLOCK START  -->
+
 
         <!-- FOOTER AREA START  -->
         <footer class="footer-area">
@@ -852,11 +767,13 @@
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="../assets/scripts/scrollreveal.js"></script>
     <script src="../assets/scripts/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
     <!-- <script src="../assets/scripts/jquery-plugin-collection.js"></script> -->
     <script src="../assets/scripts/swiper-bundle.min.js"></script>
     <script src="../assets/scripts/app.js"></script>
     <script src="../assets/scripts/block.js"></script>
+
 
 </body>
 

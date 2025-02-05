@@ -63,6 +63,17 @@
             }
         }
     }
+
+    section.related-blog-section,
+    .lising-area {
+
+        .col-lg-4 {
+            padding-right: 15px !important;
+            padding-left: 15px !important;
+        }
+
+    }
+
 }
 
 @media (max-width: 1140px) {
@@ -580,6 +591,15 @@
                 }
             }
         }
+    }
+
+    .lising-area {
+
+        .col-lg-4 {
+            padding-right: 10px !important;
+            padding-left: 10px !important;
+        }
+
     }
 }
 

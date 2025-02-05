@@ -340,4 +340,45 @@ setTimeout(function () {
     });
   }
   /* BACKGROUND IMAGE BLOCK END */
+
+  /* PRODUCT IMAGE SLIDER START  */
+  const galleries = document.querySelectorAll(".product-info-area");
+
+  if (galleries.length > 0) {
+    let i = 1;
+
+    galleries.forEach((gallery) => {
+      const imagesSlider = gallery.querySelector(".swiper.images");
+      const thumbnailsSlider = gallery.querySelector(".swiper.thumbnails");
+
+      if (imagesSlider && thumbnailsSlider) {
+        imagesSlider.classList.add("imagesSlider_" + i);
+        thumbnailsSlider.classList.add("thumbnailsSlider_" + i);
+
+        const thumbnailsSwiper = new Swiper(".thumbnailsSlider_" + i, {
+          spaceBetween: 0,
+          freeMode: true,
+          watchSlidesProgress: true,
+          breakpoints: {
+            320: { slidesPerView: 3 },
+            768: { slidesPerView: 4 },
+            1024: { slidesPerView: 5 },
+            1441: { slidesPerView: 5 },
+          },
+        });
+
+        const imagesSwiper = new Swiper(".imagesSlider_" + i, {
+          spaceBetween: 0,
+          thumbs: { swiper: thumbnailsSwiper },
+          pagination: {
+            el: ".imagesSlider_" + i + " .swiper-pagination",
+            clickable: true,
+          },
+        });
+      }
+
+      i++;
+    });
+  }
+  /* PRODUCT IMAGE SLIDER END  */
 }, 500);

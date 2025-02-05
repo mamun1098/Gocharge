@@ -815,6 +815,11 @@ section.digital-experience-section {
         row-gap: 55px;
     }
 
+    .col-lg-4 {
+        padding-right: 25px !important;
+        padding-left: 25px !important;
+    }
+
     .col-lg-4.col-md-6 {
         height: auto;
 
@@ -1039,12 +1044,22 @@ section.related-blog-section {
         }
     }
 
+    .col-lg-4 {
+        padding-right: 25px !important;
+        padding-left: 25px !important;
+    }
+
     .bg-shape-img {
         position: absolute;
         left: 50%;
         top: 0;
         transform: translateX(-50%);
         z-index: -1;
+    }
+
+    .load-more {
+        text-align: center;
+        margin-top: 60px;
     }
 }
 

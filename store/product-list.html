@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <link rel="stylesheet" href="./assets/styles/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/styles/swiper-bundle.min.css">
-    <link rel="stylesheet" href="./assets/styles/app.css">
-    <title>Cartão</title>
+    <link rel="stylesheet" href="../assets/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/styles/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../assets/styles/app.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <title>Produtos</title>
 </head>
 
 <body class="home page-template-default">
@@ -18,7 +19,7 @@
             <div class="container-fluid">
                 <div class="wrapper-header">
                     <a href="/" class="logo">
-                        <img src="./assets/images/white-logo.webp" width="215" height="30" alt="Logo">
+                        <img src="../assets/images/white-logo.webp" width="215" height="30" alt="Logo">
                     </a>
                     <div class="header-menu-wrap">
                         <nav class="nav-primary" id="nav-primary" aria-label="Principal">
@@ -234,28 +235,25 @@
             <div class="hero-wrapper">
                 <div class="swiper">
                     <div class="swiper-wrapper">
-
                         <div class="swiper-slide">
                             <div class="wrapper-content">
                                 <div class="background">
                                     <div class="gradient-overlay"></div>
                                     <div class="bg-content"
-                                        style="background-image: url('assets/images/dynamic/normal-hero-bg.webp');">
+                                        style="background-image: url('../assets/images/dynamic/product/proudct-hero.webp');">
                                     </div>
                                 </div>
                                 <div class="hero-content">
                                     <div class="container-fluid">
                                         <div class="row">
                                             <div class="col-lg-10 offset-lg-1">
-                                                <h1>
-                                                    A energia que impulsiona o amanhã
+                                                <h1>Explore aqui a nossa loja online
                                                 </h1>
-                                                <p class="text">
-                                                    Na Go.Charge, transformamos desafios em oportunidades e
-                                                    impulsionamos
-                                                    a mobilidade elétrica com confiança e inovação.
-                                                </p>
-
+                                                <!-- <p class="text">
+                                                    Seja para esclarecer dúvidas, pedir aconselhamento ou dar o primeiro
+                                                    passo na transição para o carregamento elétrico, a Go.Charge está
+                                                    aqui para o apoiar em cada momento.
+                                                </p> -->
                                             </div>
                                         </div>
                                     </div>
@@ -296,7 +294,7 @@
                     <div class="col-lg-10 offset-lg-1">
                         <div class="breadcrumb-list">
                             <a href="index.html">Homepage</a>
-                            <a class="current-page" href="app.html">Cartão</a>
+                            <a class="current-page" href="javascript:void(0)">Produtos</a>
                         </div>
                     </div>
                 </div>
@@ -304,356 +302,348 @@
         </div>
         <!-- BREADCRUMB END -->
 
-        <!-- CARD COLLAPSE SECTION START -->
-        <section class="card-collapse-area">
+
+
+        <!-- LISTING  AREA START  -->
+        <section class="lising-area">
             <div class="container-fluid">
                 <div class="row justify-content-center">
                     <div class="col-lg-10">
-                        <div class="accordion row">
-                            <div class="col-lg-6">
-                                <div class="accordion-item">
-                                    <h3 class="accordion-header" id="panelsStayOpen-headingOne-card">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseCardOne"
-                                            aria-expanded="true" aria-controls="panelsStayOpen-collapseCardOne">
-                                            <span>
-                                                Go.charge
-                                            </span>
-                                            <div class="card-image">
-                                                <img src="assets/images/gocharge-card.png" width="350" height="205"
-                                                    alt="Go.charge">
-                                            </div>
-                                        </button>
-                                    </h3>
-                                    <div id="panelsStayOpen-collapseCardOne" class="accordion-collapse collapse"
-                                        aria-labelledby="panelsStayOpen-headingOne-card">
-                                        <div class="accordion-body">
-                                            <p class="title">Carregue, conecte, simplifique – tudo num só cartão. </p>
-                                            <ul class="info-option">
-                                                <li>
-                                                    <img src="assets/images/char-icon-2.svg" width="11" height="16"
-                                                        alt="icon">
-                                                    <p><strong>Totalmente gratuito,</strong> porque a mobilidade
-                                                        elétrica
-                                                        deve ser acessível
-                                                        a todos.</p>
-                                                </li>
-                                                <li>
-                                                    <img src="assets/images/char-icon-2.svg" width="11" height="16"
-                                                        alt="icon">
-                                                    <p>Com <strong>tecnologia RFID,</strong> desbloqueia carregadores
-                                                        com um toque.</p>
-                                                </li>
-                                                <li>
-                                                    <img src="assets/images/char-icon-2.svg" width="11" height="16"
-                                                        alt="icon">
-                                                    <p>
-                                                        <strong> Uso versátil,</strong> disponível em formato físico e
-                                                        digital.
-                                                    </p>
-                                                </li>
-                                                <li>
-                                                    <img src="assets/images/char-icon-2.svg" width="11" height="16"
-                                                        alt="icon">
-                                                    <p>
-                                                        <strong>Conexão sem barreiras,</strong> com acesso a milhares de
-                                                        postos de
-                                                        carregamento.
-                                                    </p>
-                                                </li>
-                                                <li>
-                                                    <img src="assets/images/char-icon-2.svg" width="11" height="16"
-                                                        alt="icon">
-                                                    <p>
-                                                        Uma solução <strong>prática e simples</strong> para a mobilidade
-                                                        elétrica.
-                                                    </p>
-                                                </li>
-                                            </ul>
-                                            <div class="view-btn">
-                                                <a href="#" class="button blue" title="Pedir cartão">
-                                                    <span class="btn-text">Pedir cartão</span>
-                                                    <span class="icon">
-
-                                                    </span>
-                                                </a>
-                                            </div>
+                        <div class="filtering-options">
+                            <div class="category-filter-form">
+                                <select class="select2-activate" data-minimum-results-for-search="Infinity">
+                                    <option value="" disabled selected>Filtar e ordenar</option>
+                                    <option value="one">One</option>
+                                    <option value="two">Two</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row row-gaps">
+                            <div class="col-lg-4 col-md-4">
+                                <div class="single-product-card">
+                                    <a href="#" class="image">
+                                        <img src="../assets/images/dynamic/product/p-06.webp" alt="product">
+                                        <div class="discount">
+                                            <img src="../assets/images/charge-white.svg" width="6" height="8"
+                                                alt="icon">
+                                            10% Desconto
                                         </div>
+                                        <div class="options">
+                                            <button class="share-button">
+                                                <img src="../assets/images/add-to-card.svg" width="12" height="12"
+                                                    alt="share icon">
+                                            </button>
+                                            <button class="share-button">
+                                                <img src="../assets/images/fav-icon.svg" width="11" height="10"
+                                                    alt="share icon">
+                                            </button>
+                                            <button class="share-button">
+                                                <img src="../assets/images/share.svg" width="10" height="10"
+                                                    alt="share icon">
+                                            </button>
+                                        </div>
+                                    </a>
+                                    <div class="content">
+                                        <span class="price">€289,00 <del>€220,00</del></span>
+                                        <h3 class="title">
+                                            <a href="#">
+                                                EVPlug Cabo
+                                                de carregamento
+                                            </a>
+                                        </h3>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
-                                <div class="accordion-item">
-                                    <h3 class="accordion-header" id="panelsStayOpen-headingTwoCard">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwoCard"
-                                            aria-expanded="false" aria-controls="panelsStayOpen-collapseTwoCard">
-                                            <span>
-                                                Caetano Go
-                                            </span>
-                                            <div class="card-image">
-                                                <img src="assets/images/caetano-go.png" width="350" height="205"
-                                                    alt="Go.charge">
-                                            </div>
-                                        </button>
-                                    </h3>
-                                    <div id="panelsStayOpen-collapseTwoCard" class="accordion-collapse collapse"
-                                        aria-labelledby="panelsStayOpen-headingTwoCard">
-                                        <div class="accordion-body">
-
-                                            <p class="title">O cartão que recompensa cada quilómetro. </p>
-                                            <ul class="info-option">
-                                                <li>
-                                                    <img src="assets/images/char-icon-2.svg" width="11" height="16"
-                                                        alt="icon">
-                                                    <p><strong> Ganhe enquanto carrega: </strong>
-                                                        acumule 1,5% de chashback* para serviços
-                                                        Caetano Go.
-                                                    </p>
-                                                </li>
-                                                <li>
-                                                    <img src="assets/images/char-icon-2.svg" width="11" height="16"
-                                                        alt="icon">
-                                                    <p>Os <strong>tecnologia RFID,</strong> acumulados
-                                                        no seu cartão e são válidos por dois anos.</p>
-                                                </li>
-                                                <li>
-                                                    <img src="assets/images/char-icon-2.svg" width="11" height="16"
-                                                        alt="icon">
-                                                    <p>
-                                                        <strong> Uso versátil,</strong> disponível em formato físico e
-                                                        digital.
-                                                    </p>
-                                                </li>
-                                                <li>
-                                                    <img src="assets/images/char-icon-2.svg" width="11" height="16"
-                                                        alt="icon">
-                                                    <p>
-                                                        <strong>Diferentes modalidades
-                                                            de pagamento </strong> para se adaptar às suas necessidades.
-                                                    </p>
-                                                </li>
-                                                <li>
-                                                    <img src="assets/images/char-icon-2.svg" width="11" height="16"
-                                                        alt="icon">
-                                                    <p>
-                                                        <strong>Gestão
-                                                            simplificada</strong> com controlo total pela app Go.Charge.
-                                                    </p>
-                                                </li>
-                                                <li>
-                                                    <img src="assets/images/char-icon-2.svg" width="11" height="16"
-                                                        alt="icon">
-                                                    <p>
-                                                        <strong>Multifuncional e prático,</strong> podendo ser
-                                                        usado em formato físico ou digital.
-                                                    </p>
-                                                </li>
-                                                <li>
-                                                    <img src="assets/images/char-icon-2.svg" width="11" height="16"
-                                                        alt="icon">
-                                                    <p>
-                                                        Flexibilidade extra:
-                                                        um que <strong>Mastercard</strong> transforma a sua mobilidade e
-                                                        o seu dia a dia.
-                                                    </p>
-
-                                                </li>
-                                                <p>(*Limite anual de 160€)</p>
-                                            </ul>
-                                            <div class="view-btn">
-                                                <a href="#" class="button blue" title="Saiba mais">
-                                                    <span class="btn-text">Saiba mais</span>
-                                                    <span class="icon">
-                                                    </span>
-                                                </a>
-                                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="single-product-card">
+                                    <a href="#" class="image">
+                                        <img src="../assets/images/dynamic/product-1.png" alt="product">
+                                        <div class="discount">
+                                            <img src="../assets/images/charge-white.svg" width="6" height="8"
+                                                alt="icon">
+                                            10% Desconto
                                         </div>
+                                        <div class="options">
+                                            <button class="share-button">
+                                                <img src="../assets/images/add-to-card.svg" width="12" height="12"
+                                                    alt="share icon">
+                                            </button>
+                                            <button class="share-button">
+                                                <img src="../assets/images/fav-icon.svg" width="11" height="10"
+                                                    alt="share icon">
+                                            </button>
+                                            <button class="share-button">
+                                                <img src="../assets/images/share.svg" width="10" height="10"
+                                                    alt="share icon">
+                                            </button>
+                                        </div>
+                                    </a>
+                                    <div class="content">
+                                        <span class="price">€289,00</span>
+                                        <h3 class="title">
+                                            <a href="#">
+                                                LAPP Mobility Dock
+                                            </a>
+                                        </h3>
                                     </div>
-                                    <div class="b-bottom"></div>
                                 </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="single-product-card">
+                                    <a href="#" class="image">
+                                        <img src="../assets/images/dynamic/product/p-07.webp" alt="product">
+                                        <div class="discount">
+                                            <img src="../assets/images/charge-white.svg" width="6" height="8"
+                                                alt="icon">
+                                            10% Desconto
+                                        </div>
+                                        <div class="options">
+                                            <button class="share-button">
+                                                <img src="../assets/images/add-to-card.svg" width="12" height="12"
+                                                    alt="share icon">
+                                            </button>
+                                            <button class="share-button">
+                                                <img src="../assets/images/fav-icon.svg" width="11" height="10"
+                                                    alt="share icon">
+                                            </button>
+                                            <button class="share-button">
+                                                <img src="../assets/images/share.svg" width="10" height="10"
+                                                    alt="share icon">
+                                            </button>
+                                        </div>
+                                    </a>
+                                    <div class="content">
+                                        <span class="price">€289,00</span>
+                                        <h3 class="title">
+                                            <a href="#">
+                                                Baseus Suporte de Telemóvel
+                                            </a>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="single-product-card">
+                                    <a href="#" class="image">
+                                        <img src="../assets/images/dynamic/product/p-06.webp" alt="product">
+                                        <div class="discount">
+                                            <img src="../assets/images/charge-white.svg" width="6" height="8"
+                                                alt="icon">
+                                            10% Desconto
+                                        </div>
+                                        <div class="options">
+                                            <button class="share-button">
+                                                <img src="../assets/images/add-to-card.svg" width="12" height="12"
+                                                    alt="share icon">
+                                            </button>
+                                            <button class="share-button">
+                                                <img src="../assets/images/fav-icon.svg" width="11" height="10"
+                                                    alt="share icon">
+                                            </button>
+                                            <button class="share-button">
+                                                <img src="../assets/images/share.svg" width="10" height="10"
+                                                    alt="share icon">
+                                            </button>
+                                        </div>
+                                    </a>
+                                    <div class="content">
+                                        <span class="price">€289,00 <del>€220,00</del></span>
+                                        <h3 class="title">
+                                            <a href="#">
+                                                EVPlug Cabo
+                                                de carregamento
+                                            </a>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="single-product-card">
+                                    <a href="#" class="image">
+                                        <img src="../assets/images/dynamic/product-1.png" alt="product">
+                                        <div class="discount">
+                                            <img src="../assets/images/charge-white.svg" width="6" height="8"
+                                                alt="icon">
+                                            10% Desconto
+                                        </div>
+                                        <div class="options">
+                                            <button class="share-button">
+                                                <img src="../assets/images/add-to-card.svg" width="12" height="12"
+                                                    alt="share icon">
+                                            </button>
+                                            <button class="share-button">
+                                                <img src="../assets/images/fav-icon.svg" width="11" height="10"
+                                                    alt="share icon">
+                                            </button>
+                                            <button class="share-button">
+                                                <img src="../assets/images/share.svg" width="10" height="10"
+                                                    alt="share icon">
+                                            </button>
+                                        </div>
+                                    </a>
+                                    <div class="content">
+                                        <span class="price">€289,00</span>
+                                        <h3 class="title">
+                                            <a href="#">
+                                                LAPP Mobility Dock
+                                            </a>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="single-product-card">
+                                    <a href="#" class="image">
+                                        <img src="../assets/images/dynamic/product/p-07.webp" alt="product">
+                                        <div class="discount">
+                                            <img src="../assets/images/charge-white.svg" width="6" height="8"
+                                                alt="icon">
+                                            10% Desconto
+                                        </div>
+                                        <div class="options">
+                                            <button class="share-button">
+                                                <img src="../assets/images/add-to-card.svg" width="12" height="12"
+                                                    alt="share icon">
+                                            </button>
+                                            <button class="share-button">
+                                                <img src="../assets/images/fav-icon.svg" width="11" height="10"
+                                                    alt="share icon">
+                                            </button>
+                                            <button class="share-button">
+                                                <img src="../assets/images/share.svg" width="10" height="10"
+                                                    alt="share icon">
+                                            </button>
+                                        </div>
+                                    </a>
+                                    <div class="content">
+                                        <span class="price">€289,00</span>
+                                        <h3 class="title">
+                                            <a href="#">
+                                                Baseus Suporte de Telemóvel
+                                            </a>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="single-product-card">
+                                    <a href="#" class="image">
+                                        <img src="../assets/images/dynamic/product/p-06.webp" alt="product">
+                                        <div class="discount">
+                                            <img src="../assets/images/charge-white.svg" width="6" height="8"
+                                                alt="icon">
+                                            10% Desconto
+                                        </div>
+                                        <div class="options">
+                                            <button class="share-button">
+                                                <img src="../assets/images/add-to-card.svg" width="12" height="12"
+                                                    alt="share icon">
+                                            </button>
+                                            <button class="share-button">
+                                                <img src="../assets/images/fav-icon.svg" width="11" height="10"
+                                                    alt="share icon">
+                                            </button>
+                                            <button class="share-button">
+                                                <img src="../assets/images/share.svg" width="10" height="10"
+                                                    alt="share icon">
+                                            </button>
+                                        </div>
+                                    </a>
+                                    <div class="content">
+                                        <span class="price">€289,00 <del>€220,00</del></span>
+                                        <h3 class="title">
+                                            <a href="#">
+                                                EVPlug Cabo
+                                                de carregamento
+                                            </a>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="single-product-card">
+                                    <a href="#" class="image">
+                                        <img src="../assets/images/dynamic/product-1.png" alt="product">
+                                        <div class="discount">
+                                            <img src="../assets/images/charge-white.svg" width="6" height="8"
+                                                alt="icon">
+                                            10% Desconto
+                                        </div>
+                                        <div class="options">
+                                            <button class="share-button">
+                                                <img src="../assets/images/add-to-card.svg" width="12" height="12"
+                                                    alt="share icon">
+                                            </button>
+                                            <button class="share-button">
+                                                <img src="../assets/images/fav-icon.svg" width="11" height="10"
+                                                    alt="share icon">
+                                            </button>
+                                            <button class="share-button">
+                                                <img src="../assets/images/share.svg" width="10" height="10"
+                                                    alt="share icon">
+                                            </button>
+                                        </div>
+                                    </a>
+                                    <div class="content">
+                                        <span class="price">€289,00</span>
+                                        <h3 class="title">
+                                            <a href="#">
+                                                LAPP Mobility Dock
+                                            </a>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="single-product-card">
+                                    <a href="#" class="image">
+                                        <img src="../assets/images/dynamic/product/p-07.webp" alt="product">
+                                        <div class="discount">
+                                            <img src="../assets/images/charge-white.svg" width="6" height="8"
+                                                alt="icon">
+                                            10% Desconto
+                                        </div>
+                                        <div class="options">
+                                            <button class="share-button">
+                                                <img src="../assets/images/add-to-card.svg" width="12" height="12"
+                                                    alt="share icon">
+                                            </button>
+                                            <button class="share-button">
+                                                <img src="../assets/images/fav-icon.svg" width="11" height="10"
+                                                    alt="share icon">
+                                            </button>
+                                            <button class="share-button">
+                                                <img src="../assets/images/share.svg" width="10" height="10"
+                                                    alt="share icon">
+                                            </button>
+                                        </div>
+                                    </a>
+                                    <div class="content">
+                                        <span class="price">€289,00</span>
+                                        <h3 class="title">
+                                            <a href="#">
+                                                Baseus Suporte de Telemóvel
+                                            </a>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="load-more">
+                                <button type="button" class="button blue">
+                                    <span class="btn-text">Ver mais</span>
+                                    <span class="icon">
+
+                                    </span>
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- CARD COLLAPSE SECTION END -->
-
-
-        <!-- FAQ BLOCK START -->
-        <section class="faq-block-area section-padding">
-            <div class="container-fluid">
-                <div class="row justify-content-center">
-                    <div class="col-lg-10">
-                        <div class="row align-items-center">
-                            <div class="col-lg-5">
-                                <div class="title-part">
-                                    <div class="section-title">
-                                        <h2>Tem dúvidas sobre os nossos cartões?</h2>
-                                        <p>Encontre aqui as respostas para as perguntas mais comuns e saiba como
-                                            aproveitar ao máximo os benefícios do carregamento e da mobilidade elétrica.
-                                        </p>
-                                    </div>
-                                    <div class="bg-shape-img">
-                                        <img src="assets/images/logo-shape-bg.webp" width="285" height="400" alt="Logo">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 offset-lg-1">
-                                <div class="faq-collapse-area">
-                                    <div class="accordion" id="accordionPanelsStayOpenExample">
-                                        <div class="accordion-item">
-                                            <div class="b-top"></div>
-                                            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
-                                                    aria-controls="panelsStayOpen-collapseOne">
-                                                    <div class="logo">
-                                                        <img src="assets/images/char-icon-2.svg" width="11" height="16"
-                                                            alt="Icon">
-                                                    </div>
-                                                    <span>
-                                                        Porque devo solicitar um cartão físico?
-                                                    </span>
-                                                </button>
-                                            </h2>
-                                            <div id="panelsStayOpen-collapseOne"
-                                                class="accordion-collapse collapse show"
-                                                aria-labelledby="panelsStayOpen-headingOne">
-                                                <div class="accordion-body">
-                                                    <p>O cartão físico Go.Charge permite-lhe aceder a postos de
-                                                        carregamento sem depender do seu telemóvel. É mais simples,
-                                                        rápido e intuitivo. Embora a app seja uma opção, em alguns
-                                                        postos da rede pública MOBI.E, a utilização do cartão físico
-                                                        pode ser mais fiável, garantindo que o carregamento comece sem
-                                                        problemas.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div class="b-bottom"></div>
-                                        </div>
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                                                <button class="accordion-button collapsed" type="button"
-                                                    data-bs-toggle="collapse"
-                                                    data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
-                                                    aria-controls="panelsStayOpen-collapseTwo">
-                                                    <div class="logo">
-                                                        <img src="assets/images/char-icon-2.svg" width="11" height="16"
-                                                            alt="Icon">
-                                                    </div>
-                                                    <span>
-                                                        A quem se destina o cartão Go.Charge ou Caetano Go?
-                                                    </span>
-                                                </button>
-                                            </h2>
-                                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
-                                                aria-labelledby="panelsStayOpen-headingTwo">
-                                                <div class="accordion-body">
-                                                    <p>Acompanhe o desempenho dos seus veículos e postos de carregamento
-                                                        com estatísticas detalhadas, como tempo total de carregamento,
-                                                        número de sessões, custo/receita, energia carregada
-                                                        e redução de CO2. Obtenha também médias para otimizar a sua
-                                                        experiência. </p>
-                                                </div>
-                                            </div>
-                                            <div class="b-bottom"></div>
-                                        </div>
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                                                <button class="accordion-button collapsed" type="button"
-                                                    data-bs-toggle="collapse"
-                                                    data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
-                                                    aria-controls="panelsStayOpen-collapseThree">
-                                                    <div class="logo">
-                                                        <img src="assets/images/char-icon-2.svg" width="11" height="16"
-                                                            alt="Icon">
-                                                    </div>
-                                                    <span>
-                                                        Qual a vantagem de ter um cartão virtual ou físico com a
-                                                        Go.Charge?
-                                                    </span>
-                                                </button>
-                                            </h2>
-                                            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
-                                                aria-labelledby="panelsStayOpen-headingThree">
-                                                <div class="accordion-body">
-                                                    <p>Acompanhe o desempenho dos seus veículos e postos de carregamento
-                                                        com estatísticas detalhadas, como tempo total de carregamento,
-                                                        número de sessões, custo/receita, energia carregada
-                                                        e redução de CO2. Obtenha também médias para otimizar a sua
-                                                        experiência.</p>
-                                                </div>
-                                            </div>
-                                            <div class="b-bottom"></div>
-                                        </div>
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="panelsStayOpen-headingFour">
-                                                <button class="accordion-button collapsed" type="button"
-                                                    data-bs-toggle="collapse"
-                                                    data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
-                                                    aria-controls="panelsStayOpen-collapseFour">
-                                                    <div class="logo">
-                                                        <img src="assets/images/char-icon-2.svg" width="11" height="16"
-                                                            alt="Icon">
-                                                    </div>
-                                                    <span>
-                                                        Como posso associar o cartão à app?
-                                                    </span>
-                                                </button>
-                                            </h2>
-                                            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
-                                                aria-labelledby="panelsStayOpen-headingFour">
-                                                <div class="accordion-body">
-                                                    <p>Acompanhe o desempenho dos seus veículos e postos de carregamento
-                                                        com estatísticas detalhadas, como tempo total de carregamento,
-                                                        número de sessões, custo/receita, energia carregada
-                                                        e redução de CO2. Obtenha também médias para otimizar a sua
-                                                        experiência.</p>
-                                                </div>
-                                            </div>
-                                            <div class="b-bottom"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- FAQ BLOCK END -->
-
-
-        <!-- CAREER FORM START -->
-        <section class="career-form-block section-padding">
-            <div class="container-fluid">
-                <div class="row justify-content-center">
-                    <div class="col-lg-10">
-                        <div class="form-wrapper career-form">
-                            <div class="row align-items-center">
-                                <div class="col-lg-4 offset-lg-1">
-                                    <div class="title">
-                                        <h2>Está pronto para carregar o futuro?
-                                        </h2>
-                                        <p>Preencha os dados abaixo e receba o seu cartão gratuitamente. Junte-se a uma
-                                            comunidade que está a moldar um mundo mais sustentável, onde cada
-                                            carregamento faz a diferença.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <h1>Form will be here</h1>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- CAREER FORM END -->
+        <!-- LISTING  AREA END  -->
 
 
 
@@ -665,14 +655,14 @@
                         <div class="col-lg-3">
                             <div class="logo-side">
                                 <a href="#" class="logo" title="logo">
-                                    <img src="./assets/images/white-logo.webp" width="215" height="30" alt="Logo">
+                                    <img src="../assets/images/white-logo.webp" width="215" height="30" alt="Logo">
                                 </a>
                                 <ul class="social-share">
                                     <li><a href="#" title="X">
-                                            <img src="./assets/images/Instagram.svg" width="13" height="12" alt="X">
+                                            <img src="../assets/images/Instagram.svg" width="13" height="12" alt="X">
                                         </a></li>
                                     <li><a href="#" title="Linkedin">
-                                            <img src="./assets/images/Linkedin.svg" width="12" height="12"
+                                            <img src="../assets/images/Linkedin.svg" width="12" height="12"
                                                 alt="Linkedin">
                                         </a></li>
                                 </ul>
@@ -739,10 +729,10 @@
                                 <div class="download-link">
                                     <span class="title">Download</span>
                                     <a href="#" target="_blank">
-                                        <img src="assets/images/android-app.svg" alt="android-app">
+                                        <img src="../assets/images/android-app.svg" alt="android-app">
                                     </a>
                                     <a href="#" target="_blank">
-                                        <img src="assets/images/iphone-app.svg" alt="iPhone-app">
+                                        <img src="../assets/images/iphone-app.svg" alt="iPhone-app">
                                     </a>
                                 </div>
                             </div>
@@ -777,50 +767,16 @@
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="./assets/scripts/scrollreveal.js"></script>
-    <script src="./assets/scripts/bootstrap.bundle.min.js"></script>
+    <script src="../assets/scripts/scrollreveal.js"></script>
+    <script src="../assets/scripts/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
-    <!-- <script src="./assets/scripts/jquery-plugin-collection.js"></script> -->
-    <script src="./assets/scripts/swiper-bundle.min.js"></script>
-    <script src="./assets/scripts/app.js"></script>
-    <script src="./assets/scripts/block.js"></script>
-
-
-
+    <!-- <script src="../assets/scripts/jquery-plugin-collection.js"></script> -->
+    <script src="../assets/scripts/swiper-bundle.min.js"></script>
+    <script src="../assets/scripts/app.js"></script>
+    <script src="../assets/scripts/block.js"></script>
 
 
-
-
-    <!-- blog card html structure  -->
-    <!-- <div class="single-blog-card">
-        <a href="#" class="image">
-            <img src="assets/images/dynamic/01.png" alt="title will be here">
-            <button class="share-button">
-                <img src="assets/images/share.svg" width="10" height="10" alt="share icon">
-            </button>
-        </a>
-        <ul class="card-tags">
-            <li>
-                <a href="#">
-                    <img src="assets/images/charge-icon.svg" width="6" height="8"
-                        alt="icon">
-                    Lorem
-                    ispum
-                </a>
-            </li>
-        </ul>
-        <div class="content">
-            <a href="#" class="title">Lorem ipsum dolor sit amet, lorem ipsum</a>
-            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis
-                egestas turpis.
-            </p>
-            <a href="#" class="view-details-button">
-                <img src="assets/images/arrow-rotate.svg" width="11" height="11"
-                    alt="arrow">
-            </a>
-        </div>
-    </div> -->
-    <!-- blog card html structure  -->
 </body>
 
 </html>
