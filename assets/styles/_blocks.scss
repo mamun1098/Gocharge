@@ -101,12 +101,21 @@ section.blog-card-block {
         height: auto;
     }
 
+    .col-lg-4 {
+        padding-right: calc(var(--bs-gutter-x)* 0.4);
+        padding-left: calc(var(--bs-gutter-x)* 0.4);
+    }
+
     .single-blog-card {
         height: 100%;
 
         .title {
-            font-weight: 400;
             margin-top: 14px;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            font-family: var(--heading-font);
         }
 
         .text,
@@ -878,7 +887,8 @@ section.logo-slider-block {
 /* CAREER BLOCK START */
 section.career-block {
     .section-title {
-        margin-bottom: 60px;
+        max-width: 820px;
+        margin: 0 auto 60px;
     }
 
     .items-wrapper {

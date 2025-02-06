@@ -51,10 +51,12 @@ $(document).on("click", ".menu-item-has-children a", function (event) {
 /* HEADER SUBMENU SHOW END */
 
 /* Select2 Initialization Start  */
+
 $(".select2-activate").select2({
   minimumResultsForSearch: Infinity,
 });
 /* Select2 Initialization  */
+
 setTimeout(function () {
   /* HERO SLIDER START */
   const swipers = document.querySelectorAll(".banner-area .swiper");

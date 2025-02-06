@@ -548,6 +548,19 @@ section.pricing-area {
 
             ul {
                 margin-bottom: 15px;
+
+                li {
+                    &::before {
+                        background: var(--New_Gradient);
+                    }
+
+                    color: unset;
+                    opacity: 0.8;
+                    background: var(--New_Gradient);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
             }
 
             small {
@@ -1202,7 +1215,7 @@ section.gocharge-contact-section {
                 }
 
                 &.address-item {
-                    max-width: 300px;
+                    max-width: 290px;
 
                     .address {
                         color: var(--Brandcolor_Black);
