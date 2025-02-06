@@ -142,9 +142,11 @@ section.store-suggestion-block {
 
             .swiper-slide {
                 width: 100%;
+                height: auto;
 
                 img {
                     max-height: 455px;
+                    height: 100%;
                     width: 100%;
                     border-radius: 14px;
                     object-fit: cover;
@@ -154,17 +156,16 @@ section.store-suggestion-block {
 
         .swiper.thumbnails {
             flex-basis: 86px;
+            max-height: 450px;
 
             .swiper-wrapper {
-                flex-direction: column;
-                row-gap: 20px;
+                // flex-direction: column;
+                // row-gap: 20px;
             }
 
             .swiper-slide {
                 cursor: pointer;
-                width: 100% !important;
-                max-width: 85px;
-                height: 85px;
+
                 position: relative;
                 text-align: center;
                 align-items: center;
@@ -194,6 +195,10 @@ section.store-suggestion-block {
                         z-index: -1;
                     }
                 }
+            }
+
+            .swiper-slider-btns {
+                display: none;
             }
         }
     }
@@ -279,6 +284,11 @@ section.store-suggestion-block {
             align-items: center;
             column-gap: 30px;
             padding: 25px 0 45px;
+
+
+            &.mobile-version {
+                display: none;
+            }
         }
 
         .info-text {
@@ -395,6 +405,7 @@ section.store-suggestion-block {
 
                     .image {
                         margin-top: 20px;
+                        text-align: center;
 
                         img {
                             max-width: 100%;

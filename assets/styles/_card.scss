@@ -269,6 +269,11 @@
                 font-weight: 400;
                 line-height: normal;
                 display: inline-block;
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    color: var(--Newcolor_Neon);
+                }
             }
         }
     }

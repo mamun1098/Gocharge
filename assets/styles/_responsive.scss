@@ -595,6 +595,30 @@
         }
 
     }
+
+    .product-details-page {
+        padding-top: 110px;
+    }
+
+    .product-info-area {
+        .product-images {
+            padding: 0px 0 40px;
+        }
+
+        .content-info {
+            .product-info-collapse {
+                padding-top: 40px;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .product-info-area .product-images .swiper.thumbnails .swiper-slide {
+        width: 100% !important;
+        max-width: 85px;
+        height: 85px !important;
+    }
 }
 
 @media (max-width: 768px) {
@@ -603,6 +627,14 @@
     button.button {
         .btn-text {
             min-width: 105px !important;
+        }
+    }
+
+    .single-product-card {
+        .image {
+            img {
+                height: 350px;
+            }
         }
     }
 
@@ -1079,9 +1111,65 @@
             }
         }
     }
+
+    .product-info-area {
+        .product-images {
+            display: block;
+
+            .options {
+                top: 14px;
+                right: 14px;
+            }
+
+            .swiper.thumbnails {
+                margin-top: 15px;
+                padding-right: 8px;
+                padding-bottom: 5px;
+
+                .swiper-wrapper {
+                    flex-direction: row;
+                    padding: 4px 0;
+                    margin-left: 2px;
+
+                    .swiper-slide {
+                        max-width: unset;
+                        height: auto;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+
+                        &.swiper-slide-thumb-active {
+                            &::before {
+                                width: calc(100% + 2px);
+                                height: calc(100% + 2px);
+                                top: -1px;
+                                left: -1px;
+                            }
+                        }
+                    }
+
+                }
+
+                .swiper-slider-btns {
+                    display: flex;
+                    margin-top: 22px;
+                }
+            }
+        }
+    }
+
 }
 
 @media (max-width: 576px) {
+    .single-product-card {
+        .image {
+            img {
+                height: 230px;
+            }
+        }
+    }
 
     .section-title {
         margin-bottom: 30px;
@@ -2124,4 +2212,67 @@
         }
     }
 
+    .product-info-area {
+        .content-info {
+            h2 {
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 30px;
+                margin-bottom: 20px;
+            }
+
+            .code-status {
+                flex-direction: column;
+                row-gap: 8px;
+                align-items: flex-start;
+                margin: 10px 0;
+            }
+
+            .price {
+                padding: 10px 0;
+            }
+
+            .count-item {
+                padding: 10px 0 10px;
+                flex-direction: column;
+                align-items: center;
+                row-gap: 20px;
+                justify-content: center;
+                width: 100%;
+
+                &.desktop-version {
+                    display: none;
+                }
+
+                &.mobile-version {
+                    display: flex;
+                }
+            }
+
+            .product-info-collapse {
+                .accordion-item {
+                    .accordion-button {
+                        span {
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                        }
+                    }
+
+                    .accordion-body {
+                        .list {
+                            h4 {
+                                font-size: 20px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

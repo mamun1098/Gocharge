@@ -359,11 +359,38 @@ setTimeout(function () {
           spaceBetween: 0,
           freeMode: true,
           watchSlidesProgress: true,
+          direction: "vertical",
           breakpoints: {
-            320: { slidesPerView: 3 },
-            768: { slidesPerView: 4 },
-            1024: { slidesPerView: 5 },
-            1441: { slidesPerView: 5 },
+            320: {
+              slidesPerView: 4,
+              spaceBetween: 15,
+              pagination: {
+                el: `.swiper-pagination`,
+                clickable: true,
+              },
+              direction: "horizontal",
+            },
+            768: {
+              slidesPerView: "auto",
+              spaceBetween: 20,
+              mousewheelControl: true,
+              freeMode: true,
+              freeModeSticky: true,
+            },
+            1024: {
+              slidesPerView: "auto",
+              spaceBetween: 20,
+              mousewheelControl: true,
+              freeMode: true,
+              freeModeSticky: true,
+            },
+            1441: {
+              slidesPerView: "auto",
+              spaceBetween: 20,
+              mousewheelControl: true,
+              freeMode: true,
+              freeModeSticky: true,
+            },
           },
         });
 
