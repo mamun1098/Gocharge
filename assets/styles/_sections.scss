@@ -233,6 +233,44 @@ section.innovation-sustainablity-section {
 
 /* CHARGE ANYTIME SECTION START */
 section.charge-anytime {
+    .image {
+        position: relative;
+        max-width: 225px;
+
+        >img {
+            box-shadow: 0px 15px 45px 0px rgba(0, 0, 0, 0.10);
+            border-radius: 30px;
+        }
+
+        .open-btn {
+            position: absolute;
+            cursor: pointer;
+
+            img {
+                width: 40px;
+                height: 40px;
+                border-radius: 100px;
+                box-shadow: -3px 3px 20px 0px rgba(25, 227, 227, 0.60);
+            }
+
+            &.one {
+                top: -20px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            &.two {
+                bottom: 170px;
+                left: -12px;
+            }
+
+            &.three {
+                bottom: -10px;
+                right: 44px;
+            }
+        }
+    }
+
     .charge-content-wrapp {
         display: flex;
         flex-direction: column;
