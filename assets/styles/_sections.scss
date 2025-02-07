@@ -245,18 +245,25 @@ section.charge-anytime {
         .open-btn {
             position: absolute;
             cursor: pointer;
+            box-shadow: -3px 3px 20px 0px rgba(25, 227, 227, 0.60);
+            transition: all 0.3s ease-in-out;
+            transform: scale(1);
+            background: var(--New_Gradient);
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
             img {
-                width: 40px;
-                height: 40px;
-                border-radius: 100px;
-                box-shadow: -3px 3px 20px 0px rgba(25, 227, 227, 0.60);
+                width: 9px;
+                height: 12px;
             }
 
             &.one {
                 top: -20px;
-                left: 50%;
-                transform: translateX(-50%);
+                left: 93px;
             }
 
             &.two {
@@ -267,6 +274,10 @@ section.charge-anytime {
             &.three {
                 bottom: -10px;
                 right: 44px;
+            }
+
+            &.active {
+                transform: scale(1.1);
             }
         }
     }

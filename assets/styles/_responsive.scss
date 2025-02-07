@@ -504,6 +504,15 @@
     section.charge-anytime {
         .image {
             text-align: center;
+            margin: 0 auto 30px;
+        }
+
+        .charge-content-wrapp {
+            .single-item {
+                &.white-bg {
+                    display: none;
+                }
+            }
         }
     }
 
@@ -1783,6 +1792,31 @@
     section.charge-anytime {
         .section-title {
             text-align: center;
+        }
+
+        .image {
+            max-width: 120px;
+
+            img {
+                max-width: 120px;
+                max-height: 240px;
+                border-radius: 10px;
+            }
+
+            .open-btn {
+                width: 30px;
+                height: 30px;
+
+
+                &.one {
+                    top: -17px;
+                    left: 44px;
+                }
+
+                &.two {
+                    bottom: 105px;
+                }
+            }
         }
     }
 

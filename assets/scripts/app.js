@@ -32,6 +32,28 @@ document.addEventListener("DOMContentLoaded", function () {
       headerArea.classList.add("show-search-box");
     }
   });
+
+  /* CHANGE BACKGROUND COLOR ON CLICK CHARGE ICON START */
+  const gradientButtons = document.querySelectorAll(
+    ".charge-anytime .open-btn"
+  );
+  const chareItems = document.querySelectorAll(".charge-anytime .single-item");
+
+  if (!gradientButtons.length || !chareItems.length) return;
+
+  gradientButtons.forEach((button, index) => {
+    button.addEventListener("click", function () {
+      chareItems.forEach((item) =>
+        item.classList.replace("blue-bg", "white-bg")
+      );
+
+      chareItems[index].classList.replace("white-bg", "blue-bg");
+
+      gradientButtons.forEach((btn) => btn.classList.remove("active"));
+      button.classList.add("active");
+    });
+  });
+  /* CHANGE BACKGROUND COLOR ON CLICK CHARGE ICON END */
 });
 function openNav(x) {
   x.classList.toggle("cross");
