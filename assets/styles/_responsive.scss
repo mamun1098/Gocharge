@@ -2254,6 +2254,7 @@
         }
     }
 
+
     .product-info-area {
         .content-info {
             h2 {
@@ -2318,42 +2319,17 @@
         }
     }
 
-    .single-carrinho-product {
-        column-gap: 10px;
-        border-radius: 14px;
-        border: 0.5px solid rgba(17, 17, 17, 0.10);
-        box-shadow: none;
-        margin-bottom: 10px;
-
-        .image {
-            max-width: 70px;
-            border-radius: 8px;
-        }
-
-        .content {
-            .name {
-                font-size: 14px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: normal;
-                max-width: 190px;
-            }
-
-            .price {
-                margin-top: 10px;
-
-                .amount {
-                    font-size: 14px;
-                    font-style: normal;
-                    font-weight: 600;
-                    line-height: normal;
-                }
-            }
-        }
-    }
-
-    .cart-product-wrapper {
+    .carinho-section {
         padding-bottom: 20px;
+        padding-top: 20px;
+
+        .container-fluid {
+            padding: 0 15px !important;
+        }
+
+        .cart-product-wrapper {
+            padding-bottom: 0px;
+        }
 
         .cupon-box {
             padding: 0 0 15px;
@@ -2386,5 +2362,63 @@
                 }
             }
         }
+
+        .back-to-shopping {
+            margin-top: 40px;
+        }
     }
+
+    .single-carrinho-product {
+        column-gap: 10px;
+        border-radius: 14px;
+        border: 0.5px solid rgba(17, 17, 17, 0.10);
+        box-shadow: none;
+        margin-bottom: 10px;
+        padding: 6px;
+
+        .image {
+            max-width: 70px;
+
+            img {
+                border-radius: 8px;
+                min-height: 70px;
+                min-width: 70px;
+            }
+        }
+
+        .content {
+            .name {
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                max-width: 190px;
+            }
+
+            .price {
+                margin-top: 5px;
+
+                .amount {
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                }
+            }
+        }
+
+        .count-item {
+            margin-top: 0;
+
+            &.desktop-version {
+                display: none;
+            }
+        }
+
+        .remove-product-fromlist-btn {
+            top: -25px;
+            right: 0;
+        }
+    }
+
 }
