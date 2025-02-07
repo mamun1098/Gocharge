@@ -241,7 +241,8 @@
                                 <a href="index.html">Homepage</a>
                                 <a href="carrinho.html">Carrinho de compras
                                 </a>
-                                <a class="current-page" href="javascript:void(0)">Finalizar compras</a>
+                                <a href="checkout.html">Finalizar compras</a>
+                                <a href="javascript:void(0)">Pagamento</a>
                             </div>
                         </div>
                     </div>
@@ -254,101 +255,128 @@
                 <div class="container-fluid">
                     <div class="row justify-content-center">
                         <div class="col-lg-10">
-                            <div class="section-title">
-                                <h2>Finalizar compras</h2>
-                                <p>Confirme os seus dados de faturação, escolha a opção de pagamento que melhor se
-                                    adequa a si e opte pelo ponto de recolha mais confortável para si.
-                                </p>
-                            </div>
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <form action="#" class="billing-form">
-                                        <h3 class="title">
-                                            Detalhes da facturação
-                                        </h3>
-                                        <input type="text" placeholder="Nome">
-                                        <input type="text" placeholder="Morada">
-                                        <input type="text" placeholder="Localidade">
-                                        <input type="text" placeholder="Código-postal">
-                                        <input type="tel" placeholder="Telefone">
-                                        <input type="email" placeholder="Email">
-                                    </form>
-                                    <div class="checkout-payment-details">
-                                        <div class="titel-part">
-                                            <h4>Detalhes de pagamento</h4>
-                                            <p>O pagamento poderá ser efetuado através da plataforma:</p>
-                                            <img src="../assets/images/dynamic/caet.png" width="243" height="73"
-                                                alt="caetanopay">
+                                    <div class="payment-for-product">
+                                        <img src="../assets/images/dynamic/caet.png" width="243" height="73"
+                                            alt="caetanopay">
+                                        <p>Tudo pronto! Faça o pagamento do documento:</p>
+                                        <h2 class="product-name">EVPlug Cabo
+                                            de carregamento</h2>
+                                        <span class="price-tag">€184,00</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 offset-lg-1">
+                                    <div class="product-payment-option">
+                                        <div class="client-data">
+                                            <h3>Por favor, verifique
+                                                os seus dados</h3>
+                                            <p>Estes são os dados correspondentes
+                                                ao seu pagamento</p>
+                                            <ul class="clietn-information">
+                                                <li>Transação Id:</li>
+                                                <li>Telefone:</li>
+                                                <li>Cliente:</li>
+                                                <li>Email:</li>
+                                            </ul>
+                                        </div>
+                                        <form class="bank-card-option">
+                                            <label class="radio-option">
+                                                <div class="left">
+                                                    <div class="radio">
+                                                        <input type="radio" name="payment" value="caetano">
+                                                    </div>
+                                                    <span>
+                                                        Cartão de Crédito Caetano Go <br> (diferentes modalidades de
+                                                        pagamento) </span>
+                                                </div>
+                                                <img src="../assets/images/dynamic/caeten.png" width="60" height="28"
+                                                    alt="Caetano Go">
+                                            </label>
+
+                                            <label class="radio-option">
+
+                                                <div class="left">
+                                                    <div class="radio">
+                                                        <input type="radio" name="payment" value="mbway">
+                                                    </div>
+                                                    <span>
+                                                        MB Way
+                                                        </sp>
+                                                </div>
+                                                <img src="../assets/images/dynamic/mb-way.png" width="52" height="24"
+                                                    alt="MB Way">
+                                            </label>
+
+                                            <label class="radio-option">
+
+                                                <div class="left">
+                                                    <div class="radio">
+                                                        <input type="radio" name="payment" value="visa">
+                                                    </div>
+                                                    <span>Cartão de Crédito/Débito
+                                                    </span>
+                                                </div>
+                                                <img src="../assets/images/dynamic/visa.png" width="63" height="22"
+                                                    alt="Visa">
+                                            </label>
+
+                                            <div class="pamyent-confirm-btn">
+                                                <button type="submit" class="button blue">
+                                                    <span class="btn-text">Selecione</span>
+                                                    <span class="icon"></span>
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="product-info-billing-details-box product-checkout-payment-details-box">
+                                <div class="title-part">
+                                    <h4>Resumo</h4>
+                                    <p>Confirme os seus dados de faturação, escolha a opção de pagamento que
+                                        melhor se adequa a si e opte pelo ponto de recolha mais confortável para
+                                        si.
+                                    </p>
+                                </div>
+                                <div class="product-info-wrap">
+                                    <div class="single-product-info-wrap">
+                                        <div class="image">
+                                            <img src="../assets/images/dynamic/product/p-06.webp" alt="img">
+                                            <span class="item-count">1</span>
                                         </div>
                                         <div class="content">
-                                            <p>Com a possibilidade de escolher entre MB Way e VISA.</p>
-                                            <div class="bank-card-wrap">
-                                                <img src="../assets/images/dynamic/caeten.png" width="99" height="45"
-                                                    alt="caeten">
-                                                <img src="../assets/images/dynamic/mb-way.png" width="65" height="30"
-                                                    alt="MBway">
-                                                <img src="../assets/images/dynamic/visa.png" width="85" height="30"
-                                                    alt="MBway">
-                                            </div>
-                                            <p>Os seus dados pessoais serão utilizados para processar a sua encomenda,
-                                                apoiar a sua experiência em todo este website e para outros fins
-                                                descritos na nossa política de privacidade.
-                                            </p>
-                                            <div class="payment-btn">
-                                                <a href="#" class="button  blue">
-                                                    <span class="btn-text">Ir para o pagamento</span>
-                                                    <span class="icon"></span>
-                                                </a>
+                                            <h2 class="name">EVPlug Cabo de
+                                                carregamento
+                                            </h2>
+                                            <div class="price">
+                                                <span class="amount">€184,00</span>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="product-info-billing-details-box">
-                                        <div class="title-part">
-                                            <h4>Resumo</h4>
-                                            <p>Confirme os seus dados de faturação, escolha a opção de pagamento que
-                                                melhor se adequa a si e opte pelo ponto de recolha mais confortável para
-                                                si.
-                                            </p>
+                                    <div class="totla-amount">
+                                        <div class="total">
+                                            <p>Subtotal</p>
+                                            <h4 class="total-price">€184,00</h4>
                                         </div>
-                                        <div class="product-info-wrap">
-                                            <div class="single-product-info-wrap">
-                                                <div class="image">
-                                                    <img src="../assets/images/dynamic/product/p-06.webp" alt="img">
-                                                    <span class="item-count">1</span>
-                                                </div>
-                                                <div class="content">
-                                                    <h2 class="name">EVPlug Cabo de
-                                                        carregamento
-                                                    </h2>
-                                                    <div class="price">
-                                                        <span class="amount">€184,00</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="totla-amount">
-                                                <div class="total">
-                                                    <p>Subtotal</p>
-                                                    <h4 class="total-price">€184,00</h4>
-                                                </div>
-                                                <div class="total">
-                                                    <p>Custo de envio:</p>
-                                                    <h4 class="total-price">€0,00</h4>
-                                                </div>
-                                                <div class="sub-total">
-                                                    <p>Total</p>
-                                                    <h4 class="sub-total-price">€184,00</h4>
-                                                </div>
-                                            </div>
+                                        <div class="total">
+                                            <p>Custo de envio:</p>
+                                            <h4 class="total-price">€0,00</h4>
+                                        </div>
+                                        <div class="sub-total">
+                                            <p>Total</p>
+                                            <h4 class="sub-total-price">€184,00</h4>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
             </article>
+
             <!-- CHECKOUT SECTION END -->
 
         </div>

@@ -6,6 +6,7 @@
         display: flex;
         align-items: center;
         column-gap: 15px;
+        flex-wrap: wrap;
 
         a,
         span {
@@ -34,6 +35,8 @@
             }
 
             &:last-child {
+                opacity: 1;
+
                 &::before {
                     display: none;
                 }
