@@ -132,6 +132,10 @@ section.blog-card-block {
     .mobile-version {
         display: none;
     }
+
+    .swiper-slide {
+        height: auto;
+    }
 }
 
 /* BLOG CARD BLOCK END */
@@ -237,6 +241,7 @@ section.charge-withapp-block {
             line-height: 20px;
             letter-spacing: -0.26px;
             margin-bottom: 20px;
+            opacity: 0.8;
         }
 
         .app-button {
@@ -764,6 +769,11 @@ section.evolution-collapse-block {
     &:first-of-type {
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
+    }
+
+    &:last-of-type {
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
     }
 
     .accordion-button {

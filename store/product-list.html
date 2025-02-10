@@ -381,75 +381,6 @@
                                 </div>
                             </div>
                         </div>
-                        <script>
-
-
-                            document.addEventListener("DOMContentLoaded", function () {
-                                const filterToggle = document.querySelector(".filter-toggle");
-                                const filterMenu = document.querySelector(".filter-menu");
-                                const filterItems = document.querySelectorAll(".filter-item");
-                                const appliedFilters = document.querySelector(".applied-filters");
-                                const clearFilters = document.querySelector(".clear-filters");
-
-                                filterToggle.addEventListener("click", () => {
-                                    filterMenu.classList.toggle("filter-menu-show");
-                                    filterToggle.classList.toggle("active");
-                                });
-
-                                // Close the filter menu if clicked outside
-                                document.addEventListener("click", (event) => {
-                                    if (!filterToggle.contains(event.target) && !filterMenu.contains(event.target)) {
-                                        filterMenu.classList.remove("filter-menu-show");
-                                        filterToggle.classList.remove("active");
-                                    }
-                                });
-
-                                filterItems.forEach(item => {
-                                    item.addEventListener("click", (event) => {
-                                        const subMenu = item.querySelector(".sub-menu");
-                                        if (subMenu) {
-                                            subMenu.classList.toggle("sub-menu-show");
-                                            item.classList.toggle('active');
-                                        }
-                                        event.stopPropagation();
-                                    });
-                                });
-
-                                document.querySelectorAll(".sub-menu-item").forEach(subItem => {
-                                    subItem.addEventListener("click", (event) => {
-                                        const filterType = subItem.getAttribute("data-filter");
-
-                                        if (!document.querySelector(`.applied-${filterType}`)) {
-                                            const filterTag = document.createElement("div");
-                                            filterTag.classList.add("applied-filter", `applied-${filterType}`);
-                                            filterTag.innerHTML = `<span class='remove'>&times;</span> ${subItem.textContent}`;
-                                            appliedFilters.appendChild(filterTag);
-
-                                            // Add active class to the clicked sub-menu-item
-                                            subItem.classList.add("active");
-
-                                            filterTag.querySelector(".remove").addEventListener("click", () => {
-                                                appliedFilters.removeChild(filterTag);
-
-                                                // Remove the active class when the filter is removed
-                                                subItem.classList.remove("active");
-                                            });
-                                        }
-                                        event.stopPropagation();
-                                    });
-                                });
-
-                                clearFilters.addEventListener("click", () => {
-                                    appliedFilters.innerHTML = "";
-                                    // Remove the active class from all sub-menu items
-                                    document.querySelectorAll(".sub-menu-item").forEach(subItem => {
-                                        subItem.classList.remove("active");
-                                    });
-                                });
-                            });
-
-
-                        </script>
 
                         <div class="row row-gaps">
                             <div class="col-lg-4 col-md-4">
@@ -908,6 +839,76 @@
     <script src="../assets/scripts/swiper-bundle.min.js"></script>
     <script src="../assets/scripts/app.js"></script>
     <script src="../assets/scripts/block.js"></script>
+
+    <script>
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const filterToggle = document.querySelector(".filter-toggle");
+            const filterMenu = document.querySelector(".filter-menu");
+            const filterItems = document.querySelectorAll(".filter-item");
+            const appliedFilters = document.querySelector(".applied-filters");
+            const clearFilters = document.querySelector(".clear-filters");
+
+            filterToggle.addEventListener("click", () => {
+                filterMenu.classList.toggle("filter-menu-show");
+                filterToggle.classList.toggle("active");
+            });
+
+            // Close the filter menu if clicked outside
+            document.addEventListener("click", (event) => {
+                if (!filterToggle.contains(event.target) && !filterMenu.contains(event.target)) {
+                    filterMenu.classList.remove("filter-menu-show");
+                    filterToggle.classList.remove("active");
+                }
+            });
+
+            filterItems.forEach(item => {
+                item.addEventListener("click", (event) => {
+                    const subMenu = item.querySelector(".sub-menu");
+                    if (subMenu) {
+                        subMenu.classList.toggle("sub-menu-show");
+                        item.classList.toggle('active');
+                    }
+                    event.stopPropagation();
+                });
+            });
+
+            document.querySelectorAll(".sub-menu-item").forEach(subItem => {
+                subItem.addEventListener("click", (event) => {
+                    const filterType = subItem.getAttribute("data-filter");
+
+                    if (!document.querySelector(`.applied-${filterType}`)) {
+                        const filterTag = document.createElement("div");
+                        filterTag.classList.add("applied-filter", `applied-${filterType}`);
+                        filterTag.innerHTML = `<span class='remove'>&times;</span> ${subItem.textContent}`;
+                        appliedFilters.appendChild(filterTag);
+
+                        // Add active class to the clicked sub-menu-item
+                        subItem.classList.add("active");
+
+                        filterTag.querySelector(".remove").addEventListener("click", () => {
+                            appliedFilters.removeChild(filterTag);
+
+                            // Remove the active class when the filter is removed
+                            subItem.classList.remove("active");
+                        });
+                    }
+                    event.stopPropagation();
+                });
+            });
+
+            clearFilters.addEventListener("click", () => {
+                appliedFilters.innerHTML = "";
+                // Remove the active class from all sub-menu items
+                document.querySelectorAll(".sub-menu-item").forEach(subItem => {
+                    subItem.classList.remove("active");
+                });
+            });
+        });
+
+
+    </script>
 
 
 </body>

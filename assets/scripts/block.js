@@ -26,7 +26,7 @@ setTimeout(function () {
 
         breakpoints: {
           0: {
-            slidesPerView: 1.2,
+            slidesPerView: 1.1,
             centeredSlides: false,
             loop: false,
           },
@@ -205,7 +205,7 @@ setTimeout(function () {
 
         breakpoints: {
           0: {
-            slidesPerView: 1.2,
+            slidesPerView: 1.1,
             centeredSlides: true,
             loop: true,
           },
@@ -236,7 +236,7 @@ setTimeout(function () {
 
         breakpoints: {
           0: {
-            slidesPerView: 1.2,
+            slidesPerView: 1.1,
             centeredSlides: false,
             loop: false,
           },

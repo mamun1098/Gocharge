@@ -320,7 +320,10 @@
             <div class="container-fluid">
                 <div class="row justify-content-center">
                     <div class="col-lg-10">
-                        <div class="filtering-options">
+
+                        <!-- This structure for select2 (with the styles) start  -->
+
+                        <!-- <div class="filtering-options">
                             <div class="category-filter-form">
                                 <select class="select2-activate" data-minimum-results-for-search="Infinity">
                                     <option value="" disabled selected>Filtar e ordenar</option>
@@ -328,7 +331,73 @@
                                     <option value="two">Two</option>
                                 </select>
                             </div>
+                        </div> -->
+                        <!-- This structure for select2 (with the styles) end -->
+
+
+                        <div class="filter-container">
+                            <div class="filter-toggle"><span>Filtrar e ordenar</span></div>
+                            <div class="filter-menu">
+                                <div class="applied-filters-wrap">
+                                    <div class="title">
+                                        <img src="../assets/images/char-icon-2.svg" width="11" height="16" alt="Icon">
+                                        <h5>Filtros aplicados</h5>
+                                    </div>
+                                    <div class="applied-filters">
+                                    </div>
+                                </div>
+                                <div class="filter-items-wrapp">
+
+                                    <div class="filter-item">
+                                        <span>
+                                            <img src="../assets/images/char-icon-2.svg" width="11" height="16"
+                                                alt="Icon">
+                                            Ordenar por
+                                        </span>
+
+                                        <div class="sub-menu">
+                                            <div class="sub-menu-item" data-filter="mais-relevante">Mais Relevante</div>
+                                            <div class="sub-menu-item" data-filter="menor-preco">Menor Preço</div>
+                                        </div>
+                                    </div>
+                                    <div class="filter-item">
+                                        <span>
+                                            <img src="../assets/images/char-icon-2.svg" width="11" height="16"
+                                                alt="Icon">
+                                            Categoria
+                                        </span>
+                                        <div class="sub-menu">
+                                            <div class="sub-menu-item" data-filter="carregadores">Carregadores</div>
+                                            <div class="sub-menu-item" data-filter="adaptadores">Adaptadores</div>
+                                        </div>
+                                    </div>
+                                    <div class="filter-item">
+                                        <span>
+                                            <img src="../assets/images/char-icon-2.svg" width="11" height="16"
+                                                alt="Icon">
+                                            Preço
+                                        </span>
+                                        <div class="sub-menu">
+                                            <div class="sub-menu-item" data-filter="ate-50">Até 50€</div>
+                                            <div class="sub-menu-item" data-filter="acima-50">Acima de 50€</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filter-btns">
+                                    <button class="button white clear-filters">
+                                        <span class="btn-text">Apagar filtros</span>
+                                        <span class="icon"></span>
+                                    </button>
+                                    <button class="button blue">
+                                        <span class="btn-text">Mostrar resultados</span>
+                                        <span class="icon"></span>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
+
+
+
                         <div class="row row-gaps">
                             <div class="col-lg-4 col-md-6">
                                 <div class="single-blog-card">
@@ -759,40 +828,78 @@
 
 
 
+    <script>
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const filterToggle = document.querySelector(".filter-toggle");
+            const filterMenu = document.querySelector(".filter-menu");
+            const filterItems = document.querySelectorAll(".filter-item");
+            const appliedFilters = document.querySelector(".applied-filters");
+            const clearFilters = document.querySelector(".clear-filters");
+
+            filterToggle.addEventListener("click", () => {
+                filterMenu.classList.toggle("filter-menu-show");
+                filterToggle.classList.toggle("active");
+            });
+
+            // Close the filter menu if clicked outside
+            document.addEventListener("click", (event) => {
+                if (!filterToggle.contains(event.target) && !filterMenu.contains(event.target)) {
+                    filterMenu.classList.remove("filter-menu-show");
+                    filterToggle.classList.remove("active");
+                }
+            });
+
+            filterItems.forEach(item => {
+                item.addEventListener("click", (event) => {
+                    const subMenu = item.querySelector(".sub-menu");
+                    if (subMenu) {
+                        subMenu.classList.toggle("sub-menu-show");
+                        item.classList.toggle('active');
+                    }
+                    event.stopPropagation();
+                });
+            });
+
+            document.querySelectorAll(".sub-menu-item").forEach(subItem => {
+                subItem.addEventListener("click", (event) => {
+                    const filterType = subItem.getAttribute("data-filter");
+
+                    if (!document.querySelector(`.applied-${filterType}`)) {
+                        const filterTag = document.createElement("div");
+                        filterTag.classList.add("applied-filter", `applied-${filterType}`);
+                        filterTag.innerHTML = `<span class='remove'>&times;</span> ${subItem.textContent}`;
+                        appliedFilters.appendChild(filterTag);
+
+                        // Add active class to the clicked sub-menu-item
+                        subItem.classList.add("active");
+
+                        filterTag.querySelector(".remove").addEventListener("click", () => {
+                            appliedFilters.removeChild(filterTag);
+
+                            // Remove the active class when the filter is removed
+                            subItem.classList.remove("active");
+                        });
+                    }
+                    event.stopPropagation();
+                });
+            });
+
+            clearFilters.addEventListener("click", () => {
+                appliedFilters.innerHTML = "";
+                // Remove the active class from all sub-menu items
+                document.querySelectorAll(".sub-menu-item").forEach(subItem => {
+                    subItem.classList.remove("active");
+                });
+            });
+        });
+
+
+    </script>
 
 
 
-
-    <!-- blog card html structure  -->
-    <!-- <div class="single-blog-card">
-        <a href="#" class="image">
-            <img src="assets/images/dynamic/01.png" alt="title will be here">
-            <button class="share-button">
-                <img src="assets/images/share.svg" width="10" height="10" alt="share icon">
-            </button>
-        </a>
-        <ul class="card-tags">
-            <li>
-                <a href="#">
-                    <img src="assets/images/charge-icon.svg" width="6" height="8"
-                        alt="icon">
-                    Lorem
-                    ispum
-                </a>
-            </li>
-        </ul>
-        <div class="content">
-            <a href="#" class="title">Lorem ipsum dolor sit amet, lorem ipsum</a>
-            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis
-                egestas turpis.
-            </p>
-            <a href="#" class="view-details-button">
-                <img src="assets/images/arrow-rotate.svg" width="11" height="11"
-                    alt="arrow">
-            </a>
-        </div>
-    </div> -->
-    <!-- blog card html structure  -->
 </body>
 
 </html>
