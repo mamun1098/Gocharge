@@ -221,7 +221,7 @@
                                 .icon-blue {
                                     svg {
                                         path {
-                                            stroke: var(--white);
+                                            // stroke: var(--white);
                                         }
 
                                     }
@@ -236,7 +236,7 @@
                                 .icon-blue {
                                     svg {
                                         path {
-                                            fill: var(--white);
+                                            // fill: var(--white);
                                         }
 
                                     }
@@ -298,7 +298,29 @@
                 }
             }
         }
+
+        &.dark-version {
+            .wrapper-header .header-menu-wrap ul.nav li.menu-item-has-children .sub-menu {
+                box-shadow: none;
+                background: transparent;
+
+            }
+
+            .wrapper-header .header-menu-wrap ul.nav li .sub-menu li a {
+                color: var(--Brandcolor_Black);
+            }
+        }
     }
+
+    header.header-area:not(.dark-version) .wrapper-header .header-right-wrapp .icon-list li.search-icon button .icon-blue svg path,
+    header.header-area:not(.dark-version) .header-right-wrapp .icon-list li.account-icon a .icon-blue svg path {
+        stroke: var(--white);
+    }
+
+    header.header-area:not(.dark-version) .wrapper-header .header-right-wrapp .icon-list li.bags-icon a .icon-blue svg path {
+        fill: var(--white);
+    }
+
 
     footer.footer-area {
         border-radius: 28px 28px 0px 0px;
