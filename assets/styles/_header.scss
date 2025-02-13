@@ -486,6 +486,30 @@ header.header-area {
                     }
                 }
             }
+
+            .lang-selector {
+                a {
+                    color: rgba(17, 17, 17, 0.5);
+
+                    &::before {
+                        background: rgba(17, 17, 17, 0.5);
+                    }
+
+                    &.active {
+                        color: rgba(17, 17, 17, 1);
+                    }
+                }
+            }
+        }
+
+        .mobile-show-only {
+            .fav-icon {
+                .icon-blue {
+                    background: rgba(17, 17, 17, 0.8);
+                }
+
+                color: var(--Brandcolor_Black);
+            }
         }
     }
 }

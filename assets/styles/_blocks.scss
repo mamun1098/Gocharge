@@ -559,16 +559,17 @@ section.block-image {
 
 /* NEWS BLOCK START */
 section.news-block {
+    padding: 50px 0 5px;
+
     .section-title {
+        margin-bottom: 15px;
+
         h2 {
             max-width: 600px;
             margin: auto;
         }
     }
 
-    .single-blog-card {
-        margin-bottom: 30px;
-    }
 
     .mobile-version {
         display: none;
@@ -592,6 +593,33 @@ section.news-block {
     .view-more-button {
         text-align: center;
         margin-top: 60px;
+    }
+
+    .swiper {
+        padding: 25px 25px 55px 25px;
+
+        .swiper-slide {
+            height: auto;
+        }
+
+        .single-blog-card {
+            box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, .1);
+            height: 100%;
+        }
+
+        .swiper-slider-btns {
+            margin-top: 30px;
+        }
+    }
+
+
+}
+
+section.store-suggestion-block {
+    padding: 50px 0;
+
+    .section-title {
+        margin-bottom: 40px;
     }
 }
 
@@ -1291,7 +1319,7 @@ section.faq-block-area {
                 content: "";
                 position: absolute;
                 width: 100%;
-                height: 0.5px;
+                height: 1px;
                 left: 0;
                 bottom: 0;
                 background: linear-gradient(90deg, rgba(21, 142, 206, 0.3) 0%, rgba(25, 227, 227, 0.3) 100%);
@@ -1303,7 +1331,7 @@ section.faq-block-area {
                     content: "";
                     position: absolute;
                     width: 100%;
-                    height: 0.5px;
+                    height: 1px;
                     left: 0;
                     top: 0;
                     background: linear-gradient(90deg, rgba(21, 142, 206, 0.3) 0%, rgba(25, 227, 227, 0.3) 100%);

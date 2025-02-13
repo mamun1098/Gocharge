@@ -32,6 +32,26 @@ document.addEventListener("DOMContentLoaded", function () {
       headerArea.classList.add("show-search-box");
     }
   });
+  /* SEARCH SCRIPT END */
+
+  /* COMMON SCRIPT FOR HTML STRUCTURE REMOVED START */
+  const isMobile = window.innerWidth <= 768;
+  document
+    .querySelectorAll(".desktop-version-remove-from-mobile")
+    .forEach((el) => {
+      if (isMobile) {
+        el.remove();
+      }
+    });
+
+  document
+    .querySelectorAll(".mobile-version-remove-from-desktop")
+    .forEach((el) => {
+      if (!isMobile) {
+        el.remove();
+      }
+    });
+  /* COMMON SCRIPT FOR HTML STRUCTURE REMOVED START */
 
   /* CHANGE BACKGROUND COLOR ON CLICK CHARGE ICON START */
   const gradientButtons = document.querySelectorAll(

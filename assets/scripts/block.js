@@ -172,9 +172,26 @@ setTimeout(function () {
 
         breakpoints: {
           0: {
-            slidesPerView: 1.2,
-            centeredSlides: true,
-            loop: true,
+            slidesPerView: 1.1,
+            centeredSlides: false,
+            loop: false,
+          },
+          768: {
+            slidesPerView: 2,
+            centeredSlides: false,
+            loop: false,
+          },
+          990: {
+            slidesPerView: 3,
+            centeredSlides: false,
+            loop: false,
+            spaceBetween: 25,
+          },
+          1200: {
+            slidesPerView: 3,
+            centeredSlides: false,
+            loop: false,
+            spaceBetween: 50,
           },
         },
       });

@@ -367,6 +367,12 @@ section.charge-anytime {
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                 }
+
+                .content {
+                    &::before {
+                        background: rgba(21, 142, 206, 0.3);
+                    }
+                }
             }
 
             &.blue-bg {
@@ -395,6 +401,12 @@ section.charge-anytime {
                     color: #FFF;
                 }
 
+                .content {
+                    &::before {
+                        background: rgba(255, 255, 255, 0.3);
+                    }
+                }
+
             }
 
             .img {
@@ -417,6 +429,16 @@ section.charge-anytime {
 
             .content {
                 flex-basis: calc(100% - 65px);
+                position: relative;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: -18px;
+                    width: 0.5px;
+                    height: calc(100% - 10px);
+                    top: 5px;
+                }
             }
 
             .title {
@@ -436,6 +458,65 @@ section.charge-anytime {
                 line-height: 20px;
                 letter-spacing: -0.26px;
                 margin-top: 10px;
+            }
+        }
+
+        &.mobile-version {
+            display: none;
+
+            .single-item {
+                flex-direction: column;
+                align-items: flex-start;
+
+                .title-part {
+                    display: flex;
+                    align-items: center;
+                    column-gap: 35px;
+
+                    .img {
+                        flex-basis: 30px;
+                    }
+
+                    .title,
+                    h3 {
+                        // flex-basis: ;
+                        // max-width: 60%;
+                        position: relative;
+
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            left: -18px;
+                            width: 0.5px;
+                            height: calc(100% - 3px);
+                            top: 3px;
+                        }
+                    }
+                }
+
+                &.white-bg {
+                    .title-part {
+
+                        .title,
+                        h3 {
+                            &::before {
+                                background: rgba(21, 142, 206, 0.3);
+                            }
+                        }
+                    }
+                }
+
+                &.blue-bg {
+                    .title-part {
+
+                        .title,
+                        h3 {
+                            &::before {
+                                background: rgba(255, 255, 255, 0.3);
+                            }
+                        }
+                    }
+                }
             }
         }
     }
