@@ -213,36 +213,36 @@
                             display: none;
                         }
 
-                        &.search-icon,
-                        &.account-icon {
+                        // &.search-icon,
+                        // &.account-icon {
 
-                            a,
-                            button {
-                                .icon-blue {
-                                    svg {
-                                        path {
-                                            // stroke: var(--white);
-                                        }
+                        //     a,
+                        //     button {
+                        //         .icon-blue {
+                        //             svg {
+                        //                 path {
+                        //                     stroke: var(--white);
+                        //                 }
 
-                                    }
-                                }
-                            }
-                        }
+                        //             }
+                        //         }
+                        //     }
+                        // }
 
-                        &.bags-icon {
+                        // &.bags-icon {
 
-                            a,
-                            button {
-                                .icon-blue {
-                                    svg {
-                                        path {
-                                            // fill: var(--white);
-                                        }
+                        //     a,
+                        //     button {
+                        //         .icon-blue {
+                        //             svg {
+                        //                 path {
+                        //                     fill: var(--white);
+                        //                 }
 
-                                    }
-                                }
-                            }
-                        }
+                        //             }
+                        //         }
+                        //     }
+                        // }
 
                         .mobile-search-button {
                             .close-icon-svg {
@@ -712,8 +712,6 @@
         .footer-top {
             padding-bottom: 30px;
 
-            .subscription-form {}
-
             .footer-nav-wrapper {
 
                 .footer-nav {
@@ -845,18 +843,6 @@
 
     section.banner-area {
         margin-bottom: 20px;
-
-        &.higher {
-
-            .hero-wrapper {
-                .swiper {
-                    .swiper-slide {
-
-                        .wrapper-content {}
-                    }
-                }
-            }
-        }
 
     }
 
@@ -1247,8 +1233,6 @@
                 flex-direction: column;
                 align-items: flex-start;
 
-                .left {}
-
                 .add_to-cart-btn {
                     text-align: center;
                     width: 100%;
@@ -1562,17 +1546,7 @@
             }
         }
 
-        .single-price {
-            .subtitle {}
-        }
 
-        .content-wrapper {
-
-            .side-slider {
-
-                .swiper-slider-btns {}
-            }
-        }
     }
 
     section.save-for-charge-block {

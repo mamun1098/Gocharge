@@ -158,10 +158,7 @@ section.store-suggestion-block {
             flex-basis: 86px;
             max-height: 450px;
 
-            .swiper-wrapper {
-                // flex-direction: column;
-                // row-gap: 20px;
-            }
+
 
             .swiper-slide {
                 cursor: pointer;
@@ -1523,7 +1520,6 @@ section.store-suggestion-block {
                 }
             }
 
-            .add_to-cart-btn {}
         }
     }
 }
